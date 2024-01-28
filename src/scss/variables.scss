@@ -1,0 +1,70 @@
+:root {
+  /* Container */
+  --container-width: 1470px;
+  --container-padding: 0 20px 0 20px;
+
+  /* Colors */
+  --color-light: #ffffff;
+  --color-dark: #16182a;
+  --color-dark-green: #169b00;
+  --color-green: #a3da5f;
+  --color-orange: #eea245;
+  --color-orange-btn: linear-gradient(180deg, #ffc67e 0%, #eea245 100%);
+  --color-gray: #e1e1e1;
+  --color-gray-alt: #8e8e8e;
+  --color-gray-border: #d9d9d9;
+  --color-gray-light: #f5f5f5;
+
+  /* Border */
+  --border-radius-s: 20px;
+  --border-radius-m: 30px;
+  --border-radius-l: 40px;
+  --border-radius-xl: 50px;
+  --border-radius-xxl: 50%;
+  --border-dashed: 1px dashed var(--color-gray-border);
+  --border-solid-gray: 1px solid var(--color-gray-light);
+  --border-solid-orange: 1px solid var(--color-orange);
+
+  /* Box Shadow */
+  --box-shadow-s: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  --box-shadow-m: 0px 4px 10px 0px rgba(22, 24, 42, 0.1);
+  --box-shadow-orange-btn: 2px 2px 10px 4px rgba(255, 255, 255, 0.1) inset,
+    -2px -2px 10px 4px rgba(255, 255, 255, 0.1) inset, 0px 4px 0px 0px #eea245;
+
+  /* Font Family */
+  --font-family-base: "Manrope", Inter, system-ui, Avenir, Helvetica, Arial,
+    sans-serif;
+  --font-family-other: "Forum", Inter, system-ui, Avenir, Helvetica, Arial,
+    sans-serif;
+
+  /* Font Size */
+  --text-smal: 12px;
+  --text-xs: 14px;
+  --text-xxs: 16px;
+  --text-sm: 20px;
+  --text-md: 24px;
+  --text-lg: 30px;
+  --text-llg: 36px;
+  --text-xl: 40px;
+  --text-xxl: 48px;
+  --text-xxxl: 70px;
+  --title-xl: 90px;
+
+  /* Font Weights */
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* Buttons */
+  --button-width: 300px;
+  --button-height-s: 65px;
+  --button-height-m: 80px;
+  --transition-duration: 0.2s;
+
+  /* Input */
+  --input-width-s: 300px;
+  --input-height-s: 87px;
+  --input-width: 337px;
+  --input-height: 80px;
+}

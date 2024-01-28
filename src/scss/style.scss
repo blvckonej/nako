@@ -1,0 +1,201 @@
+/* Local Style */
+@import "variables.scss";
+@import "fonts.scss";
+@import "mixins.scss";
+@import "media.scss";
+@import "global.scss";
+@import "utils.scss";
+/* Reset Style */
+@import "normalize.css";
+
+/* General Styles */
+.container {
+  width: var(--container-width);
+  padding: var(--container-padding);
+  box-sizing: border-box;
+}
+
+.colors_span {
+  color: var(--color-orange);
+}
+
+.backimage {
+  position: absolute;
+  width: 100%;
+  height: 1120px;
+  object-fit: contain;
+  z-index: -1;
+}
+
+/* Element Style */
+
+header {
+  //   background-image: url(../images/titleimg2.png);
+  //   background-size: cover;
+  z-index: -1;
+  height: 1120px;
+}
+
+.header {
+  padding-top: 15px;
+  border-bottom-left-radius: 40px;
+  &__logo-block {
+    @include df-center;
+  }
+  &__logo-title {
+    max-width: 201px;
+    margin-left: 43px;
+    font-size: var(--text-smal);
+    font-weight: var(--fw-regular);
+  }
+  &__logo {
+    @include df-center-sb;
+  }
+  &__menu-list {
+    display: flex;
+  }
+  &__menu-item {
+    margin-left: 50px;
+  }
+  &__phone {
+    font-weight: var(--fw-bold);
+    line-height: normal;
+  }
+  &__social {
+    @include df-center;
+    &-item {
+      margin-left: 25px;
+    }
+  }
+  &__title {
+    @include font-forum(var(--title-xl));
+    max-width: 945px;
+    text-transform: uppercase;
+    line-height: 99px;
+    margin-top: 67px;
+  }
+  &__subtitle {
+    @include font-forum(var(--text-xxxl));
+    color: var(--color-orange);
+  }
+  &__description {
+    font-size: var(--text-lg);
+    max-width: 690px;
+    margin-top: 27px;
+    margin-bottom: 10px;
+  }
+  &__subdescr {
+    @include df-center-sb;
+    max-width: 925px;
+  }
+  &__subdescr-list {
+    max-width: 667px;
+    height: 162px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  &__subdescr-item {
+    margin-top: 54px;
+    margin-right: 27px;
+    display: flex;
+    align-items: center;
+  }
+  .not-mt {
+    margin-top: 0;
+  }
+  &__subdescr-dots {
+    width: 16px;
+    height: 16px;
+    margin-right: 27px;
+    background-color: var(--color-orange);
+    border-radius: var(--border-radius-xxl);
+  }
+  &__button {
+    @include round-btn;
+    font-family: var(--font-family-other);
+    font-size: var(--text-md);
+    box-shadow: var(--box-shadow-s);
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    cursor: pointer;
+  }
+  &__button-ring {
+    @include df-center;
+    justify-content: center;
+    margin-top: 40px;
+    width: 255px;
+    height: 255px;
+    border: 2px solid var(--color-light);
+    border-radius: var(--border-radius-xxl);
+  }
+}
+
+.work {
+  margin-top: 50px;
+  &__block {
+    @include df-center-sb;
+  }
+  &__block-title {
+    @include font-forum(48px);
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 55px;
+    max-width: 1000px;
+  }
+  &__block-subtitle {
+    font-weight: var(--fw-semibold);
+    margin-bottom: 10px;
+  }
+  &__block-subdescr {
+    max-width: 385px;
+    &:last-child {
+      max-width: 473px;
+    }
+  }
+  &__block-item {
+    max-width: 100%;
+    margin-right: 30px;
+    padding-right: 100px;
+    height: 168px;
+    border: var(--border-dashed);
+    border-radius: var(--border-radius-xl);
+    @include df-center;
+    &:last-child {
+      padding-right: 20px;
+      margin-right: 0;
+    }
+  }
+}
+
+.example {
+  background-image: url(../images/backwork.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  &__block-card {
+    margin-top: 71px;
+    border-radius: var(--border-radius-l);
+  }
+  &__block-card_img {
+    width: 460px;
+    height: 400px;
+    margin-bottom: -70px;
+    border-top-right-radius: var(--border-radius-l);
+    border-top-left-radius: var(--border-radius-l);
+  }
+  &__block-card_wrapp {
+    position: relative;
+    padding-top: 1px;
+    width: 460px;
+    height: 400px;
+    border-radius: var(--border-radius-l);
+    background-color: var(--color-light);
+    z-index: 1;
+  }
+  &__block-card_descr {
+    margin: 11px;
+    height: 375px;
+    border: var(--border-dashed);
+    border-radius: var(--border-radius-l);
+  }
+}

@@ -1,0 +1,66 @@
+/* Fonts Names */
+@mixin font-forum($size) {
+  font-family: var(--font-family-other);
+  font-weight: 400;
+  font-style: normal;
+  font-size: $size;
+}
+
+@mixin font-manrope($weight, $size) {
+  font-family: var(--font-family-base);
+  font-weight: $weight;
+  font-style: normal;
+  font-size: $size;
+}
+
+/* Element style */
+@mixin df-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin df-center-sb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin df-center-all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin round-btn {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #ffdaac 0%, #eea245 100%);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border: none;
+}
+
+@mixin reset-link {
+  color: inherit;
+  &,
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+@mixin reset-button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+@mixin flex-center($isInline: false) {
+  @if $isInline {
+    display: inline-flex;
+  } @else {
+    display: flex;
+  }
+
+  justify-content: center;
+  align-items: center;
+}
