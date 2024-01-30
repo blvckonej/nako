@@ -5,6 +5,7 @@
 @import "media.scss";
 @import "global.scss";
 @import "utils.scss";
+@import "section.scss";
 /* Reset Style */
 @import "normalize.css";
 
@@ -13,10 +14,6 @@
   width: var(--container-width);
   padding: var(--container-padding);
   box-sizing: border-box;
-}
-
-.colors_span {
-  color: var(--color-orange);
 }
 
 .backimage {
@@ -136,27 +133,20 @@ header {
   &__block {
     @include df-center-sb;
   }
-  &__block-title {
-    @include font-forum(48px);
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 55px;
-    max-width: 1000px;
-  }
   &__block-subtitle {
     font-weight: var(--fw-semibold);
     margin-bottom: 10px;
   }
   &__block-subdescr {
     max-width: 385px;
-    &:last-child {
+    line-height: 24px;
+    &:nth-child(2) {
       max-width: 473px;
     }
   }
   &__block-item {
-    max-width: 100%;
+    width: 100%;
     margin-right: 30px;
-    padding-right: 100px;
     height: 168px;
     border: var(--border-dashed);
     border-radius: var(--border-radius-xl);
@@ -172,6 +162,10 @@ header {
   background-image: url(../images/backwork.png);
   background-repeat: no-repeat;
   background-position: center center;
+  padding-bottom: 50px;
+  &__block {
+    @include df-center-sb;
+  }
   &__block-card {
     margin-top: 71px;
     border-radius: var(--border-radius-l);
@@ -192,10 +186,39 @@ header {
     background-color: var(--color-light);
     z-index: 1;
   }
-  &__block-card_descr {
+  &__block-card_dashblock {
     margin: 11px;
     height: 375px;
     border: var(--border-dashed);
     border-radius: var(--border-radius-l);
+  }
+  &__block-card_descr {
+    margin-left: 48px;
+    margin-top: 54px;
+  }
+  &__block-card_counter {
+    @include df-center;
+    color: var(--color-dark-green);
+  }
+  &__block-card_dots {
+    width: 11px;
+    height: 11px;
+    margin-right: 19px;
+    background-color: var(--color-dark-green);
+    border-radius: var(--border-radius-xxl);
+  }
+  &__block-card_title {
+    @include font-forum(var(--text-xl));
+    margin-top: 24px;
+  }
+  &__block-card_price {
+    font-size: var(--text-md);
+    margin-top: 20px;
+    span {
+      font-size: var(--text-llg);
+    }
+  }
+  &__block-card_button {
+    margin-top: 42px;
   }
 }

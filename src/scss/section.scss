@@ -1,0 +1,28 @@
+section {
+    .section_title {
+        @include font-forum(48px);
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 55px;
+        max-width: 1000px;
+        span {
+            color: var(--color-orange);
+          }
+    }
+}
+
+/* Buttons */
+
+// Orange Full color button
+
+.button_orange {
+    @include font-forum(var(--text-sm));
+    width: var(--button-width);
+    height: var(--button-height-m);
+    border-radius: var(--border-radius-xxxl);
+    background: var(--color-orange-btn);
+    box-shadow: var(--box-shadow-orange-btn);
+    color: var(--color-light);
+    cursor: pointer;
+    border: none;
+}

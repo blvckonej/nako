@@ -10,6 +10,7 @@
   --color-green: #a3da5f;
   --color-orange: #eea245;
   --color-orange-btn: linear-gradient(180deg, #ffc67e 0%, #eea245 100%);
+  --color-orange-btn-rgb: linear-gradient(180deg, rgba(255, 198, 126) 0%, rgba(238, 162, 69) 100%);
   --color-gray: #e1e1e1;
   --color-gray-alt: #8e8e8e;
   --color-gray-border: #d9d9d9;
@@ -21,6 +22,7 @@
   --border-radius-l: 40px;
   --border-radius-xl: 50px;
   --border-radius-xxl: 50%;
+  --border-radius-xxxl: 100px;
   --border-dashed: 1px dashed var(--color-gray-border);
   --border-solid-gray: 1px solid var(--color-gray-light);
   --border-solid-orange: 1px solid var(--color-orange);
