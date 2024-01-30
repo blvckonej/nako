@@ -133,6 +133,9 @@ header {
   &__block {
     @include df-center-sb;
   }
+  &__block-title {
+    max-width: 1000px;
+  }
   &__block-subtitle {
     font-weight: var(--fw-semibold);
     margin-bottom: 10px;
@@ -147,6 +150,7 @@ header {
   &__block-item {
     width: 100%;
     margin-right: 30px;
+    margin-top: 55px;
     height: 168px;
     border: var(--border-dashed);
     border-radius: var(--border-radius-xl);
@@ -162,12 +166,14 @@ header {
   background-image: url(../images/backwork.png);
   background-repeat: no-repeat;
   background-position: center center;
-  padding-bottom: 50px;
+  height: 846px;
+  padding-top: 15px;
+  padding-bottom: 150px;
   &__block {
     @include df-center-sb;
   }
   &__block-card {
-    margin-top: 71px;
+    margin-top: 70px;
     border-radius: var(--border-radius-l);
   }
   &__block-card_img {
@@ -184,6 +190,7 @@ header {
     height: 400px;
     border-radius: var(--border-radius-l);
     background-color: var(--color-light);
+    box-shadow: var(--box-shadow-x);
     z-index: 1;
   }
   &__block-card_dashblock {
@@ -220,5 +227,56 @@ header {
   }
   &__block-card_button {
     margin-top: 42px;
+  }
+}
+
+.advantages {
+  &__block {
+    @include df-center-sb;
+    flex-wrap: wrap;
+    margin-top: 16px;
+  }
+  &__descr {
+    margin: 0 auto;
+    margin-top: 30px;
+    max-width: 761px;
+    text-align: center;
+    line-height: 24px;
+  }
+  &__block-wrapp {
+    @include df-center-all;
+    width: var(--block-width-m);
+    height: var(--block-height-m);
+    border-radius: var(--border-radius-m);
+    box-shadow: var(--box-shadow-m);
+    margin-top: 36px;
+  }
+  &__block-dashed {
+    width: var(--block-width-s);
+    height: var(--block-height-s);
+    border: var(--border-dashed);
+    border-radius: var(--border-radius-m);
+  }
+  &__block-title {
+    margin-top: 16px;
+    margin-right: 4px;
+    @include df-center-sb;
+  }
+  &__block-subtitle {
+    @include df-center-all;
+    width: 200px;
+    height: 40px;
+    margin-left: -15px;
+    border-top-right-radius: var(--border-radius-s);
+    border-bottom-right-radius: var(--border-radius-s);
+    background: var(--color-green);
+    color: var(--color-light);
+    font-weight: var(--fw-semibold);
+  }
+  &__block-subdescr {
+    font-size: var(--text-xxs);
+    line-height: 21px;
+    width: 304px;
+    margin-left: 31px;
   }
 }
