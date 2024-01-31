@@ -9,8 +9,13 @@
   --color-dark-green: #169b00;
   --color-green: #a3da5f;
   --color-orange: #eea245;
+  --color-light-orange: #ffc67e;
   --color-orange-btn: linear-gradient(180deg, #ffc67e 0%, #eea245 100%);
-  --color-orange-btn-rgb: linear-gradient(180deg, rgba(255, 198, 126) 0%, rgba(238, 162, 69) 100%);
+  --color-orange-btn-rgb: linear-gradient(
+    180deg,
+    rgba(255, 198, 126) 0%,
+    rgba(238, 162, 69) 100%
+  );
   --color-gray: #e1e1e1;
   --color-gray-alt: #8e8e8e;
   --color-gray-border: #d9d9d9;
@@ -71,10 +76,10 @@
   --input-width: 337px;
   --input-height: 80px;
 
-   /* Blocks */
-   --block-width-s: 430px;
-   --block-height-s: 230px;
+  /* Blocks */
+  --block-width-s: 430px;
+  --block-height-s: 230px;
 
-   --block-width-m: 460px;
-   --block-height-m: 260px;
+  --block-width-m: 460px;
+  --block-height-m: 260px;
 }

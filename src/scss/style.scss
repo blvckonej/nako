@@ -231,7 +231,7 @@ header {
 }
 
 .advantages {
-  background-image: url('../images/backadvantages.png');
+  background-image: url("../images/backadvantages.png");
   background-repeat: no-repeat;
   background-position: right;
   padding-top: 35px;
@@ -287,11 +287,16 @@ header {
 }
 
 .feedback {
+  &__block {
+    display: flex;
+  }
   &__portrait {
     width: 613px;
     height: 754px;
-    background-image: url('../images/boss.png');
+    margin-right: 88px;
+    background-image: url("../images/boss.png");
     border-radius: var(--border-radius-m);
+    z-index: -1000;
   }
   &__portrait-descr {
     height: 100%;
@@ -299,5 +304,109 @@ header {
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-end;
+  }
+  &__portrait-name {
+    @include df-center-all;
+    width: 181px;
+    height: 51px;
+    margin-right: 75px;
+    background-color: var(--color-light-orange);
+    border-radius: var(--border-radius-m);
+    font-weight: var(--fw-semibold);
+    z-index: 1;
+  }
+  &__portrait-jobtitle {
+    @include df-center-all;
+    width: 270px;
+    height: 51px;
+    margin-right: -40px;
+    margin-top: -10px;
+    margin-bottom: 31px;
+    font-weight: var(--fw-light);
+    background-color: var(--color-light);
+    border-top-left-radius: var(--border-radius-m);
+    border-bottom-left-radius: var(--border-radius-m);
+  }
+  &__consultation-title {
+    text-align: left !important;
+  }
+  &__consultation-dots {
+    width: 10px;
+    height: 10px;
+    margin-right: 25px;
+    background: var(--color-orange-btn);
+    border-radius: var(--border-radius-xl);
+  }
+  &__consultation-text {
+    font-weight: var(--fw-light);
+    font-size: var(--text-sm);
+    line-height: 22px;
+  }
+  &__consultation-item {
+    @include df-center;
+    margin-top: 30px;
+  }
+  &__form {
+    @include df-center-all;
+    width: 691px;
+    height: 405px;
+    margin-top: 43px;
+    box-shadow: var(--box-shadow-m);
+    border-radius: var(--border-radius-l);
+  }
+  &__form-dashed {
+    width: 663px;
+    height: 378px;
+    border: var(--border-dashed);
+    border-radius: var(--border-radius-l);
+  }
+  &__form-block {
+    margin-top: 45px;
+  }
+  &__form-title {
+    font-weight: var(--fw-semibold);
+    font-size: var(--text-sm);
+    margin-bottom: 25px;
+  }
+  &__form-input {
+    width: 322px;
+    height: 80px;
+    border-radius: var(--border-radius-xl);
+    border: none;
+    background-color: var(--color-gray);
+    padding-left: 15px;
+    &::placeholder {
+      font-size: var(--text-xxs);
+      padding-left: 60px;
+    }
+  }
+  &__form-realcheckbox {
+    display: none;
+  }
+  &__form-customcheckbox {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: var(--border-radius-xxl);
+    background-color: var(--color-orange);
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 13px;
+      height: 13px;
+      background-image: url(../images/arrow.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      margin-top: 1px;
+      transition: 0.2 ease-in;
+    }
+  }
+  &__form-realcheckbox:checked + &__form-customcheckbox::before {
+    transform: translate(-50%, -50%) scale(1);
   }
 }

@@ -1,30 +1,30 @@
 section {
-    .section_title {
-        @include font-forum(var(--text-xxl));
-        margin: 0 auto;
-        text-align: center;
-        span {
-            color: var(--color-orange);
-          }
+  .section_title {
+    @include font-forum(var(--text-xxl));
+    margin: 0 auto;
+    text-align: center;
+    span {
+      color: var(--color-orange);
     }
-    .advantages__height {
-        width: 201px;
-        height: 68px;
-    }
+  }
+  .advantages__height {
+    width: 201px;
+    height: 68px;
+  }
 }
 
 /* Buttons */
 
 // Orange Full color button
 
-.button_orange {
-    @include font-forum(var(--text-sm));
-    width: var(--button-width);
-    height: var(--button-height-m);
-    border-radius: var(--border-radius-xxxl);
-    background: var(--color-orange-btn);
-    box-shadow: var(--box-shadow-orange-btn);
-    color: var(--color-light);
-    cursor: pointer;
-    border: none;
+.button_default {
+  @include font-forum(var(--text-sm));
+  width: var(--button-width);
+  height: var(--button-height-m);
+  border-radius: var(--border-radius-xxxl);
+  background: var(--color-orange-btn);
+  box-shadow: var(--box-shadow-orange-btn);
+  color: var(--color-light);
+  cursor: pointer;
+  border: none;
 }

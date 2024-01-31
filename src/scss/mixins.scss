@@ -40,6 +40,14 @@
   border: none;
 }
 
+@mixin button-all($width, $height, $font, $b-radius) {
+  width: $width;
+  height: $height;
+  border-radius: $b-radius;
+  cursor: pointer;
+  border: none;
+}
+
 @mixin reset-link {
   color: inherit;
   &,
@@ -60,7 +68,6 @@
   } @else {
     display: flex;
   }
-
   justify-content: center;
   align-items: center;
 }
