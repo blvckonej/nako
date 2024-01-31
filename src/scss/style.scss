@@ -168,7 +168,7 @@ header {
   background-position: center center;
   height: 846px;
   padding-top: 15px;
-  padding-bottom: 150px;
+  padding-bottom: 130px;
   &__block {
     @include df-center-sb;
   }
@@ -231,6 +231,10 @@ header {
 }
 
 .advantages {
+  background-image: url('../images/backadvantages.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-top: 35px;
   &__block {
     @include df-center-sb;
     flex-wrap: wrap;
@@ -263,10 +267,11 @@ header {
     @include df-center-sb;
   }
   &__block-subtitle {
-    @include df-center-all;
-    width: 200px;
+    @include df-center;
+    width: 152px;
     height: 40px;
     margin-left: -15px;
+    padding-left: 48px;
     border-top-right-radius: var(--border-radius-s);
     border-bottom-right-radius: var(--border-radius-s);
     background: var(--color-green);
@@ -278,5 +283,21 @@ header {
     line-height: 21px;
     width: 304px;
     margin-left: 31px;
+  }
+}
+
+.feedback {
+  &__portrait {
+    width: 613px;
+    height: 754px;
+    background-image: url('../images/boss.png');
+    border-radius: var(--border-radius-m);
+  }
+  &__portrait-descr {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
   }
 }
