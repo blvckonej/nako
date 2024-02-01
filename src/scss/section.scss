@@ -28,3 +28,42 @@ section {
   cursor: pointer;
   border: none;
 }
+
+// Empty button
+
+.button_empty {
+  @include font-forum(var(--text-sm));
+  width: var(--button-width);
+  height: var(--button-height-s);
+  color: var(--color-orange);
+  background: var(--color-light) !important;
+  border: 1px solid var(--color-orange) !important;
+  border-radius: var(--border-radius-xxxl);
+  cursor: pointer;
+}
+
+.button_green {
+  @include font-forum(var(--text-sm));
+  width: var(--button-width);
+  height: var(--button-height-m);
+  border-radius: var(--border-radius-xxxl);
+  color: var(--color-light);
+  background: var(--color-green) !important;
+  box-shadow: var(--color-green-btn-rgb);
+  border: none;
+  cursor: pointer;
+}
+
+.input_gray {
+  width: 322px;
+  height: 80px;
+  border-radius: var(--border-radius-xl);
+  border: none;
+  background-color: var(--color-gray);
+  padding-left: 15px;
+  margin-top: 25px;
+  &::placeholder {
+    font-size: var(--text-xxs);
+    padding-left: 60px;
+  }
+}
