@@ -1,0 +1,55 @@
+.advantages {
+    background-image: url("../images/backadvantages.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-top: 35px;
+    &__block {
+      @include df-center-sb;
+      flex-wrap: wrap;
+      margin-top: 16px;
+    }
+    &__descr {
+      margin: 0 auto;
+      margin-top: 30px;
+      max-width: 761px;
+      text-align: center;
+      line-height: 24px;
+    }
+    &__block-wrapp {
+      @include df-center-all;
+      width: var(--block-width-m);
+      height: var(--block-height-m);
+      border-radius: var(--border-radius-m);
+      box-shadow: var(--box-shadow-m);
+      margin-top: 36px;
+    }
+    &__block-dashed {
+      width: var(--block-width-s);
+      height: var(--block-height-s);
+      border: var(--border-dashed);
+      border-radius: var(--border-radius-m);
+    }
+    &__block-title {
+      margin-top: 16px;
+      margin-right: 4px;
+      @include df-center-sb;
+    }
+    &__block-subtitle {
+      @include df-center;
+      width: 152px;
+      height: 40px;
+      margin-left: -15px;
+      padding-left: 48px;
+      border-top-right-radius: var(--border-radius-s);
+      border-bottom-right-radius: var(--border-radius-s);
+      background: var(--color-green);
+      color: var(--color-light);
+      font-weight: var(--fw-semibold);
+    }
+    &__block-subdescr {
+      font-size: var(--text-xxs);
+      line-height: 21px;
+      width: 304px;
+      margin-left: 31px;
+    }
+  }

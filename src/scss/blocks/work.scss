@@ -1,0 +1,33 @@
+.work {
+    margin-top: 50px;
+    &__block {
+      @include df-center-sb;
+    }
+    &__block-title {
+      max-width: 1000px;
+    }
+    &__block-subtitle {
+      font-weight: var(--fw-semibold);
+      margin-bottom: 10px;
+    }
+    &__block-subdescr {
+      max-width: 385px;
+      line-height: 24px;
+      &:nth-child(2) {
+        max-width: 473px;
+      }
+    }
+    &__block-item {
+      width: 100%;
+      margin-right: 30px;
+      margin-top: 55px;
+      height: 168px;
+      border: var(--border-dashed);
+      border-radius: var(--border-radius-xl);
+      @include df-center;
+      &:last-child {
+        padding-right: 20px;
+        margin-right: 0;
+      }
+    }
+  }

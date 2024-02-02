@@ -1,0 +1,67 @@
+.example {
+    background-image: url(../images/backwork.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 846px;
+    padding-top: 15px;
+    padding-bottom: 130px;
+    &__block {
+      @include df-center-sb;
+    }
+    &__block-card {
+      margin-top: 70px;
+      border-radius: var(--border-radius-l);
+    }
+    &__block-card_img {
+      width: 460px;
+      height: 400px;
+      margin-bottom: -70px;
+      border-top-right-radius: var(--border-radius-l);
+      border-top-left-radius: var(--border-radius-l);
+    }
+    &__block-card_wrapp {
+      position: relative;
+      padding-top: 1px;
+      width: 460px;
+      height: 400px;
+      border-radius: var(--border-radius-l);
+      background-color: var(--color-light);
+      box-shadow: var(--box-shadow-x);
+      z-index: 1;
+    }
+    &__block-card_dashblock {
+      margin: 11px;
+      height: 375px;
+      border: var(--border-dashed);
+      border-radius: var(--border-radius-l);
+    }
+    &__block-card_descr {
+      margin-left: 48px;
+      margin-top: 54px;
+    }
+    &__block-card_counter {
+      @include df-center;
+      color: var(--color-dark-green);
+    }
+    &__block-card_dots {
+      width: 11px;
+      height: 11px;
+      margin-right: 19px;
+      background-color: var(--color-dark-green);
+      border-radius: var(--border-radius-xxl);
+    }
+    &__block-card_title {
+      @include font-forum(var(--text-xl));
+      margin-top: 24px;
+    }
+    &__block-card_price {
+      font-size: var(--text-md);
+      margin-top: 20px;
+      span {
+        font-size: var(--text-llg);
+      }
+    }
+    &__block-card_button {
+      margin-top: 42px;
+    }
+  }
