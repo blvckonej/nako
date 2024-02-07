@@ -1,101 +1,214 @@
 header {
-    //   background-image: url(../images/titleimg2.png);
-    //   background-size: cover;
-    z-index: -1;
-    height: 1120px;
+  background-image: url(../images/titleimg2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 100%;
+  z-index: -1;
+  height: 1120px;
+  @include desktop {
+    height: 900px;
   }
+  @include mobile {
+    height: 600px;
+  }
+  @include phone {
+    height: 100vh;
+    background-image: url("/src/images/bg-phone-header.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
 
 .header {
-    padding-top: 15px;
-    border-bottom-left-radius: 40px;
-    &__logo-block {
-      @include df-center;
+  padding-top: 15px;
+  border-bottom-left-radius: 40px;
+  &__logo-block {
+    @include df-center;
+  }
+  &__logo-title {
+    max-width: 201px;
+    margin-left: 43px;
+    font-size: var(--text-smal);
+    font-weight: var(--fw-regular);
+  }
+  &__logo {
+    @include df-center-sb;
+  }
+  &__menu-list {
+    display: flex;
+  }
+  &__menu-item {
+    font-size: var(--text-xxs);
+    margin-left: 50px;
+    &:first-child {
+      margin-left: 0;
     }
-    &__logo-title {
-      max-width: 201px;
-      margin-left: 43px;
-      font-size: var(--text-smal);
-      font-weight: var(--fw-regular);
-    }
-    &__logo {
-      @include df-center-sb;
-    }
-    &__menu-list {
-      display: flex;
-    }
-    &__menu-item {
-      margin-left: 50px;
-    }
-    &__phone {
-      font-weight: var(--fw-bold);
-      line-height: normal;
-    }
-    &__social {
-      @include df-center;
-      &-item {
-        margin-left: 25px;
-      }
-    }
-    &__title {
-      @include font-forum(var(--title-xl));
-      max-width: 945px;
-      text-transform: uppercase;
-      line-height: 99px;
-      margin-top: 67px;
-    }
-    &__subtitle {
-      @include font-forum(var(--text-xxxl));
-      color: var(--color-orange);
-    }
-    &__description {
-      font-size: var(--text-lg);
-      max-width: 690px;
-      margin-top: 27px;
-      margin-bottom: 10px;
-    }
-    &__subdescr {
-      @include df-center-sb;
-      max-width: 925px;
-    }
-    &__subdescr-list {
-      max-width: 667px;
-      height: 162px;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-    }
-    &__subdescr-item {
-      margin-top: 54px;
-      margin-right: 27px;
-      display: flex;
-      align-items: center;
-    }
-    .not-mt {
-      margin-top: 0;
-    }
-    &__subdescr-dots {
-      width: 16px;
-      height: 16px;
-      margin-right: 27px;
-      background-color: var(--color-orange);
-      border-radius: var(--border-radius-xxl);
-    }
-    &__button {
-      @include round-btn;
-      font-family: var(--font-family-other);
-      font-size: var(--text-md);
-      box-shadow: var(--box-shadow-s);
-      text-transform: uppercase;
-      letter-spacing: 1.2px;
-      cursor: pointer;
-    }
-    &__button-ring {
-      @include df-center;
-      justify-content: center;
-      margin-top: 40px;
-      width: 255px;
-      height: 255px;
-      border: 2px solid var(--color-light);
-      border-radius: var(--border-radius-xxl);
+    @include desktop {
+      font-size: var(--text-xs);
+      margin-left: 20px;
     }
   }
+  &__phone {
+    font-weight: var(--fw-bold);
+    line-height: normal;
+    @include desktop {
+      font-size: var(--text-xs);
+    }
+  }
+  &__social {
+    @include df-center;
+    &-item {
+      margin-left: 20px;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+  &__title {
+    @include font-forum(var(--title-xl));
+    max-width: 945px;
+    text-transform: uppercase;
+    line-height: 99px;
+    margin-top: 67px;
+    @include desktop {
+      margin-top: 40px;
+      font-size: var(--text-xxxl);
+      max-width: 700px;
+    }
+    @include mobile {
+      margin-top: 20px;
+      font-size: var(--text-xxl);
+      max-width: 500px;
+      line-height: 50px;
+    }
+    @include phone {
+      margin-top: 44px;
+      width: 200px;
+      line-height: 35px;
+      font-size: var(--text-xlg);
+    }
+  }
+  &__subtitle {
+    @include font-forum(var(--text-xxxl));
+    color: var(--color-orange);
+    @include desktop {
+      font-size: var(--text-xxl);
+    }
+    @include mobile {
+      font-size: var(--text-xlg);
+    }
+    @include phone {
+      margin-top: 10px;
+      font-size: var(--text-md);
+    }
+  }
+  &__description {
+    font-size: var(--text-lg);
+    max-width: 690px;
+    margin-top: 27px;
+    margin-bottom: 10px;
+    line-height: 39px;
+    @include desktop {
+      line-height: 25px;
+      max-width: 460px;
+      font-size: var(--text-sm);
+    }
+    @include mobile {
+      max-width: 370px;
+      margin-top: 10px;
+      font-size: var(--text-xxs);
+    }
+    @include phone {
+      max-width: 255px;
+      font-size: var(--text-xs);
+      line-height: 18px;
+    }
+  }
+  &__subdescr {
+    @include df-center-sb;
+    max-width: 925px;
+    @include desktop {
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+    @include phone {
+      flex-direction: column;
+    }
+  }
+  &__subdescr-list {
+    max-width: 667px;
+    height: 162px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @include phone {
+      margin-top: 29px;
+      grid-template-columns: repeat(1, 1fr);
+      max-width: 430px;
+    }
+  }
+  &__subdescr-item {
+    margin-right: 27px;
+    display: flex;
+    align-items: center;
+    @include desktop {
+      font-size: var(--text-xxs);
+    }
+    @include mobile {
+      align-items: flex-start;
+      margin-right: 0;
+      font-size: var(--text-xs);
+    }
+    @include phone {
+      align-items: center;
+      font-size: var(--text-smal);
+    }
+  }
+  .not-mt {
+    margin-top: 0;
+  }
+  &__subdescr-dots {
+    width: 16px;
+    height: 16px;
+    margin-right: 27px;
+    background-color: var(--color-orange);
+    border-radius: var(--border-radius-xxl);
+    @include desktop {
+      width: 12px;
+      height: 12px;
+    }
+    @include mobile {
+      margin-top: 5px;
+      margin-right: 10px;
+      width: 8px;
+      height: 8px;
+    }
+  }
+  &__button {
+    @include round-btn;
+    font-family: var(--font-family-other);
+    font-size: var(--text-md);
+    box-shadow: var(--box-shadow-s);
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    cursor: pointer;
+  }
+  &__button-ring {
+    @include df-center;
+    justify-content: center;
+    margin-top: 40px;
+    width: 255px;
+    height: 255px;
+    border: 2px solid var(--color-light);
+    border-radius: var(--border-radius-xxl);
+    @include desktop {
+      margin-top: 0;
+      width: 180px;
+      height: 180px;
+    }
+    @include phone {
+      margin-top: 28px;
+      align-self: center;
+    }
+  }
+}

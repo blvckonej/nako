@@ -1,0 +1,31 @@
+.review {
+  margin-top: 85px;
+  margin-bottom: 88px;
+  &__block {
+    @include df-center-sb;
+  }
+  &__descr {
+    width: 372px;
+    h2 {
+      text-align: left;
+    }
+  }
+  &__descr-text {
+    width: 356px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    font-size: var(--text-xxs);
+    font-weight: var(--fw-light);
+  }
+  &__descr-btn {
+    height: 80px;
+  }
+  &__example {
+    img {
+      margin-right: 30px;
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+}

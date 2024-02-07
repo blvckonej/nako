@@ -1,33 +1,84 @@
 .work {
-    margin-top: 50px;
-    &__block {
-      @include df-center-sb;
+  margin-top: 50px;
+  &__block {
+    @include df-center-sb;
+    @include tablet {
+      flex-direction: column;
+      justify-content: center;
     }
-    &__block-title {
-      max-width: 1000px;
+  }
+  &__block-title {
+    max-width: 1000px;
+    @include desktop {
+      max-width: 850px;
     }
-    &__block-subtitle {
-      font-weight: var(--fw-semibold);
-      margin-bottom: 10px;
+  }
+  &__block-subtitle {
+    font-weight: var(--fw-semibold);
+    margin-bottom: 10px;
+    @include desktop {
+      font-size: var(--text-other);
     }
-    &__block-subdescr {
-      max-width: 385px;
-      line-height: 24px;
-      &:nth-child(2) {
-        max-width: 473px;
+    @include mobile {
+      font-size: var(--text-xs);
+    }
+  }
+  &__block-subdescr {
+    max-width: 385px;
+    line-height: 24px;
+    &:nth-child(2) {
+      max-width: 473px;
+    }
+    @include desktop {
+      font-size: var(--text-other);
+    }
+    @include mobile {
+      max-width: 400px;
+      font-size: var(--text-xs);
+    }
+    @include phone {
+      width: 187px;
+    }
+  }
+  &__block-item {
+    width: 100%;
+    margin-right: 30px;
+    margin-top: 55px;
+    height: 168px;
+    border: var(--border-dashed);
+    border-radius: var(--border-radius-xl);
+    padding: 5px;
+    @include df-center;
+    &:last-child {
+      padding-right: 20px;
+      margin-right: 0;
+      @include tablet {
+        padding-right: 0;
       }
     }
-    &__block-item {
-      width: 100%;
-      margin-right: 30px;
-      margin-top: 55px;
-      height: 168px;
-      border: var(--border-dashed);
-      border-radius: var(--border-radius-xl);
-      @include df-center;
-      &:last-child {
-        padding-right: 20px;
+    &:first-child {
+      @include tablet {
         margin-right: 0;
       }
     }
+    @include desktop {
+      margin-top: 40px;
+    }
+    @include tablet {
+      width: 90%;
+      margin-top: 15px;
+    }
+    @include mobile {
+      height: 178px;
+      img {
+        width: 107px;
+        height: 80px;
+      }
+      .two_img {
+        width: 94px;
+        height: 76px;
+        margin-right: 20px;
+      }
+    }
   }
+}

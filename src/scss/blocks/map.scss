@@ -1,0 +1,59 @@
+.map {
+  background: url("/src/images/bg-map.png");
+  background-size: cover;
+  background-position: 0px 200px;
+  background-repeat: no-repeat;
+  height: 520px;
+  padding-top: 50px;
+  padding-bottom: 200px;
+  &__block {
+    width: 800px;
+    height: 420px;
+    background-color: var(--color-light);
+    border-radius: var(--border-radius-m);
+    box-shadow: var(--box-shadow-m);
+    padding-top: 1px;
+  }
+  &__block-descr {
+    margin-top: 43px;
+    margin-left: 56px;
+  }
+  &__title {
+    text-align: left !important;
+  }
+  &__block-operating {
+    margin-top: 39px;
+    width: 600px;
+    @include df-center-sb;
+  }
+  &__block-operating_title {
+    margin-bottom: 5px;
+    font-size: var(--text-xxs);
+    font-weight: var(--fw-semibold);
+  }
+  &__block-operating_number {
+    font-size: var(--text-sm);
+    font-weight: var(--fw-bold);
+  }
+  &__block-operating_subtitle {
+    margin-top: 5px;
+    width: 251px;
+    font-size: var(--text-xxs);
+    font-weight: (--fw-regular);
+  }
+  &__block-address {
+    display: flex;
+    justify-content: space-between;
+    width: 590px;
+    margin-top: 5px;
+    margin-top: 45px;
+  }
+  &__block-social {
+    margin-top: 15px;
+    @include df-center;
+    width: 210px;
+  }
+  &__block-link {
+    margin-right: 15px;
+  }
+}

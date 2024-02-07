@@ -1,162 +1,164 @@
 .feedback {
-    &__block {
-      margin-top: 82px;
-      display: flex;
-      justify-content: space-between;
-    }
-    &__portrait {
-      position: relative;
-      width: 613px;
-      height: 754px;
-      background-image: url("../images/boss.png");
-      border-radius: var(--border-radius-m);
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
-    &__portrait-descr {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      justify-content: flex-end;
-    }
-    &__portrait-name {
-      @include df-center-all;
-      width: 181px;
-      height: 51px;
-      margin-right: 75px;
-      background-color: var(--color-light-orange);
-      border-radius: var(--border-radius-m);
-      font-weight: var(--fw-semibold);
-      z-index: 1;
-    }
-    &__portrait-jobtitle {
-      @include df-center-all;
-      width: 270px;
-      height: 51px;
-      margin-right: -40px;
-      margin-top: -10px;
-      margin-bottom: 31px;
-      font-weight: var(--fw-light);
-      background-color: var(--color-light);
-      border-top-left-radius: var(--border-radius-m);
-      border-bottom-left-radius: var(--border-radius-m);
-    }
-    &__consultation-title {
-      text-align: left !important;
-    }
-    &__consultation-dots {
-      width: 10px;
-      height: 10px;
-      margin-right: 25px;
-      background: var(--color-orange-btn);
-      border-radius: var(--border-radius-xl);
-    }
-    &__consultation-text {
-      font-weight: var(--fw-light);
-      font-size: var(--text-sm);
-      line-height: 22px;
-    }
-    &__consultation-item {
-      @include df-center;
-      margin-top: 30px;
-    }
-    &__form {
-      @include df-center-all;
-      margin-left: -210px;
-      margin-right: -75px;
-      height: 405px;
-      margin-top: 43px;
-      box-shadow: var(--box-shadow-m);
-      border-radius: var(--border-radius-l);
-    }
-    &__form-dashed-wrapp {
-      width: 97%;
-      height: 378px;
-      border: var(--border-dashed);
-      border-radius: var(--border-radius-l);
-    }
-    &__form-dashed {
-      width: 682px;
-      height: 378px;
-      margin-left: 195px;
-    }
-    &__form-block {
-      margin-top: 45px;
-    }
-    &__form-title {
-      font-weight: var(--fw-semibold);
-      font-size: var(--text-sm);
-    }
-    &__form-checkbox {
-      @include df-center;
-      margin-top: 23px;
-      span {
-        color: var(--color-orange);
-      }
-    }
-    &__form-cookies {
-      font-size: var(--text-smal);
-      margin-left: 16px;
-    }
-    &__form-realcheckbox {
-      display: none;
-    }
-    &__form-customcheckbox {
-      margin-top: 3px;
-      position: relative;
-      display: inline-block;
-      width: 20px;
-      height: 20px;
-      border-radius: var(--border-radius-xxl);
-      background-color: var(--color-orange);
-      &::before {
-        content: "";
-        display: inline-block;
-        width: 13px;
-        height: 13px;
-        background-image: url(../images/arrow.svg);
-        background-size: contain;
-        background-repeat: no-repeat;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(0);
-        margin-top: 1px;
-        transition: 0.2 ease-in;
-      }
-    }
-    &__form-realcheckbox:checked + &__form-customcheckbox::before {
-      transform: translate(-50%, -50%) scale(1);
-    }
-    &__form-button {
-      margin-left: 35px;
-    }
-    &__contacts {
-      margin-top: 53px;
-      display: flex;
-    }
-    &__contacts-title {
-      margin-bottom: 20px;
-    }
-    &__contacts-left {
-      margin-right: 70px;
-      .header__social {
-        margin-left: -25px;
-      }
-    }
-    &__contacts-phone {
-      @include df-center-all;
-      font-weight: var(--fw-bold);
-      font-size: var(--text-other);
-      span {
-        font-size: var(--text-xs);
-        font-weight: var(--fw-regular);
-        margin-left: 34px;
-      }
-    }
-    &__contacts-title {
-      font-size: var(--text-xxs);
-      font-weight: var(--fw-semibold);
+  background-image: url("/src/images/bg-special.png");
+  background-repeat: no-repeat;
+  &__block {
+    padding-top: 82px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__portrait {
+    position: relative;
+    width: 613px;
+    height: 754px;
+    background-image: url("../images/boss.png");
+    border-radius: var(--border-radius-m);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &__portrait-descr {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  &__portrait-name {
+    @include df-center-all;
+    width: 181px;
+    height: 51px;
+    margin-right: 75px;
+    background-color: var(--color-light-orange);
+    border-radius: var(--border-radius-m);
+    font-weight: var(--fw-semibold);
+    z-index: 1;
+  }
+  &__portrait-jobtitle {
+    @include df-center-all;
+    width: 270px;
+    height: 51px;
+    margin-right: -40px;
+    margin-top: -10px;
+    margin-bottom: 31px;
+    font-weight: var(--fw-light);
+    background-color: var(--color-light);
+    border-top-left-radius: var(--border-radius-m);
+    border-bottom-left-radius: var(--border-radius-m);
+  }
+  &__consultation-title {
+    text-align: left !important;
+  }
+  &__consultation-dots {
+    width: 10px;
+    height: 10px;
+    margin-right: 25px;
+    background: var(--color-orange-btn);
+    border-radius: var(--border-radius-xl);
+  }
+  &__consultation-text {
+    font-weight: var(--fw-light);
+    font-size: var(--text-sm);
+    line-height: 22px;
+  }
+  &__consultation-item {
+    @include df-center;
+    margin-top: 30px;
+  }
+  &__form {
+    @include df-center-all;
+    margin-left: -210px;
+    // margin-right: -75px;
+    height: 405px;
+    margin-top: 43px;
+    box-shadow: var(--box-shadow-m);
+    border-radius: var(--border-radius-l);
+  }
+  &__form-dashed-wrapp {
+    width: 97%;
+    height: 378px;
+    border: var(--border-dashed);
+    border-radius: var(--border-radius-l);
+  }
+  &__form-dashed {
+    width: 682px;
+    height: 378px;
+    margin-left: 195px;
+  }
+  &__form-block {
+    margin-top: 45px;
+  }
+  &__form-title {
+    font-weight: var(--fw-semibold);
+    font-size: var(--text-sm);
+  }
+  &__form-checkbox {
+    @include df-center;
+    margin-top: 23px;
+    span {
+      color: var(--color-orange);
     }
   }
+  &__form-cookies {
+    font-size: var(--text-smal);
+    margin-left: 16px;
+  }
+  &__form-realcheckbox {
+    display: none;
+  }
+  &__form-customcheckbox {
+    margin-top: 3px;
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: var(--border-radius-xxl);
+    background-color: var(--color-orange);
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 13px;
+      height: 13px;
+      background-image: url(../images/arrow.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      margin-top: 1px;
+      transition: 0.2 ease-in;
+    }
+  }
+  &__form-realcheckbox:checked + &__form-customcheckbox::before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  &__form-button {
+    margin-left: 35px;
+  }
+  &__contacts {
+    margin-top: 53px;
+    display: flex;
+  }
+  &__contacts-title {
+    margin-bottom: 20px;
+  }
+  &__contacts-left {
+    margin-right: 70px;
+    .header__social {
+      margin-left: -25px;
+    }
+  }
+  &__contacts-phone {
+    @include df-center-all;
+    font-weight: var(--fw-bold);
+    font-size: var(--text-other);
+    span {
+      font-size: var(--text-xs);
+      font-weight: var(--fw-regular);
+      margin-left: 34px;
+    }
+  }
+  &__contacts-title {
+    font-size: var(--text-xxs);
+    font-weight: var(--fw-semibold);
+  }
+}

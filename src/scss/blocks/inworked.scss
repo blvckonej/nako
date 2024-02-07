@@ -1,33 +1,40 @@
 .inworked {
-    &__block {
-        @include df-center-all;
-        height: 500px;
-        background-color: var(--color-light-blue);
-        border-radius: var(--border-radius-s);
-    }
-    &__block-dashed {
-        width: 98%;
-        height: 467px;
-        border: var(--border-dashed-light);
-        border-radius: var(--border-radius-s);
-    }
-    &__block-description {
-        margin-left: 64px;
-        margin-top: 39px;
-    }
-    &__block-title {
-        text-align: left !important; 
-    }
-    &__block-subdescr {
-        width: 524px;
-        margin-top: 30px;
-        font-weight: var(--fw-light);
-        line-height: 27px;
-    }
-    &__form {
-        margin-top: 49px;
-    }
-    &__form-input {
-        margin-right: 25px;
-    }
+  &__block {
+    @include df-center-all;
+    height: 500px;
+    background-color: var(--color-light-blue);
+    border-radius: var(--border-radius-s);
+    background-image: url("/src/images/bg-inworked-empty.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    outline: var(--border-dashed-light);
+    outline-offset: -16px;
+    z-index: -1;
+  }
+  &__block-dashed {
+    @include df-center-sb;
+    width: 98%;
+    height: 467px;
+    border-radius: var(--border-radius-s);
+  }
+  &__block-description {
+    margin-left: 64px;
+    margin-top: 39px;
+  }
+  &__block-title {
+    text-align: left !important;
+  }
+  &__block-subdescr {
+    width: 524px;
+    margin-top: 30px;
+    font-weight: var(--fw-light);
+    line-height: 27px;
+  }
+  &__form {
+    margin-top: 49px;
+  }
+  &__form-input {
+    margin-right: 25px;
+  }
 }

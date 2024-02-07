@@ -8,7 +8,6 @@
   </head>
   <body>
     <header>
-      <img src="./src/images/titleimg2.png" alt="Title" class="backimage">
       <div class="container">
         <div class="header">
           <div class="header__logo">
@@ -16,11 +15,11 @@
               <a href="/" class="header__logo-link">
                 <img src="./src/images/logo.svg" alt="Логотип НАКО" loading="lazy">
               </a>
-              <p class="header__logo-title">
+              <p class="header__logo-title hidden-tablet">
                 Проектирование и строительство кирпичных домов «под ключ»
               </p>
             </div>
-            <nav class="header__menu hidden-mobile">
+            <nav class="header__menu hidden-tablet">
               <ul class="header__menu-list">
                 <li class="header__menu-item">
                   <a href="#" class="header__menu-link">О НАС</a>
@@ -37,8 +36,8 @@
               </ul>
             </nav>
             <img src="./src/images/dots.svg" alt="Три точки">
-            <p class="header__phone"><a href="tel:+78432126623">+7(843) 212 66 23</a></p>
-            <div class="header__social">
+            <p class="header__phone hidden-tablet"><a href="tel:+78432126623">+7(843) 212 66 23</a></p>
+            <div class="header__social hidden-tablet">
               <a href="#" class="header__social-item"><img src="./src/images/telegram.svg" alt="Телеграм"></a>
               <a href="#" class="header__social-item"><img src="./src/images/wahtsapp.svg" alt="Ватсап"></a>
               <a href="#" class="header__social-item"><img src="./src/images/vk.svg" alt="Вконтакте"></a>
@@ -81,7 +80,7 @@
             </div>
           </div>
           <div class="work__block-item">
-            <img src="./src/images/instruments.png" alt="Дом">
+            <img class="two_img" src="./src/images/instruments.png" alt="Дом">
             <div class="work__block-descr">
               <p class="work__block-subtitle">Материалы от ведущих производителей</p>
               <p class="work__block-subdescr">
@@ -224,11 +223,10 @@
           </div>
         </div>
       </section>
-      <section class="feedback">
+      <!-- <section class="feedback">
         <div class="container">
           <div class="feedback__block">
             <div class="feedback__portrait">
-              <!-- <img src="./src/images/boss.png" alt="Фотография Олега"> -->
               <div class="feedback__portrait-descr">
                 <p class="feedback__portrait-name">Олег Козлов</p>
                 <p class="feedback__portrait-jobtitle">директор компании</p>
@@ -430,7 +428,228 @@
           </div>
         </div>
       </section>
+      <section class="devproject container">
+        <h2 class="devproject__title section_title">
+          Можем разработать <span>проект индивидуально под вас</span> или подобрать из нашей коллекции
+        </h2>
+        <div class="devproject__block">
+          <div class="project__card">
+            <div class="project__card-img">
+              <p class="project__card-video">Есть видео-отзыв</p>
+            </div>
+            <div class="project__card-descr">
+              <h3 class="project__card-title">
+                Проект NAKO №1
+              </h3>
+              <p class="project__card-char">Площадь:<span>125 м2</span></p>
+              <p class="project__card-char">Стоймость:<span>от 14 461 000 Р</span></p>
+              <button class="project__card-btn button_empty">Подробнее</button>
+            </div>
+          </div>
+
+          <div class="project__card">
+            <div class="project__card-img">
+              <p class="project__card-video">Есть видео-отзыв</p>
+            </div>
+            <div class="project__card-descr">
+              <h3 class="project__card-title">
+                Проект NAKO №1
+              </h3>
+              <p class="project__card-char">Площадь:<span>125 м2</span></p>
+              <p class="project__card-char">Стоймость:<span>от 14 461 000 Р</span></p>
+              <button class="project__card-btn button_empty">Подробнее</button>
+            </div>
+          </div>
+
+          <div class="project__card">
+            <div class="project__card-img">
+              <p class="project__card-video">Есть видео-отзыв</p>
+            </div>
+            <div class="project__card-descr">
+              <h3 class="project__card-title">
+                Проект NAKO №1
+              </h3>
+              <p class="project__card-char">Площадь:<span>125 м2</span></p>
+              <p class="project__card-char">Стоймость:<span>от 14 461 000 Р</span></p>
+              <button class="project__card-btn button_empty">Подробнее</button>
+            </div>
+          </div>
+
+          <div class="project__card">
+            <div class="project__card-img">
+              <p class="project__card-video">Есть видео-отзыв</p>
+            </div>
+            <div class="project__card-descr">
+              <h3 class="project__card-title">
+                Проект NAKO №1
+              </h3>
+              <p class="project__card-char">Площадь:<span>125 м2</span></p>
+              <p class="project__card-char">Стоймость:<span>от 14 461 000 Р</span></p>
+              <button class="project__card-btn button_empty">Подробнее</button>
+            </div>
+          </div>
+        </div>
+        <button class="devproject__block-btn button_default">Смотреть каталог проектов</button>
+      </section>
+      <section class="review">
+        <div class="container">
+          <div class="review__block">
+            <div class="review__descr">
+              <h2 class="review__descr-title section_title"><span>Видео-отзывы</span><br> о наших проектах</h2>
+              <p class="review__descr-text">
+                Вы сможете увидеть результаты работы и услышать мнение людей, которые уже воспользовались нашими услугами. Мы уверены, что эти отзывы помогут вам сделать правильный выбор и доверить нам свой проект.
+              </p>
+              <button class="review__descr-btn button_empty">Смотреть больше отзывов</button>
+            </div>
+            <div class="review__example">
+              <img src="./src/images/houseproject.png" alt="Пример проекта">
+              <img src="./src/images/houseproject.png" alt="Пример проекта">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="news container">
+        <h2 class="news__title section_title"><span>Делимся экспертностью</span> в области строительства</h2>
+        <div class="news__block">
+          <div class="news__block-card">
+            <img src="./src/images/peoplework.png" alt="Рабочий">
+            <div class="news__block-descr">
+              <h3 class="news__block-subtitle">
+                Экологически чистое строительство: новые тренды и решения
+              </h3>
+              <p class="news__block-date">01.01.2023</p>
+            </div>
+          </div>
+
+          <div class="news__block-card">
+            <img src="./src/images/peoplework.png" alt="Рабочий">
+            <div class="news__block-descr">
+              <h3 class="news__block-subtitle">
+                Экологически чистое строительство: новые тренды и решения
+              </h3>
+              <p class="news__block-date">01.01.2023</p>
+            </div>
+          </div>
+
+          <div class="news__block-card">
+            <img src="./src/images/peoplework.png" alt="Рабочий">
+            <div class="news__block-descr">
+              <h3 class="news__block-subtitle">
+                Экологически чистое строительство: новые тренды и решения
+              </h3>
+              <p class="news__block-date">01.01.2023</p>
+            </div>
+          </div>
+
+          <div class="news__block-card">
+            <img src="./src/images/peoplework.png" alt="Рабочий">
+            <div class="news__block-descr">
+              <h3 class="news__block-subtitle">
+                Экологически чистое строительство: новые тренды и решения
+              </h3>
+              <p class="news__block-date">01.01.2023</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="map">
+        <div class="container">
+          <div class="map__block">
+            <div class="map__block-descr">
+              <h2 class="map__title section_title">
+                Свяжитесь с нами <br><span>любым удобным способом</span>
+              </h2>
+              <div class="map__block-operating">
+                <div class="map__block-left">
+                  <p class="map__block-operating_title">Телефон:</p>
+                  <p class="map__block-operating_number"><a href="tel:+78432126623">+7 (843) 212 66 23</a></p>
+                </div>
+                <div class="map__block-right">
+                  <p class="map__block-operating_title">Режим работы:</p>
+                  <p class="map__block-operating_subtitle">Пн-Пт с 9.00-18.00</p>
+                </div>
+              </div>
+              <div class="map__block-address">
+                <div class="map__block-address_left">
+                  <p class="map__block-operating_title">Адрес:</p>
+                  <p class="map__block-operating_subtitle">г. Казань, ул. Оренбургский тракт 22а, ТЦ «Бэхетле», 2 этаж</p>
+                </div>
+                <div class="map__block-address_right">
+                  <p class="map__block-operating_title">Присоединяйтесь в соц.сетях:</p>
+                  <ul class="map__block-social">
+                    <li class="map__block-item"><a href="#" class="map__block-link"><img src="./src/images/telegramorange.svg" alt="Телеграм"></a></li>
+                    <li class="map__block-item"><a href="#" class="map__block-link"><img src="./src/images/whatsorange.svg" alt="Ватсап"></a></li>
+                    <li class="map__block-item"><a href="#" class="map__block-link"><img src="./src/images/vkorange.svg" alt="Вконтакте"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
     </main>
+    <!-- <footer class="footer">
+      <div class="container">
+        <div class="footer__block">
+          <div class="footer__logo">
+            <img src="./src/images/logo.svg" alt="Лого">
+          </div>
+          <div class="footer__descr">
+            <h2 class="footer__title footer_title">Компания</h2>
+            <ul class="footer__list">
+              <li class="footer__item footer_item"><a href="#">О Нас</a></li>
+              <li class="footer__item footer_item"><a href="#">Карьера</a></li>
+              <li class="footer__item footer_item"><a href="#">Отзывы</a></li>
+              <li class="footer__item footer_item"><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__descr">
+            <h2 class="footer__title footer_title">Каталог проектов</h2>
+            <ul class="footer__list">
+              <li class="footer__item footer_item"><a href="#">1-этажные дома</a></li>
+              <li class="footer__item footer_item"><a href="#">2-этажные дома</a></li>
+              <li class="footer__item footer_item"><a href="#">Дома до 150м2</a></li>
+              <li class="footer__item footer_item"><a href="#">Дома 151-200м2</a></li>
+              <li class="footer__item footer_item"><a href="#">Дома более 200м2</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__descr">
+            <h2 class="footer__title footer_title">Услуги</h2>
+            <ul class="footer__list">
+              <li class="footer__item footer_item"><a href="#">Строительство кирпичных домов</a></li>
+              <li class="footer__item footer_item"><a href="#">Индивидуальное проектирование</a></li>
+              <li class="footer__item footer_item"><a href="#">Строительство бань</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__descr">
+            <h3 class="footer__title footer_number"><a href="tel:+78432126623">+ 7 (843) 212 66 23</a></h3>
+            <p class="footer__subtitle bold_text">Адрес офиса:</p>
+            <p class="footer__subdescr light_text">г. Казань, ул. Оренбургский тракт 22а, ТЦ «Бэхетле», 2 этаж</p>
+            <p class="footer__subtitle bold_text">Режим работы:</p>
+            <p class="footer__subdescr light_text">Пн-Пт с 9.00-18.00</p>
+          </div>
+          
+        </div>
+        <div class="footer__border"></div>
+        <div class="footer__license">
+          <div class="footer__license-left">
+              <p class="footer__license-name bold_text">© 2023 NAKO</p>
+              <p class="footer__license-descr light_text">
+                ООО «NAKO» ИНН 1655433656 ОГРН: 1201600014120 Информация не является публичной офертой.
+              </p>
+          </div>
+          <div class="footer__license-right">
+            <p class="footer__license-policy bold_text">Политика конфиденциальности</p>
+            <p class="footer__license-dev light_text">
+              Разработка сайта: <br> Adexe - эффективный интернет маркетинг
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer> -->
     <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>

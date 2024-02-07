@@ -1,0 +1,19 @@
+.devproject {
+  background-color: var(--color-light);
+  z-index: 3;
+  &__title {
+    width: 936px;
+  }
+  &__block {
+    @include df-center-sb;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 60px;
+  }
+  &__block-btn {
+    width: 320px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 56px;
+  }
+}
