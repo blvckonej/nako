@@ -4,12 +4,11 @@
   &__block {
     padding-top: 82px;
     display: flex;
-    justify-content: space-between;
   }
   &__portrait {
     position: relative;
     width: 613px;
-    height: 754px;
+    max-height: 754px;
     background-image: url("../images/boss.png");
     border-radius: var(--border-radius-m);
     background-size: cover;
@@ -33,10 +32,11 @@
     z-index: 1;
   }
   &__portrait-jobtitle {
-    @include df-center-all;
-    width: 270px;
+    @include df-center;
+    width: 225px;
     height: 51px;
-    margin-right: -40px;
+    justify-content: flex-end;
+    padding-right: 2px;
     margin-top: -10px;
     margin-bottom: 31px;
     font-weight: var(--fw-light);
@@ -46,31 +46,49 @@
   }
   &__consultation-title {
     text-align: left !important;
+    margin-left: 88px !important;
+    @include desktop-h {
+      margin-left: 30px !important;
+    }
   }
   &__consultation-dots {
     width: 10px;
     height: 10px;
+    margin-left: 88px;
     margin-right: 25px;
     background: var(--color-orange-btn);
     border-radius: var(--border-radius-xl);
+    @include desktop-h {
+      margin-left: 30px;
+    }  
   }
   &__consultation-text {
     font-weight: var(--fw-light);
     font-size: var(--text-sm);
     line-height: 22px;
+    @include desktop {
+      font-size: var(--text-xxs);
+    }
   }
   &__consultation-item {
     @include df-center;
     margin-top: 30px;
+    @include desktop {
+      margin-top: 20px;
+    }
   }
   &__form {
     @include df-center-all;
-    margin-left: -210px;
-    // margin-right: -75px;
+    margin-left: -12%;
+    margin-right: -5%;
     height: 405px;
     margin-top: 43px;
     box-shadow: var(--box-shadow-m);
     border-radius: var(--border-radius-l);
+    @include desktop-h {
+      margin-left: 10px;
+      margin-right: 0;
+    }
   }
   &__form-dashed-wrapp {
     width: 97%;
@@ -81,7 +99,10 @@
   &__form-dashed {
     width: 682px;
     height: 378px;
-    margin-left: 195px;
+    margin-left: 19%;
+    @include desktop-h {
+      margin-left: 2%;
+    }
   }
   &__form-block {
     margin-top: 45px;
@@ -89,6 +110,11 @@
   &__form-title {
     font-weight: var(--fw-semibold);
     font-size: var(--text-sm);
+  }
+  &__form-input {
+    @include desktop-h {
+      width: 300px;
+    }
   }
   &__form-checkbox {
     @include df-center;
@@ -133,6 +159,9 @@
   }
   &__form-button {
     margin-left: 35px;
+    @include desktop-h {
+      margin-left: 20px;
+    }
   }
   &__contacts {
     margin-top: 53px;
@@ -143,9 +172,6 @@
   }
   &__contacts-left {
     margin-right: 70px;
-    .header__social {
-      margin-left: -25px;
-    }
   }
   &__contacts-phone {
     @include df-center-all;
