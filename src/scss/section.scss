@@ -10,11 +10,12 @@ section {
       font-size: var(--text-xl);
     }
     @include tablet {
-      font-size: var(--text-llg);
     }
     @include mobile {
     }
     @include phone {
+      text-align: left;
+      font-size: var(--text-md);
     }
   }
   .advantages__height {
