@@ -8,18 +8,24 @@
 @import "section.scss";
 
 /* Section Style */
-@import "blocks/header.scss";
-@import "blocks/work.scss";
-@import "blocks/example.scss";
-@import "blocks/advantages.scss";
-@import "blocks/feedback.scss";
-@import "blocks/project.scss";
-@import "blocks/inworked.scss";
-@import "blocks/devproject.scss";
-@import "blocks/review.scss";
-@import "blocks/news.scss";
-@import "blocks/map.scss";
-@import "blocks/footer.scss";
+/* Home */
+@import "home/header.scss";
+@import "home/work.scss";
+@import "home/example.scss";
+@import "home/advantages.scss";
+@import "home/feedback.scss";
+@import "home/project.scss";
+@import "home/inworked.scss";
+@import "home/devproject.scss";
+@import "home/review.scss";
+@import "home/news.scss";
+@import "home/map.scss";
+@import "home/footer.scss";
+
+/* Brick House */
+@import "brickHouse/brick-header.scss";
+@import "brickHouse/brick-catalog.scss";
+
 
 /* Reset Style */
 @import "normalize.css";

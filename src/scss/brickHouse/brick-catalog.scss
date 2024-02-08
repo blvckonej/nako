@@ -1,0 +1,213 @@
+.catalog {
+    &__block {
+        display: flex;
+        margin-top: 88px;
+        @include mobile {
+            margin-top: 10px;
+            flex-direction: column;
+        }
+    }
+    &__block-left {
+        overflow: hidden;
+        position: relative;
+        margin-top: 50px;
+    }
+    &__block-img {
+        width: 100%;
+        @include mobile {
+            width: 125%;
+            margin-left: -5%;
+        }
+    }
+    &__block-left_button {
+        position: absolute;
+        bottom: 8.5%;
+        right: 8%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include tablet {
+            right: 12%;
+        }
+        @include mobile {
+            bottom: 16%;
+            right: 20%;
+        }
+        @include phone {
+            bottom: 8%;
+        }
+    }
+    &__block-left_btn {
+        margin: 0 auto;
+        background: none;
+        border-radius: var(--border-radius-xxl);
+        border: none;
+        @include mobile {
+            width: 100px;
+            height: 100px;
+            img {
+                width: 100px;
+            }
+        }
+    }
+    &__block-left_text {
+        margin-top: 25px;
+        max-width: 359px;
+        text-align: center;
+        font-weight: var(--fw-semibold);
+        font-size: var(--text-xxs);
+        line-height: 140%;
+        @include tablet {
+            max-width: 270px;
+        }
+        @include mobile {
+            display: none;
+        }
+    }
+    &__block-right {
+        max-width: 400px;
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+            background-color: var(--color-light);
+            box-shadow: var(--box-shadow-m);
+            border-radius: var(--border-radius-m);
+            padding: 10px;
+            margin-top: -20%;
+        }
+        @include phone {
+            max-height: 100%;
+            margin-top: -30%;
+        }
+    }
+    &__mobile-dashed {
+        @include mobile {
+            border: var(--border-dashed);
+            border-radius: var(--border-radius-m);
+        }
+    }
+    &__block-wrapp {
+        @include mobile {
+            margin-top: 30%;
+            margin-left: 30px;
+        }
+    }
+    &__block-dots {
+        width: 10px;
+        height: 10px;
+        margin-top: 5px;
+        background-color: var(--color-light-orange);
+        border-radius: var(--border-radius-xxl);
+        @include phone {
+            width: 7px;
+            height: 7px;
+        }
+    }
+    &__block-title {
+        text-align: left !important;
+        max-width: 388px;
+        margin: 0 !important;
+    }
+    &__block-item {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 15px;
+        &:first-of-type {
+            margin-top: 30px;
+            @include tablet {
+                margin-top: 10px;
+            }
+        }
+    }
+    &__block-descr {
+        max-width: 320px;
+        font-weight: var(--fw-light);
+        line-height: 140%;
+        margin-left: 30px;
+        @include desktop {
+            font-size: var(--text-xxs);
+            margin-left: 20px;
+            max-width: 250px
+        }
+        @include phone {
+            margin-left: 18px;
+            font-size: var(--text-smal);
+            max-width: 190px;
+        }
+    }
+    &__form {
+        @include df-center-all;
+        height: 338px;
+        margin-top: 25px;
+        margin-left: -140%;
+        box-shadow: var(--box-shadow-m);
+        background-color: var(--color-light);
+        border-radius: var(--border-radius-m);
+        @include tablet {
+            margin-left: -100%;
+        }
+        @include mobile {
+            box-shadow: none;
+            background-color: none;
+            margin-left: 0;
+            margin-top: 0;
+        }
+        @include phone {
+            height: 100%;
+            margin-bottom: 80px;
+        }
+    }
+    &__form-dashed {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        width: 98%;
+        height: 95%;
+        border: var(--border-dashed);
+        border-radius: var(--border-radius-m);
+        @include mobile {
+            border: none;
+        }
+    }
+    &__form-descr {
+        @include df-center-all;
+        flex-direction: column;
+        margin-right: 3%;
+        margin-top: 30px;
+        width: 350px;
+        @include phone {
+            margin-top: 25px;
+        }
+    }
+    &__form-title {
+        font-size: var(--text-xxs);
+        font-weight: var(--fw-semibold);
+        @include phone {
+            font-size: var(--text-xs);
+        }
+    }
+    &__form-input {
+        width: 100%;
+        padding: 0;
+        margin-top: 25px !important;
+        @include phone {
+            height: 50px;
+            text-align: center;
+            &::placeholder {
+                padding: 0;
+                font-size: var(--text-xxs);
+                font-weight: var(--fw-regular);
+            }
+        }
+    }
+    &__form-btn {
+        width: 100%;
+        margin-top: 25px;
+        @include phone {
+            margin-top: 10px;
+            height: 50px;
+        }
+    }
+}
