@@ -1,0 +1,119 @@
+.selection {
+  margin-bottom: 20px;
+  &__block {
+    @include df-center-all;
+    position: relative;
+    height: 572px;
+    background-color: var(--color-light-blue);
+    border-radius: var(--border-radius-m);
+    background-image: url("/src/images/bg-selection.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    img {
+      max-width: 50%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      @include desktop-h {
+        max-width: 40%;
+      }
+      @include phone {
+        max-width: 70%;
+      }
+    }
+    @include desktop {
+      height: 500px;
+    }
+    @include mobile {
+      height: 650px;
+      background-size: contain;
+      background-position: bottom;
+    }
+  }
+  &__block-dashed {
+    width: 98%;
+    height: 96%;
+    border-radius: var(--border-radius-m);
+    border: var(--border-dashed-light);
+    display: flex;
+    justify-content: flex-end;
+    @include mobile {
+      width: 96%;
+    }
+    @include mobile {
+      width: 95%;
+      justify-content: flex-start;
+    }
+  }
+  &__block-descr {
+    margin: 68px 65px 0px 0px;
+    @include desktop {
+      margin: 40px 20px 0px 0px;
+    }
+    @include mobile {
+      margin: 20px 0px 0px 30px;
+    }
+    @include phone {
+      margin: 18px 0px 0px 25px;
+    }
+  }
+  &__block-title {
+    max-width: 585px;
+    padding-bottom: 17px;
+    text-align: left !important;
+    @include tablet {
+      max-width: 485px;
+    }
+    @include phone {
+      width: 249px;
+      padding-bottom: 0;
+    }
+  }
+  &__block-list {
+    max-width: 585px;
+    @include tablet {
+      max-width: 485px;
+    }
+  }
+  &__block-item {
+    display: flex;
+    margin-top: 30px;
+    @include phone {
+      margin-top: 16px;
+    }
+  }
+  &__block-dots {
+    width: 10px;
+    height: 10px;
+    margin-top: 5px;
+    margin-right: 50px;
+    background-color: var(--color-orange);
+    border-radius: var(--border-radius-m);
+    @include desktop {
+      margin-right: 30px;
+    }
+    @include phone {
+      width: 5px;
+      height: 5px;
+      margin-right: 22px;
+    }
+  }
+  &__block-text {
+    max-width: 520px;
+    font-size: var(--text-sm);
+    @include desktop {
+      font-size: var(--text-other);
+    }
+    @include tablet {
+      font-size: var(--text-xxs);
+      max-width: 420px;
+    }
+    @include mobile {
+      max-width: 300px;
+    }
+    @include phone {
+      max-width: 184px;
+      font-size: var(--text-smal);
+    }
+  }
+}
