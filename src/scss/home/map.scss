@@ -1,11 +1,14 @@
 .map {
-  background: url("/src/images/bg-map.png");
+  background: url("/src/images/bg-mapOne.png");
   background-size: cover;
   background-position: 0px 200px;
   background-repeat: no-repeat;
   height: 520px;
   padding-top: 50px;
   padding-bottom: 200px;
+  @include desktop {
+    background-size: 100% auto;
+  }
   &__block {
     width: 800px;
     height: 420px;

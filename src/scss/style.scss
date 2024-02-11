@@ -26,9 +26,9 @@
 @import "brickHouse/brick-header.scss";
 @import "brickHouse/brick-catalog.scss";
 
-
 /* Reset Style */
 @import "normalize.css";
+@import "@splidejs/splide/css";
 
 .container {
   width: 100%;
@@ -46,5 +46,48 @@
   }
   @include phone {
     max-width: 430px;
+  }
+}
+
+.splide {
+  margin: 0 auto;
+  @include mobile {
+    margin-top: 25px;
+  }
+  &__slide {
+    // min-height: 340px;
+    // width: 340px;
+    img {
+      width: 100%;
+    }
+    @include mobile {
+    }
+  }
+  &__arrow {
+    background: none;
+    @include mobile {
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+    @include phone {
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+  &__arrow--prev {
+    margin-left: -4.5%;
+    @include tablet {
+      margin-left: 0;
+    }
+  }
+  &__arrow--next {
+    margin-right: -4.5%;
+    @include tablet {
+      margin-right: 0;
+    }
   }
 }

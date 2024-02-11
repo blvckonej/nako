@@ -65,6 +65,10 @@ section {
   border: 1px solid var(--color-orange) !important;
   border-radius: var(--border-radius-xxxl);
   cursor: pointer;
+  @include phone {
+    width: 220px;
+    height: 50px;
+  }
 }
 
 .button_green {
@@ -77,6 +81,13 @@ section {
   box-shadow: var(--color-green-btn-rgb);
   border: none;
   cursor: pointer;
+  @include tablet {
+    width: 250px;
+  }
+  @include phone {
+    height: 50px;
+    font-size: var(--text-xxs);
+  }
 }
 
 .input_gray {
@@ -90,6 +101,18 @@ section {
   &::placeholder {
     font-size: var(--text-xxs);
     padding-left: 60px;
+    @include phone {
+      font-size: var(--text-xs);
+    }
+  }
+  @include desktop {
+    width: 300px;
+  }
+  @include tablet {
+    width: 250px;
+  }
+  @include phone {
+    height: 50px;
   }
 }
 
@@ -99,25 +122,46 @@ section {
   font-family: var(--font-family-other);
   text-transform: uppercase;
   margin-bottom: 8px;
+  @include tablet {
+    font-size: var(--text-other);
+  }
 }
 
 .footer_item {
   margin-top: 10px;
   font-size: var(--text-xs);
   font-weight: var(--fw-light);
+  @include tablet {
+    font-size: var(--text-smal);
+  }
 }
 
 .footer_number {
   font-size: var(--text-sm);
   font-weight: var(--fw-bold);
+  @include tablet {
+    font-size: var(--text-other);
+  }
 }
 
 .bold_text {
   font-size: var(--text-xxs);
   font-weight: var(--fw-semibold);
+  @include tablet {
+    font-size: var(--text-xs);
+  }
+  @include phone {
+    font-size: var(--text-smal);
+  }
 }
 
 .light_text {
   font-size: var(--text-xxs);
   font-weight: var(--fw-light);
+  @include tablet {
+    font-size: var(--text-xs);
+  }
+  @include phone {
+    font-size: var(--text-smal);
+  }
 }

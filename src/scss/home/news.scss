@@ -1,18 +1,11 @@
 .news {
   &__block {
-    @include df-center-sb;
-    flex-wrap: wrap;
-    width: 1440px;
-    grid-gap: 0px 25px;
     margin-top: 50px;
-    margin-bottom: 50px;
-    @include mobile {
-      width: 767px;
-      margin: 0 auto;
-    }
+    margin-bottom: 20px;
   }
   &__block-card {
-    width: 338px;
+    margin: 0 auto;
+    width: 340px;
     height: 420px;
     box-shadow: var(--box-shadow-m);
     border-radius: var(--border-radius-m);
@@ -31,5 +24,15 @@
     font-size: var(--text-xxs);
     font-weight: var(--fw-regular);
     color: var(--color-orange);
+  }
+}
+
+.splide {
+  max-width: 100%;
+  &__list {
+    @include mobile {
+      width: 100%;
+      height: auto;
+    }
   }
 }

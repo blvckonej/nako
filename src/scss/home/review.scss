@@ -3,6 +3,9 @@
   margin-bottom: 88px;
   &__block {
     @include df-center-sb;
+    @include mobile {
+      flex-direction: column;
+    }
   }
   &__descr {
     width: 372px;
@@ -16,16 +19,27 @@
     margin-bottom: 30px;
     font-size: var(--text-xxs);
     font-weight: var(--fw-light);
+    @include desktop {
+      font-size: var(--text-xs);
+    }
+    @include phone {
+      margin-top: 15px;
+      width: 242px;
+      font-size: var(--text-smal);
+    }
   }
   &__descr-btn {
     height: 80px;
+    @include phone {
+      width: 280px;
+      height: 70px;
+      font-size: var(--text-xxs);
+    }
   }
   &__example {
-    img {
-      margin-right: 30px;
-      &:last-child {
-        margin-right: 0px;
-      }
+    max-width: 980px;
+    @include mobile {
+      max-width: 450px;
     }
   }
 }

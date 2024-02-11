@@ -17,10 +17,19 @@
     width: 98%;
     height: 467px;
     border-radius: var(--border-radius-s);
+    @include mobile {
+      align-items: flex-start !important;
+    }
   }
   &__block-description {
     margin-left: 64px;
     margin-top: 39px;
+    @include tablet {
+      margin-left: 35px;
+      margin-top: 25px;
+    }
+    @include mobile {
+    }
   }
   &__block-title {
     text-align: left !important;
@@ -30,11 +39,38 @@
     margin-top: 30px;
     font-weight: var(--fw-light);
     line-height: 27px;
+    @include desktop {
+      font-size: var(--text-xxs);
+      width: 440px;
+    }
+    @include mobile {
+      font-size: var(--text-xs);
+      width: 360px;
+      line-height: normal;
+      margin-top: 15px;
+    }
+    @include phone {
+      font-size: var(--text-smal);
+      width: 240px;
+      line-height: normal;
+    }
   }
   &__form {
     margin-top: 49px;
+    @include desktop {
+      margin-top: 30px;
+    }
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      margin-top: 15px;
+    }
   }
   &__form-input {
     margin-right: 25px;
+    @include mobile {
+      margin: 0 0 10px 0;
+      padding: 0;
+    }
   }
 }

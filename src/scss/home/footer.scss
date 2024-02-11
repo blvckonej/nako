@@ -6,10 +6,35 @@
   padding-bottom: 65px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+  @include phone {
+    padding-bottom: 20px;
+  }
   &__block {
     margin-top: 35px;
     display: flex;
     justify-content: space-between;
+    @include tablet {
+      max-width: 1024px;
+      flex-wrap: wrap;
+    }
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+  &__logo {
+    img {
+      @include tablet {
+        width: 100px;
+      }
+      @include mobile {
+        width: 90px;
+      }
+    }
+  }
+  &__descr {
+    @include mobile {
+      margin-top: 25px;
+    }
   }
   &__subtitle {
     margin-top: 24px;
@@ -27,6 +52,12 @@
     display: flex;
     justify-content: space-between;
     margin-top: 42px;
+    @include tablet {
+      flex-wrap: wrap;
+    }
+    @include mobile {
+      flex-direction: column;
+    }
   }
   &__license-right {
     margin-right: 54px;
@@ -35,8 +66,19 @@
     width: 479px;
     margin-top: 25px;
     line-height: 20px;
+    @include mobile {
+      max-width: 220px;
+      span {
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
   }
   &__license-dev {
     margin-top: 25px;
+    @include mobile {
+      width: 200px;
+      line-height: 1.5;
+    }
   }
 }
