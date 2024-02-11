@@ -1,0 +1,137 @@
+.spazone {
+  margin-top: 40px;
+  &__title {
+    max-width: 1000px;
+  }
+  &__wrapp {
+    margin-top: 69px;
+    height: 830px;
+    background-image: url("/src/images/bg-spa.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include desktop {
+      height: 700px;
+    }
+    @include mobile {
+      height: 100%;
+    }
+    @include phone {
+      background-image: url("/src/images/bg-spa-phone.png");
+      background-size: 100% 100%;
+    }
+  }
+  &__block {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  &__block-flexel {
+    display: flex;
+    justify-content: flex-start;
+    height: 378px;
+    margin-top: 65px;
+    .card_one {
+      align-self: flex-end;
+      margin-right: 232px;
+    }
+    .card_two {
+      align-self: flex-start;
+    }
+    .card_three {
+      margin-right: 142px;
+    }
+    .card_four {
+      margin-top: -100px;
+    }
+    &:last-child {
+      height: 356px;
+      justify-content: flex-end;
+      margin-right: 80px;
+    }
+    @include desktop {
+      display: none;
+    }
+  }
+  &__block-tablet {
+    display: none;
+    @include desktop {
+      max-width: 1000px;
+      margin: 0 auto;
+      margin-top: 65px;
+      @include df-center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    @include mobile {
+      max-width: 100%;
+      margin-bottom: 53px;
+    }
+  }
+  &__block-card {
+    @include df-center-all;
+    position: relative;
+    width: 460px;
+    height: 260px;
+    background-color: var(--color-light);
+    border-radius: var(--border-radius-m);
+    img {
+      position: absolute;
+      right: -10%;
+      bottom: 45%;
+      @include mobile {
+        top: -15%;
+        right: 40%;
+      }
+      @include phone {
+        top: -7%;
+        width: 50px;
+        height: 50px;
+      }
+    }
+    .position_item {
+      bottom: 35%;
+    }
+    .position_item_one {
+      left: -10%;
+      @include mobile {
+        left: 43%;
+      }
+    }
+    .position_item_two {
+      bottom: -10%;
+      right: 40%;
+    }
+    @include tablet {
+      max-width: 320px;
+    }
+    @include mobile {
+      margin-top: 35px;
+      max-width: 70%;
+    }
+  }
+  &__block-dashed {
+    @include df-center-all;
+    flex-direction: column;
+    width: 95%;
+    height: 90%;
+    border-radius: var(--border-radius-m);
+    border: var(--border-dashed);
+  }
+  &__block-title {
+    font-weight: var(--fw-semibold);
+    margin-bottom: 16px;
+  }
+  &__block-subdescr {
+    width: 329px;
+    text-align: center;
+    line-height: normal;
+    font-weight: var(--fw-light);
+    font-size: var(--text-xxs);
+    @include tablet {
+      max-width: 240px;
+      font-size: var(--text-xs);
+    }
+  }
+}

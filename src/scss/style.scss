@@ -27,6 +27,13 @@
 @import "brickHouse/brick-catalog.scss";
 @import "brickHouse/brick-selection.scss";
 
+/* Bath House */
+@import "bathHouse/bath-header.scss";
+@import "bathHouse/bath-typebaths.scss";
+@import "bathHouse/bath-descrbaths.scss";
+@import "bathHouse/bath-spazone.scss";
+@import "bathHouse/bath-cleaning.scss";
+
 /* Reset Style */
 @import "normalize.css";
 @import "@splidejs/splide/css";
@@ -56,8 +63,6 @@
     margin-top: 25px;
   }
   &__slide {
-    // min-height: 340px;
-    // width: 340px;
     img {
       width: 100%;
     }

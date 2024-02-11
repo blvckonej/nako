@@ -1,0 +1,123 @@
+.descrbaths {
+  margin-top: 20px;
+  &__title {
+    max-width: 1000px;
+  }
+  &__block {
+    margin-top: 57px;
+    width: 100%;
+    @include df-center-sb;
+    @include tablet {
+      flex-direction: column;
+      justify-content: center;
+    }
+    @include phone {
+      margin-top: 24px;
+    }
+  }
+  &__left {
+    width: 671px;
+    height: 641px;
+    background-image: url("/src/images/bg-descrbaths.png");
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    @include desktop {
+      background-size: contain;
+    }
+    @include mobile {
+      max-width: 100%;
+    }
+    @include phone {
+      width: 300px;
+      height: 300px;
+    }
+  }
+  &__right {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    @include tablet {
+      margin-top: 20px;
+      width: 100%;
+    }
+    @include phone {
+      row-gap: 15px;
+    }
+  }
+  &__card {
+    @include df-center-all;
+    position: relative;
+    width: 714px;
+    height: 189px;
+    border-radius: var(--border-radius-m);
+    box-shadow: var(--box-shadow-m);
+    img {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      border-bottom-right-radius: var(--border-radius-m);
+    }
+    @include tablet {
+      width: 100%;
+    }
+    @include mobile {
+      height: 268px;
+    }
+    @include phone {
+      height: 287px;
+    }
+  }
+  &__card-dashed {
+    width: 96%;
+    height: 85%;
+    border-radius: var(--border-radius-m);
+    border: var(--border-dashed);
+  }
+  &__card-title {
+    @include df-center;
+    width: 460px;
+    height: 40px;
+    background-color: var(--color-green);
+    border-top-right-radius: var(--border-radius-m);
+    border-bottom-right-radius: var(--border-radius-m);
+    margin-top: 30px;
+    margin-left: -2%;
+    margin-bottom: 18px;
+    color: var(--color-light);
+    span {
+      margin-left: 77px;
+    }
+    @include mobile {
+      max-width: 360px;
+      font-size: var(--text-xxs);
+      span {
+        margin-left: 30px;
+      }
+    }
+    @include phone {
+      max-width: 206px;
+    }
+  }
+  .long_title {
+    @include phone {
+      max-width: 240px;
+      span {
+        padding-right: 5px;
+      }
+    }
+  }
+  &__card-subdescr {
+    margin-left: 63px;
+    max-width: 430px;
+    font-size: var(--text-xxs);
+    font-weight: var(--fw-light);
+    @include mobile {
+      max-width: 260px;
+    }
+    @include phone {
+      margin-left: 22px;
+      max-width: 205px;
+      font-size: var(--text-smal);
+    }
+  }
+}

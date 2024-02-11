@@ -1,0 +1,13 @@
+.bath_header {
+  background-image: url("/src/images/bg-bathousepage.png");
+  margin-bottom: 50px;
+}
+
+.header {
+  &__subtitle-black {
+    color: var(--color-dark);
+  }
+  &__subdescr-dots_black {
+    background-color: var(--color-dark);
+  }
+}

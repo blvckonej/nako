@@ -1,0 +1,64 @@
+.typebaths {
+  margin-bottom: 50px;
+  &__title {
+    max-width: 1000px;
+  }
+  &__block {
+    @include df-center-sb;
+    gap: 30px;
+    margin: 0 auto;
+    margin-top: 57px;
+    @include desktop-h {
+      flex-wrap: wrap;
+    }
+    @include desktop {
+      max-width: 900px;
+      justify-content: center;
+    }
+  }
+  &__card {
+    width: 338px;
+    border-radius: var(--border-radius-m);
+    box-shadow: var(--box-shadow-m);
+  }
+  &__card-descr {
+    @include df-center-all;
+    position: relative;
+    height: 331px;
+    background-color: var(--color-light);
+    border-radius: var(--border-radius-m);
+    margin-top: -50px;
+  }
+  &__card-dashed {
+    width: 95%;
+    background-color: var(--color-light);
+    height: 95%;
+    border: var(--border-dashed);
+    border-radius: var(--border-radius-m);
+  }
+  &__card-title {
+    @include df-center;
+    color: var(--color-light);
+    width: 233px;
+    height: 47px;
+    margin-top: 30px;
+    margin-left: -3%;
+    background-color: var(--color-green);
+    font-weight: var(--fw-semibold);
+    border-top-right-radius: var(--border-radius-m);
+    border-bottom-right-radius: var(--border-radius-m);
+    span {
+      margin-left: 40px;
+    }
+  }
+  .tyrkey {
+    width: 269px;
+  }
+  &__card-subdescr {
+    max-width: 278px;
+    margin: 18px 0 0 28px;
+    font-weight: var(--fw-light);
+    font-size: var(--text-xxs);
+    line-height: 130%;
+  }
+}
