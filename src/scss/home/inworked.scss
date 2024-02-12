@@ -1,22 +1,39 @@
 .inworked {
   &__block {
     @include df-center-all;
+    position: relative;
     height: 500px;
     background-color: var(--color-light-blue);
     border-radius: var(--border-radius-s);
-    background-image: url("/src/images/bg-inworked-empty.png");
-    background-size: contain;
+    background-image: url("/src/images/bg-inworked-house.png");
+    background-size: auto 92%;
     background-repeat: no-repeat;
-    background-position: 100% 100%;
-    outline: var(--border-dashed-light);
-    outline-offset: -16px;
+    // background-position: 100% 100%;
+    background-position: right 18% bottom;
     z-index: -1;
+    img {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      @include desktop-h {
+        max-height: 100%;
+      }
+      @include desktop {
+        max-height: 60%;
+      }
+      @include mobile {
+        max-height: 40%;
+      }
+    }
+    @include mobile {
+      height: 572px;
+    }
   }
   &__block-dashed {
-    @include df-center-sb;
     width: 98%;
-    height: 467px;
+    height: 95%;
     border-radius: var(--border-radius-s);
+    border: var(--border-dashed-light);
     @include mobile {
       align-items: flex-start !important;
     }
@@ -29,6 +46,7 @@
       margin-top: 25px;
     }
     @include mobile {
+      margin: 16px 0px 0px 14px;
     }
   }
   &__block-title {
@@ -56,21 +74,42 @@
     }
   }
   &__form {
-    margin-top: 49px;
+    margin-top: 20px;
     @include desktop {
       margin-top: 30px;
     }
-    @include mobile {
+    @include tablet {
       display: flex;
       flex-direction: column;
       margin-top: 15px;
     }
   }
+  &__form-btn {
+    @include tablet {
+      width: 230px;
+    }
+    @include mobile {
+      width: 250px;
+      height: 60px;
+    }
+  }
   &__form-input {
     margin-right: 25px;
+    width: 297px;
+    @include tablet {
+      width: 230px;
+      margin-bottom: 10px;
+      padding: 0;
+      &::placeholder {
+        padding: 0;
+        text-align: center;
+      }
+    }
     @include mobile {
       margin: 0 0 10px 0;
       padding: 0;
+      width: 250px;
+      height: 60px;
     }
   }
 }
