@@ -1,0 +1,54 @@
+.stepproject {
+    margin-top: 57px;
+    max-width: 1193px;
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 33px;
+        margin-bottom: 62px;
+        max-width: 630px;
+        border: 0.5px solid var(--color-orange);
+        border-radius: var(--border-radius-m);
+    }
+    &__list-item {
+        width: 100px;
+        height: 60px;
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+            border-radius: var(--border-radius-m);
+            transition: all 0.3s ease-in;
+            &.active {
+                background-color: var(--color-orange);
+            }
+        }
+    }
+    &__card {
+        display: flex;
+        justify-content: space-around;
+    }
+    &__card-left {
+        max-width: 414px;
+    }
+    &__card-title {
+        font-family: var(--font-family-other);
+        font-size: var(--text-llg);
+        margin-bottom: 29px;
+    }
+    &__card-descr {
+        max-width: 401px;
+        font-weight: var(--fw-light);
+        line-height: 1.2;
+        margin-bottom: 29px;
+    }
+    &__card-btn {
+        margin-top: 31px;
+        width: 325px;
+        height: 80px;
+    }
+}

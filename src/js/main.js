@@ -1,6 +1,8 @@
 import Splide from '@splidejs/splide';
-import {tabsDefaultInit} from'../js/tabs';
+import {tabsDefaultInit} from'../js/tabs.js';
 import '../scss/style.scss';
+
+tabsDefaultInit();
 
 const mySlider = new Splide('#mySlider', {
     perPage: 2,
@@ -10,10 +12,6 @@ const mySlider = new Splide('#mySlider', {
         1024: {
             perPage: 1
         },
-        768: {
-            // arrows: false,
-            // pagination: true
-        }
     }
     
 });
@@ -32,12 +30,9 @@ const mySliderNews = new Splide('#mySliderNews', {
             perPage: 2
         },
         768: {
-            perPage: 1,
-            // arrows: false,
-            // pagination: true
+            perPage: 1
         } 
     }
 });
 
 mySliderNews.mount();
-tabsDefaultInit();
