@@ -1,4 +1,5 @@
 import Splide from '@splidejs/splide';
+import './tabs';
 import '../scss/style.scss';
 
 const mySlider = new Splide('#mySlider', {
@@ -39,3 +40,4 @@ const mySliderNews = new Splide('#mySliderNews', {
 });
 
 mySliderNews.mount();
+tabsDefaultInit();

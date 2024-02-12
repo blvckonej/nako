@@ -34,9 +34,13 @@
 @import "bathHouse/bath-spazone.scss";
 @import "bathHouse/bath-cleaning.scss";
 
+/* Project House */
+@import "projectHouse/project-header.scss";
+
 /* Reset Style */
 @import "normalize.css";
 @import "@splidejs/splide/css";
+@import 'tabs.scss';
 
 .container {
   width: 100%;
