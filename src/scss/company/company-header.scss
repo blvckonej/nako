@@ -1,0 +1,23 @@
+.header_company {
+  background-image: none;
+  height: 100%;
+}
+
+.header__band {
+  margin-top: 22px;
+  width: 100%;
+  height: 40px;
+  background-color: var(--color-gray-border);
+  border-radius: var(--border-radius-m);
+}
+
+.header__company {
+  background-image: url("/src/images/bg-company.png");
+  height: 850px;
+  &-title {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+}

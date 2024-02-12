@@ -6,7 +6,7 @@
 @import "global.scss";
 @import "utils.scss";
 @import "section.scss";
-@import 'tabs.scss';
+@import "tabs.scss";
 
 /* Section Style */
 /* Home */
@@ -38,6 +38,9 @@
 /* Project House */
 @import "projectHouse/project-header.scss";
 @import "projectHouse/project-stepproject.scss";
+
+/* Company */
+@import "company/company-header.scss";
 
 /* Reset Style */
 @import "normalize.css";
