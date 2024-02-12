@@ -66,6 +66,7 @@ section {
   border-radius: var(--border-radius-xxxl);
   cursor: pointer;
   @include phone {
+    font-size: var(--text-xs);
     width: 220px;
     height: 50px;
   }
