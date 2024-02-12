@@ -1,5 +1,5 @@
 import Splide from '@splidejs/splide';
-import './tabs';
+import {tabsDefaultInit} from'../js/tabs';
 import '../scss/style.scss';
 
 const mySlider = new Splide('#mySlider', {

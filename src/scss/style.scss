@@ -6,6 +6,7 @@
 @import "global.scss";
 @import "utils.scss";
 @import "section.scss";
+@import 'tabs.scss';
 
 /* Section Style */
 /* Home */
@@ -40,7 +41,6 @@
 /* Reset Style */
 @import "normalize.css";
 @import "@splidejs/splide/css";
-@import 'tabs.scss';
 
 .container {
   width: 100%;
