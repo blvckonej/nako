@@ -1,23 +1,41 @@
 .header_company {
   background-image: none;
   height: 100%;
+  margin-bottom: 96px;
 }
 
 .header__band {
+  position: relative;
   margin-top: 22px;
   width: 100%;
   height: 40px;
   background-color: var(--color-gray-border);
   border-radius: var(--border-radius-m);
+  z-index: 2;
 }
 
 .header__company {
+  max-width: 100%;
   background-image: url("/src/images/bg-company.png");
   height: 850px;
+  margin-top: -20px;
+  display: grid;
+  align-items: end;
+  justify-content: center;
+  z-index: -1;
+  @include phone {
+    justify-content: start;
+    height: 560px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   &-title {
-    height: 100%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    max-width: 1140px;
+    margin-bottom: 56px;
+    @include phone {
+      max-width: 272px;
+      font-size: 32px;
+    }
   }
 }

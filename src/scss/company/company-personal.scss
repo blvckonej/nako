@@ -1,0 +1,39 @@
+.personal {
+    margin-bottom: 113px;
+    &__title {
+        max-width: 900px;
+        margin-bottom: 56px !important;
+    }
+    &__card {
+        height: 510px;
+        width: 338px;
+        @include df-center-all;
+        flex-direction: column;
+        box-shadow: var(--box-shadow-m);
+        border-radius: var(--border-radius-m);
+        img {
+            z-index: 1;
+        }
+    }
+    &__card-descr {
+        height: 180px;
+        width: 100%;
+        margin-top: -64px;
+        @include df-center-all;
+    }
+    &__card-dashed {
+        width: 92%;
+        height: 85%;
+        border: var(--border-dashed);
+        border-radius: var(--border-radius-m);
+    }
+    &__card-subdescr {
+        margin-top: 70px;
+        margin-left: 37px;
+    }
+    &__card-name {
+        font-size: var(--text-md);
+        font-weight: var(--fw-semibold);
+        margin-bottom: 12px;
+    }
+}

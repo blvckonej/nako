@@ -41,6 +41,9 @@
 
 /* Company */
 @import "company/company-header.scss";
+@import "company/company-personal.scss";
+@import "company/company-documents.scss";
+@import "company/company-firms.scss";
 
 /* Reset Style */
 @import "normalize.css";
@@ -65,16 +68,20 @@
   }
 }
 
+
 .splide {
+  // default style
   margin: 0 auto;
+  width: 100%;
   @include mobile {
     margin-top: 25px;
+  }
+  &__track {
+    width: 100%;
   }
   &__slide {
     img {
       width: 100%;
-    }
-    @include mobile {
     }
   }
   &__arrow {
@@ -92,16 +99,58 @@
       }
     }
   }
-  &__arrow--prev {
-    margin-left: -4.5%;
+  // review slider style
+  &__arrow-review--prev {
+    margin-left: -4%;
+    opacity: 1 !important;
     @include tablet {
       margin-left: 0;
     }
   }
-  &__arrow--next {
-    margin-right: -4.5%;
+  &__arrow-review--next {
+    margin-right: -4%;
+    opacity: 1 !important;
     @include tablet {
       margin-right: 0;
     }
+  }
+  // news slider style
+  &__arrow-news--prev {
+    opacity: 1 !important;
+    margin-left: -2.5%;
+    @include tablet {
+      margin-left: 0;
+    }
+  }
+  &__arrow-news--next {
+    opacity: 1 !important;
+    margin-right: -2.5%;
+    @include tablet {
+      margin-right: 0;
+    }
+  }
+  &__track-news {
+    height: 435px;
+  }
+  // personal slider style
+  &__arrow-personal--prev {
+    opacity: 1 !important;
+    margin-left: -2%;
+    @include tablet {
+      margin-left: 0;
+    }
+  }
+  &__arrow-personal--next {
+    opacity: 1 !important;
+    margin-right: -2%;
+  }
+  // documents slider style
+  &__arrow-documents--prev {
+    opacity: 1 !important;
+    margin-left: -2.5%;
+  }
+  &__arrow-documents--next {
+    opacity: 1 !important;
+    margin-right: -2.5%;
   }
 }
