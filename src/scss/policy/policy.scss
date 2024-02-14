@@ -1,0 +1,60 @@
+.policy {
+    background-image: url('/src/images/bg-policy.png');
+    background-repeat: no-repeat;
+    background-position: bottom 0 right;
+    height: 850px;
+    @include mobile {
+        height: auto;
+        background-image: none;
+        margin-bottom: 50px;
+    }
+    &__title {
+        font-size: 64px;
+        font-weight: var(--fw-regular);
+        font-family: var(--font-family-other);
+        @include tablet {
+            font-size: 48px;
+        }
+        @include mobile {
+            font-size: 36px;
+        }
+        @include phone {
+            font-size: 24px;
+        }
+    }
+    &__block-descr {
+        max-width: 1328px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+        @include mobile {
+            flex-direction: column;
+        }
+        @include phone {
+            margin-top: 16px;
+            max-width: 286px;
+        }
+    }
+    &__block-right, &__block-left {
+        max-width: 620px;
+        font-size: 16px;
+        font-weight: var(--fw-light);
+        line-height: 22px;
+        span {
+            display: block;
+            margin-top: 30px;
+        }
+        @include tablet {
+            font-size: 14px;
+        }
+    }
+    &__block-left {
+        margin-right: 10px;
+    }
+    &__block-right {
+        @include phone {
+            display: none;
+        }
+    }
+
+}

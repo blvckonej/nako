@@ -46,6 +46,18 @@
 @import "company/company-firms.scss";
 @import "company/company-guard.scss";
 
+/* Order */
+@import "order/order.scss";
+
+/* Error */
+@import "404/404.scss";
+
+/* Vacancies */
+@import "vacancies/vacancies.scss";
+
+/* Policy */
+@import "policy/policy.scss";
+
 /* Reset Style */
 @import "normalize.css";
 @import "@splidejs/splide/css";

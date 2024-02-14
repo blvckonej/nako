@@ -1,0 +1,81 @@
+.header_vacancies {
+    background-image: none;
+    max-height: 173px;
+}
+
+.vacancies {
+    background-image: url('/src/images/bg-vacancies.png');
+    background-size: cover;
+    background-position: center;
+    height: 920px;
+    margin-top: -3%;
+    @include mobile {
+        height: 600px;
+    }
+    @include phone {
+        background-image: url('/src/images/bg-vacancies-mobile.png');
+        height: 547px;
+    }
+    &__block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include phone {
+            align-items: flex-start;
+            margin-left: 15px;
+        }
+    }
+    &__title {
+        margin-top: 155px;
+        font-size: 64px;
+        font-family: var(--font-family-other);
+        text-transform: uppercase;
+        font-weight: var(--fw-regular);
+        max-width: 927px;
+        text-align: center;
+        @include mobile {
+            margin-top: 70px;
+            font-size: 40px;
+        }
+        @include phone {
+            max-width: 299px;
+            text-align: left;
+            font-size: 26px;
+            margin-top: 56px;
+        }
+    }
+    &__block-buttons {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        column-gap: 40px;
+        max-width: 665px;
+        @include mobile {
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        @include phone {
+            margin-top: 46px;
+        }
+    }
+    &__block-btn {
+        width: 300px !important;
+        height: 80px;
+        width: 100%;
+        &:last-of-type {
+            width: 325px !important;
+            background-color: transparent !important;
+        }
+        @include mobile {
+            width: 100% !important;
+            margin-top: 20px;
+            &:last-of-type {
+                width: 100% !important;
+            }
+        }
+        @include phone {
+            height: 70px;
+        }
+    }
+}
+
