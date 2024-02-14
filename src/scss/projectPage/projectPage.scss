@@ -1,0 +1,24 @@
+.header_projectpage {
+    background-image: none;
+}
+
+.header__subblock {
+    background-image: url('/src/images/bg-product.png');
+    height: 850px;
+    margin-top: -1%;
+    &-title {
+        color: var(--color-light);
+        font-size: var(--text-title-product) !important;
+        font-family: var(--font-family-other);
+        font-weight: var(--fw-regular);
+    }
+    &-counter {
+        font-size: var(--text-md);
+        color: var(--color-light);
+    }
+    &-text {
+        font-size: var(--text-smal);
+        font-weight: var(--fw-semibold);
+        color: var(--color-light);
+    }
+}
