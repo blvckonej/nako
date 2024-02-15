@@ -49,6 +49,7 @@
 /* Company */
 @import "projectPage/projectPage.scss";
 @import "projectPage/products-planer.scss";
+@import "projectPage/products-ordered.scss";
 
 /* Order */
 @import "order/order.scss";
@@ -169,4 +170,30 @@
     opacity: 1 !important;
     margin-right: -2.5%;
   }
+}
+
+.thumbnails {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  justify-content: center;
+  margin-left: 22px !important;
+}
+
+.thumbnail {
+  width: 140px;
+  height: 140px;
+  margin-bottom: 20px !important;
+  overflow: hidden;
+  list-style: none;
+  margin: 0 0.2rem;
+  cursor: pointer;
+  &:last-of-type {
+    margin-bottom: 0 !important;
+  }
+}
+
+.thumbnail img {
+  width: 100%;
+  height: auto;
 }

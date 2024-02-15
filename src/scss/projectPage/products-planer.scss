@@ -4,6 +4,31 @@
     }
     &__block {
         margin-top: 55px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__splide {
+        width: 786px !important;
+    }
+    &__block-right {
+        display: flex;
+        flex-direction: column;
+        height: 620px !important;
+    }
+    &__block-carousel {
+        display: flex;
+    }
+    &__block-description {
+        display: flex;
+        align-items: center;
+        margin-top: 44px;
+        img {
+            margin-right: 25px;
+        }
+    }
+    &__block-descr_text {
+       font-size: var(--text-xxs);
+       max-width: 700px; 
     }
     &__block-left {
         width: 460px;
@@ -23,39 +48,71 @@
         margin-left: 32px !important;
     }
     &__block-list {
-        margin: 0 57px 30px 34px;
-        width: 100%;
+        width: 369px;
+        margin-left: 32px;
+        span {
+            &:nth-child(1) {
+                border: 2px solid red;
+            }
+        }
     }
     &__block-item {
         max-height: 304px;
-        max-width: 100%;
-        // display: flex;
-        // align-items: flex-end;
-        display: grid;
-        grid-template-columns: 150px 40% 20px;
+        display: flex;
         align-items: center;
-        justify-content: first baseline;
         font-size: var(--text-xs);
+        justify-content: space-between;
         margin-top: 23px;
         p {
             &:nth-child(3) {
-                
+                display: block;
+                text-wrap: nowrap;
             }
         }
         span {
-            // width: 50%;
+            width: 100%;
+            margin: 0 10px;
             border: 1px solid var(--color-gray);
         }
     }
     &__block-item_wrapp {
+        max-width: 100%;
         display: flex;
         align-items: center;
-        width: 100%;
-        // width: 150px;
+        flex-wrap: nowrap;
+        text-wrap: nowrap;
         img {
             width: 18px;
             height: 18px;
             margin-right: 20px;
         }
+    }
+    &__block-form {
+        margin-top: 12px;
+        width: 100%;
+        height: 316px;
+        background-color: var(--color-light);
+        box-shadow: var(--box-shadow-m);
+        border-radius: var(--border-radius-m);
+        form {
+            margin-left: 38px;
+            padding-top: 32px;
+        }
+    }
+    &__block-form_title {
+        max-width: 380px;
+        font-size: var(--text-sm);
+        font-weight: var(--fw-semibold);
+    }
+    &__block-input {
+        padding: 0 !important;
+        width: 380px;
+        height: 70px;
+        margin-top: 29px !important;
+    }
+    &__block-btn {
+        width: 380px;
+        height: 80px;
+        margin-top: 17px;
     }
 }
