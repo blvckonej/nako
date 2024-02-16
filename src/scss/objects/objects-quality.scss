@@ -1,0 +1,40 @@
+.quality {
+    margin-bottom: 50px;
+    &__block {
+        width: 100%;
+        position: relative;
+        background-color: var(--color-light-blue);
+        height: 519px;
+        border-radius: var(--border-radius-m);
+        padding-top: 1px;
+        background-image: url('/src/images/bg-quality.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &__block-left {
+        margin-top: 74px;
+        margin-left: 96px;
+    }
+    &__title {
+        text-align: left !important;
+    }
+    &__descr {
+        font-weight: var(--fw-light);
+        margin-top: 53px;
+        margin-bottom: 58px;
+        max-width: 530px;
+    }
+    &__block-input {
+        width: 300px;
+        margin-right: 25px;
+        padding: 0;
+        background-color: var(--color-light);
+    }
+    &__block-right {
+        img {
+            position: absolute;
+            bottom: 0;
+            right: 70px;
+        }
+    }
+}

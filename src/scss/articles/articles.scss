@@ -1,0 +1,39 @@
+.filters__articles {
+    justify-content: flex-start;
+}
+
+.filters__articles-wrapper {
+    max-width: 210px !important;
+}
+
+.filters {
+    &__search {
+        position: relative;
+    }
+    &__form-search {
+        position: relative;
+        display: block;
+        height: 45px;
+        width: 338px;
+        padding: 15px;
+        border-radius: var(--border-radius-m);
+        border: 1px solid var(--color-gray);
+        outline: none;
+        font-size: var(--text-xs);
+        &::placeholder {
+            color: var(--color-dark);
+        }
+    }
+    &__search-icon {
+        position: absolute;
+        right: 15px;
+        top: 33%;
+    }
+}
+
+.articles__news {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 56px 29px;
+    margin-bottom: 129px;
+}
