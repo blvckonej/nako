@@ -9,6 +9,7 @@ const sliderTwo = document.getElementById('mySliderNews');
 const sliderThree = document.getElementById('mySliderPersonal');
 const sliderFour = document.getElementById('mySliderDocuments');
 const carousel = document.getElementById('main-carousel');
+// const modalWindow = document.getElementById('modal_header');
 
 if (sliderOne) {
     const mySlider = new Splide('#mySlider', {

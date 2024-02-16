@@ -1,65 +1,64 @@
 .header_projectpage {
-    background-image: none;
-    max-height: 1000px;
+  background-image: none;
+  max-height: 1000px;
 }
 
 .header__subblock {
-    background-image: url('/src/images/bg-product.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 850px;
-    margin-top: -1%;
+  background-image: url("/src/images/bg-product.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 850px;
+  margin-top: -1%;
+  @include tablet {
+    height: 700px;
+  }
+  @include phone {
+    margin-top: -5%;
+    background-image: url("/src/images/bg-product-mobile.png");
+  }
+  &-descr {
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
     @include tablet {
-        height: 700px;
+      height: 650px;
     }
     @include phone {
-        margin-top: -5%;
-        background-image: url('/src/images/bg-product-mobile.png');
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+      margin-left: 20px;
     }
-    &-descr {
-        height: 800px;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-        @include tablet {
-            height: 650px;
-        }
-        @include phone {
-            flex-direction: column;
-            justify-content: flex-end;
-            align-items: flex-start;
-            margin-left: 20px;
-
-        }
+  }
+  &-title {
+    color: var(--color-light);
+    font-size: var(--text-title-product) !important;
+    font-family: var(--font-family-other);
+    font-weight: var(--fw-regular);
+    @include tablet {
+      font-size: var(--text-xxl) !important;
     }
-    &-title {
-        color: var(--color-light);
-        font-size: var(--text-title-product) !important;
-        font-family: var(--font-family-other);
-        font-weight: var(--fw-regular);
-        @include tablet {
-            font-size: var(--text-xxl) !important;
-        }
-        @include phone {
-            font-size: var(--text-xlg) !important;
-            margin-bottom: 20px;
-        }
+    @include phone {
+      font-size: var(--text-xlg) !important;
+      margin-bottom: 20px;
     }
-    &-counter {
-        margin-left: 15px;
-        font-size: var(--text-md);
-        color: var(--color-light);
-    }
-    &-text {
-        margin-top: 5px;
-        font-size: var(--text-smal);
-        font-weight: var(--fw-semibold);
-        color: var(--color-light);
-    }
-    &-like {
-        width: 118px;
-        display: flex;
-        flex-wrap: wrap;
-    }
+  }
+  &-counter {
+    margin-left: 15px;
+    font-size: var(--text-md);
+    color: var(--color-light);
+  }
+  &-text {
+    margin-top: 5px;
+    font-size: var(--text-smal);
+    font-weight: var(--fw-semibold);
+    color: var(--color-light);
+  }
+  &-like {
+    width: 118px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
