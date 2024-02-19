@@ -60,6 +60,12 @@ section {
     height: 50px;
     font-size: var(--text-xs);
   }
+  &:hover {
+    background: var(--color-orange-btn-lighten);
+  }
+  &:active {
+    background: var(--color-orange-btn-darken);
+  }
 }
 
 // Empty button
@@ -77,6 +83,13 @@ section {
     font-size: var(--text-xs);
     width: 220px;
     height: 50px;
+  }
+  &:hover {
+    background-color: var(--color-orange) !important;
+    color: var(--color-light);
+  }
+  &:active {
+    background-color: darken(#eea245, 10%) !important;
   }
 }
 
@@ -97,6 +110,12 @@ section {
     height: 50px;
     font-size: var(--text-xxs);
   }
+  &:hover {
+    background: lighten(#a3da5f, 5%) !important
+  }
+  &:active {
+    background: darken(#a3da5f, 5%) !important
+  }
 }
 
 .input_gray {
@@ -107,6 +126,7 @@ section {
   background-color: var(--color-gray);
   padding-left: 15px;
   margin-top: 25px;
+  outline: none;
   &::placeholder {
     font-size: var(--text-xxs);
     padding-left: 60px;
@@ -143,6 +163,12 @@ section {
   @include tablet {
     font-size: var(--text-smal);
   }
+  &:hover {
+    color: lighten(#16182a, 40%) !important;
+  }
+  &:active {
+    color: darken(#fff, 40%) !important;
+  }
 }
 
 .footer_number {
@@ -150,6 +176,12 @@ section {
   font-weight: var(--fw-bold);
   @include tablet {
     font-size: var(--text-other);
+  }
+  &:hover {
+    color: lighten(#16182a, 40%) !important;
+  }
+  &:active {
+    color: darken(#fff, 40%) !important;
   }
 }
 

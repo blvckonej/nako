@@ -41,6 +41,12 @@ header {
   &__menu-item {
     font-size: var(--text-xxs);
     margin-left: 50px;
+    &:hover {
+      color: lighten(#16182a, 40%) !important;
+    }
+    &:active {
+      color: darken(#fff, 40%) !important;
+    }
     &:first-child {
       margin-left: 0;
     }
@@ -52,6 +58,12 @@ header {
   &__phone {
     font-weight: var(--fw-bold);
     line-height: normal;
+    &:hover {
+      color: lighten(#16182a, 40%) !important;
+    }
+    &:active {
+      color: darken(#fff, 40%) !important;
+    }
     @include desktop {
       font-size: var(--text-xs);
     }
@@ -209,6 +221,23 @@ header {
     @include phone {
       margin-top: 28px;
       align-self: center;
+    }
+  }
+  // burger
+  &__burger-btn {
+    background-color: transparent;
+    border: none;
+    width: 42px;
+    height: 8px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    span {
+      display: block;
+      width: 5px;
+      height: 5px;
+      background-color: black;
+      border-radius: 100%;
     }
   }
 }

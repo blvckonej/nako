@@ -9,7 +9,7 @@ const sliderTwo = document.getElementById('mySliderNews');
 const sliderThree = document.getElementById('mySliderPersonal');
 const sliderFour = document.getElementById('mySliderDocuments');
 const carousel = document.getElementById('main-carousel');
-// const modalWindow = document.getElementById('modal_header');
+const modalWindow = document.querySelector('.header__modal');
 
 if (sliderOne) {
     const mySlider = new Splide('#mySlider', {
@@ -125,3 +125,13 @@ if(carousel) {
 
       splide.mount();
 }
+
+// if(modalWindow) {
+//     setTimeout(function(){  
+//         const modalwin = modalWindow;
+//         modalwin.style.display="block";  
+//         document.querySelector(".header__modal-close").addEventListener("click", function(){
+//         modalwin.style.display="none";  
+//         });
+//       }, 60000);
+// }
