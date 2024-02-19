@@ -1,10 +1,19 @@
 .personal {
     margin-bottom: 113px;
+    @include phone {
+        margin-bottom: 64px;
+    }
     &__title {
         max-width: 900px;
         margin-bottom: 56px !important;
+        @include phone {
+            max-width: 288px;
+            margin: 0 !important;
+            margin-bottom: 42px;
+        }
     }
     &__card {
+        margin: 0 auto;
         height: 510px;
         width: 338px;
         @include df-center-all;
@@ -35,5 +44,14 @@
         font-size: var(--text-md);
         font-weight: var(--fw-semibold);
         margin-bottom: 12px;
+    }
+    &__splide {
+        max-width: 1440px;
+    }
+}
+
+.splide {
+    &__slide-personal {
+        margin-bottom: 20px !important;
     }
 }

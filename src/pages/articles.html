@@ -54,7 +54,9 @@
                 </h2>
             </div>
             <form action="#" class="filters__form filters__articles">
-                <img src="/src/images/filter.svg" alt="Фильтр" class="filters__svg">
+                <div class="filters__svg-wrapper">
+                  <img src="/src/images/filter.svg" alt="Фильтр" class="filters__svg">
+                </div>
                 <div class="filters__form-wrapper">
                     <select class="filters__select" name="select">
                         <option value="" disabled selected hidden>Полезное</option>
@@ -81,6 +83,7 @@
                 </search>
             </form>
             <!-- TODO: Добавить сброс фильтров -->
+            <a href="#" class="filters__reset-filter"><img src="/src/images/resetlink.svg" alt="">Сбросить фильтры</a>
         </section>
         <section class="news container">
             <div class="news__block articles__news">

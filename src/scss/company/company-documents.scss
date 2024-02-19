@@ -2,5 +2,23 @@
     &__title {
         max-width: 900px;
         margin-bottom: 63px !important;
+        @include phone {
+            max-width: 249px;
+            margin: 0 !important;
+            margin-bottom: 40px !important;
+        }
+    }
+    &__card {
+        height: 500px;
+        margin: 0 auto !important;
+        width: 338px;
+        img {
+            margin: 0 auto !important;
+            width: 338px !important;
+            max-height: 500px !important;
+        }
+        @include phone {
+            margin-top: 40px !important;
+        }
     }
 }

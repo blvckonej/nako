@@ -1,5 +1,8 @@
 .long_block {
   max-width: 803px !important;
+  @include phone {
+    max-width: 100% !important;
+  }
 }
 
 .articleinfo {
@@ -7,16 +10,31 @@
   &__block {
     display: flex;
     justify-content: space-between;
+    @include tablet {
+      flex-wrap: wrap;
+    }
   }
   &__right {
     width: 535px;
     height: 310px;
     background-color: var(--color-light-blue);
     border-radius: var(--border-radius-m);
+    @include tablet {
+      order: 1;
+    }
+  }
+  &__left {
+    @include tablet {
+      order: 2;
+    }
   }
   &__content {
     margin-left: 59px;
     margin-top: 44px;
+    @include phone {
+      margin-left: 32px;
+      margin-top: 29px;
+    }
   }
   &__content-title {
     font-family: var(--font-family-other);
@@ -26,11 +44,20 @@
     margin-top: 15px;
     max-width: 385px;
     line-height: 20px;
+    @include phone {
+      max-width: 295px;
+      font-size: var(--text-xs);
+    }
   }
   &__left-titletext {
     max-width: 827px;
     line-height: 22px;
     font-size: var(--text-other);
+    @include phone {
+      margin-top: 30px;
+      max-width: 100%;
+      font-size: var(--text-xs);
+    }
   }
   &__left-subtext,
   &__left-descr {
@@ -38,6 +65,14 @@
     span {
       margin-top: 40px;
       display: block;
+      @include phone {
+        margin-top: 20px;
+        font-size: var(--text-xs);
+      }
+    }
+    @include phone {
+      max-width: 100%;
+      font-size: var(--text-xs) !important;
     }
   }
   &__left-subtext {
@@ -50,6 +85,10 @@
   }
   &__left-img {
     margin-top: 63px;
+    max-width: 100%;
+    @include phone {
+      display: none;
+    }
   }
   &__left-img_descr {
     margin-top: 10px;
@@ -64,6 +103,21 @@
     margin-right: 40px;
     img {
       margin-right: 15px;
+      @include phone {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+  &__left-subitem {
+    @include phone {
+      font-size: var(--text-xs);
+    }
+  }
+  &__left-mobileimg {
+    display: none;
+    @include phone {
+      display: block;
     }
   }
   &__left-statistic {
@@ -72,6 +126,9 @@
     justify-content: space-between;
     align-items: flex-end;
     max-width: 857px;
+    @include mobile {
+      flex-wrap: wrap;
+    }
   }
   &__statistic-link {
     font-size: var(--text-sm);
@@ -79,6 +136,10 @@
   &__news {
     margin-top: 220px;
     margin-bottom: 200px;
+    @include phone {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
   }
   &__news-block {
     display: flex;

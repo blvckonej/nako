@@ -2,6 +2,9 @@
   background-image: none;
   height: 100%;
   margin-bottom: 96px;
+  @include phone {
+    margin-bottom: 46px;
+  }
 }
 
 .header__band {
@@ -17,6 +20,9 @@
 .header__company {
   max-width: 100%;
   background-image: url("/src/images/bg-company.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 850px;
   margin-top: -20px;
   display: grid;
@@ -26,9 +32,6 @@
   @include phone {
     justify-content: start;
     height: 560px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
   &-title {
     max-width: 1140px;

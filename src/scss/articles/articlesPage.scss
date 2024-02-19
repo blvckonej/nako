@@ -1,13 +1,26 @@
 .header_articlepage {
   background-image: none;
   max-height: 950px;
+  @include mobile {
+    height: 850px !important;
+  }
 }
-
+.header__subblock-descr_article {
+  @include mobile {}
+}
 .header__subblock-articlespage {
   margin-top: -1%;
   height: 825px;
   background-image: url("/src/images/bg-articles.png") !important;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @include tablet {
+    height: 760px;
+  }
+  @include mobile {
+    margin-top: -2.5% !important;
+  }
 }
 
 .articlespage__title {

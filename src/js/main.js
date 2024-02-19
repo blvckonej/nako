@@ -51,8 +51,7 @@ if (sliderTwo) {
 if (sliderThree) {
     const mySliderPersonal = new Splide('#mySliderPersonal', {
         perPage: 4,
-        gap: '33px',
-        height: '525px',
+        // gap: '33px',
         pagination: false,
         breakpoints: {
             1400: {

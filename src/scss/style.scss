@@ -170,6 +170,9 @@
   &__arrow-personal--next {
     opacity: 1 !important;
     margin-right: -2%;
+    @include tablet {
+      margin-right: 0;
+    }
   }
   // documents slider style
   &__arrow-documents--prev {
@@ -188,6 +191,12 @@
   padding: 0;
   justify-content: center;
   margin-left: 22px !important;
+  @include desktop {
+    margin-top: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 0 !important;
+  }
 }
 
 .thumbnail {
@@ -200,6 +209,10 @@
   cursor: pointer;
   &:last-of-type {
     margin-bottom: 0 !important;
+  }
+  @include phone {
+    width: 97px;
+    height: 97px;
   }
 }
 

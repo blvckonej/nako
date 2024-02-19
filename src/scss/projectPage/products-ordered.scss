@@ -1,23 +1,63 @@
 .ordered {
     margin-top: 100px;
-    background-color: var(--color-light-blue);
-    border-radius: var(--border-radius-m);
     height: 420px;
     margin-bottom: 100px;
+    @include mobile {
+        margin-bottom: 200px;
+    }
+    @include phone {
+        margin-top: 40px;
+    }
     &__block {
+        margin: 0 auto;
         position: relative;
+        background-color: var(--color-light-blue);
+        border-radius: var(--border-radius-m);
         padding-top: 55px;
         width: 100%;
         background-image: url('/src/images/bg-ordered-house.png');
         background-repeat: no-repeat;
         background-position: bottom center;
         background-size: 50%;
-        img {
+        @include tablet {
+            padding-top: 30px;
+        }
+        @include mobile {
+            height: 517px !important;
+        }
+        @include phone {
+            width: 300px;
+            padding-top: 26px;
+            height: 100%;
+            background-size: 145% auto;
+            background-position:bottom 0 right -55px;
+        }
+    }
+    &__block-img_mobile {
+        display: none;
+        @include phone {
+            display: block;
             position: absolute;
-            bottom: 0;
-            right: -0.7%;
-            z-index: 1;
             border-bottom-right-radius: var(--border-radius-m);
+            border-bottom-left-radius: var(--border-radius-m);
+            bottom: 0;
+            width: 300px;
+        }
+    }
+    &__block-img_desktop {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+        border-bottom-right-radius: var(--border-radius-m);
+        @include tablet {
+            height: 300px;
+        }
+        @include mobile {
+            height: 200px;
+        }
+        @include phone {
+            display: none;
         }
     }
     &__block-left {
@@ -25,16 +65,32 @@
         z-index: 3;
         margin-left: 93px;
         height: 365px;
+        @include tablet {
+            margin-left: 70px;
+        }
+        @include mobile {
+            margin-left: 35px;
+        }
+        @include phone {
+            margin-left: 24px;
+        }
     }
     &__title {
         max-width: 580px;
         line-height: 1;
         text-align: left !important;
         margin: 0 !important;
+        @include phone {
+            max-width: 250px;
+        }
     }
     &__subtitle {
         margin-top: 31px;
         max-width: 300px;
+        @include phone {
+            margin-top: 22px;
+            max-width: 252px;
+        }
     }
     &__block-input {
         width: 300px;
@@ -43,5 +99,20 @@
         margin-top: 50px;
         padding: 0;
         background-color: var(--color-light);
+        @include mobile {
+            margin-top: 30px;
+            margin-bottom: 10px;
+            width: 250px;
+        }
+        @include phone {
+            height: 60px;
+            margin-top: 24px;
+            margin-bottom: 15px;
+        }
+    }
+    &__block-btn {
+        @include phone {
+            height: 60px;
+        }
     }
 }

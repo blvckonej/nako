@@ -1,6 +1,15 @@
 .header_projectpage {
   background-image: none;
   max-height: 1000px;
+  @include desktop {
+    height: 1000px;
+  }
+  @include tablet {
+    height: 850px;
+  }
+  @include mobile {
+    height: 850px;
+  }
 }
 
 .header__subblock {

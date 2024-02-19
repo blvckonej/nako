@@ -1,22 +1,40 @@
 .planer {
     &__title {
         text-align: left !important;
+        @include phone {
+            max-width: 199px;
+            margin: 0 !important;
+        }
     }
     &__block {
         margin-top: 55px;
         display: flex;
         justify-content: space-between;
+        @include tablet {
+            flex-direction: column;
+        }
+        @include mobile {
+            margin-top: 0;
+        }
     }
     &__splide {
-        width: 786px !important;
+        max-width: 786px !important;
     }
     &__block-right {
         display: flex;
         flex-direction: column;
         height: 620px !important;
+        @include tablet {
+            order: 1;
+            height: 100% !important;
+            margin-bottom: 27px;
+        }
     }
     &__block-carousel {
         display: flex;
+        @include desktop {
+            flex-direction: column;
+        }
     }
     &__block-description {
         display: flex;
@@ -25,16 +43,44 @@
         img {
             margin-right: 25px;
         }
+        @include tablet {
+            display: none;
+        }
+    }
+    &__block-description_visible {
+        display: none;
+        @include tablet {
+            display: flex;
+            order: 3;
+        }
+        @include phone {
+            flex-direction: column;
+            align-items: flex-start;
+            max-width: 277px;
+            img {
+                margin-bottom: 20px;
+                width: 40px;
+            }
+        }
     }
     &__block-descr_text {
        font-size: var(--text-xxs);
-       max-width: 700px; 
+       max-width: 700px;
+       @include mobile {
+        font-size: var(--text-xs);
+       }
     }
     &__block-left {
-        width: 460px;
+        max-width: 460px;
+        margin-right: 10px;
+        @include tablet {
+            align-self: center;
+            order: 2;
+            margin-right: 0;
+        }
     }
     &__block-info {
-        width: 460px;
+        max-width: 460px;
         height: 419px;
         background-color: var(--color-light);
         box-shadow: var(--box-shadow-m);
@@ -54,6 +100,9 @@
             &:nth-child(1) {
                 border: 2px solid red;
             }
+        }
+        @include mobile {
+            max-width: 340px;
         }
     }
     &__block-item {
@@ -109,10 +158,18 @@
         width: 380px;
         height: 70px;
         margin-top: 29px !important;
+        @include mobile {
+            width: 280px;
+            height: 70px;
+        }
     }
     &__block-btn {
         width: 380px;
         height: 80px;
         margin-top: 17px;
+        @include mobile {
+            width: 280px;
+            height: 70px;
+        }
     }
 }

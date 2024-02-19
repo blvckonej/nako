@@ -10,31 +10,108 @@
         background-image: url('/src/images/bg-quality.png');
         background-repeat: no-repeat;
         background-size: cover;
+        @include mobile {
+            height: 730px;
+        }
+        @include phone {
+            height: 572px;
+            background-image: url('/src/images/bg-mobile-objects.png');
+            background-size: contain;
+            background-position: bottom;
+        }
     }
     &__block-left {
         margin-top: 74px;
         margin-left: 96px;
+        @include desktop {
+            margin-top: 60px;
+            margin-left: 70px;
+        }
+        @include mobile {
+            margin-top: 40px;
+            margin-left: 45px;
+        }
+        @include phone {
+            margin-top: 26px;
+            margin-left: 24px;
+        }
     }
     &__title {
         text-align: left !important;
+        @include phone {
+            max-width: 212px;
+            margin: 0 !important;
+        }
     }
     &__descr {
         font-weight: var(--fw-light);
         margin-top: 53px;
         margin-bottom: 58px;
         max-width: 530px;
+        @include tablet {
+            margin-bottom: 20px;
+        }
+        @include mobile {
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-size: var(--text-xxs);
+            max-width: 300px;
+        }
+        @include phone {
+            font-size: var(--text-xs);
+            margin-top: 15px;
+            max-width: 250px;
+            margin-bottom: 25px;
+        }
+    }
+    &__block-buttons {
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+        }
     }
     &__block-input {
         width: 300px;
         margin-right: 25px;
         padding: 0;
         background-color: var(--color-light);
+        @include tablet {
+            margin-bottom: 10px;
+        }
+        @include mobile {
+            height: 60px;
+        }
+        @include phone {
+            margin-bottom: 16px;
+            width: 250px;
+        }
+    }
+    &__block-btn {
+        @include tablet {
+            width: 300px;
+        }
+        @include mobile {
+            height: 60px;
+        }
+        @include phone {
+            width: 250px;
+        }
     }
     &__block-right {
         img {
             position: absolute;
             bottom: 0;
             right: 70px;
+            @include desktop {
+                right: 10px;
+                height: 400px;
+            }
+            @include tablet {
+                height: 300px;
+            }
+            @include phone {
+                height: 200px;
+            }
         }
     }
 }

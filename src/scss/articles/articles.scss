@@ -1,5 +1,8 @@
 .filters__articles {
     justify-content: flex-start;
+    @include phone {
+        flex-wrap: nowrap;
+    }
 }
 
 .filters__articles-wrapper {
@@ -9,6 +12,10 @@
 .filters {
     &__search {
         position: relative;
+        margin-left: auto;
+        @include phone {
+            display: none;
+        }
     }
     &__form-search {
         position: relative;
@@ -28,6 +35,24 @@
         position: absolute;
         right: 15px;
         top: 33%;
+    }
+    &__reset-filter {
+        margin-top: 30px;
+        display: block;
+        font-size: var(--text-xs);
+        img {
+            margin-right: 10px;
+        }
+        color: var(--color-green);
+        &:hover {
+            color: darken(#a3da5f,15%);
+        }
+        &:active {
+            color: lighten(#a3da5f,5%);
+        }
+        @include phone {
+            display: none;
+        }
     }
 }
 

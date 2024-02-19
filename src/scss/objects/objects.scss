@@ -9,6 +9,9 @@
         align-items: flex-end;
         justify-content: space-between;
         margin-bottom: 48px;
+        @include phone {
+            margin-bottom: 26px;
+        }
     }
     &__link {
         font-size: var(--text-xs);
@@ -38,11 +41,20 @@
             font-size: var(--text-md) !important;
         }
     }
-    &__svg {
+    &__svg-wrapper {
+        @include df-center-all;
        width: 45px;
        height: 45px;
        background-color: var(--color-green);
        border-radius: var(--border-radius-xl);
+       @include phone {
+        width: 30px;
+        height: 30px;
+        img {
+            width: 21px;
+            height: 21px;
+        }
+       }
     }
     &__form {
         display: flex;
@@ -66,6 +78,9 @@
         border: none;
         font-size: var(--text-xxs);
         cursor: pointer;
+        @include phone {
+            font-size: var(--text-smal);
+        }
     }
     &__form-wrapper {
         position: relative;
@@ -98,11 +113,20 @@
             max-width: 100px;
             padding-right: 10px;
         }
+        @include phone {
+            height: 30px;
+        }
     }
 }
 
 .project_objects {
     background-image: none;
+    @include phone {
+        margin-top: 0;
+    }
+    .project__objects-block {
+        margin-top: 26px;
+    }
 }
 
 .objects {
