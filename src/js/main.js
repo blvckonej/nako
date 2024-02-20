@@ -11,6 +11,32 @@ const sliderFour = document.getElementById('mySliderDocuments');
 const carousel = document.getElementById('main-carousel');
 const modalWindow = document.querySelector('.header__modal');
 
+
+// Burger
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById('burgers').addEventListener('click', function() {
+        document.querySelector('.burger').classList.toggle('burger__open');
+    })
+});
+
+window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        document.querySelector('.burger').classList.remove('burger__open');
+    }
+});
+
+document.getElementById("burgers_menu").addEventListener('click', event => {
+    event._isClickWithInMenu = true;
+});
+document.getElementById("burgers").addEventListener('click', event => {
+    event._isClickWithInMenu = true;
+});
+document.body.addEventListener('click', event => {
+    if (event._isClickWithInMenu) return;
+    // Действие при клике
+    document.querySelector(".burger").classList.remove("burger__open")
+});
+
 if (sliderOne) {
     const mySlider = new Splide('#mySlider', {
         perPage: 2,

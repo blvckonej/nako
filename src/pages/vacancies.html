@@ -6,7 +6,8 @@
     <title>Вакансии</title>
 </head>
 <body>
-    <header class="header_vacancies">
+    <div class="body_wrapper">
+      <header class="header_vacancies">
         <div class="container">
           <div class="header">
             <div class="header__logo">
@@ -34,7 +35,41 @@
                   </li>
                 </ul>
               </nav>
-              <img src="/src/images/dots.svg" alt="Три точки">
+              <button class="header__burger-btn" id="burgers">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <div class="burger" id="burgers_menu">
+                <div class="burger__menu">
+                  <div class="burger__menu-wrapper">
+                    <a href="/" class="header__logo-link burger__logo">
+                      <img src="/src/images/logo.svg" alt="Логотип НАКО" loading="lazy">
+                    </a>
+                    <nav class="burger__menu-list">
+                      <a href="/index.html" class="burger__menu-item">Главная</a>
+                      <a href="/src/pages/brickHouse.html" class="burger__menu-item">Строительство кирпичных домов</a>
+                      <a href="/src/pages/bathHouse.html" class="burger__menu-item">Строительство бань</a>
+                      <a href="/src/pages/projectHouse.html" class="burger__menu-item">Индивидуальное проектирование домов</a>
+                      <a href="/src/pages/objects.html" class="burger__menu-item">Реализованные проекты</a>
+                      <a href="/src/pages/catalog.html" class="burger__menu-item">Каталог проектов</a>
+                      <a href="/src/pages/articles.html" class="burger__menu-item">полезные Статьи</a>
+                      <a href="/src/pages/company.html" class="burger__menu-item">О нас</a>
+                      <a href="/src/pages/vacancies.html" class="burger__menu-item">Вакансии</a>
+                      <a href="/" class="burger__menu-item">Контакты</a>
+                    </nav>
+                  </div>
+                  <div class="burger__menu-contact">
+                    <p class="header__phone menu__phone"><a href="tel:+78432126623">+7(843) 212 66 23</a></p>
+                    <p class="footer__subdescr light_text">Пн-Пт с 9.00-18.00</p>
+                    <div class="header__social menu__social">
+                      <a href="#" class="header__social-item"><img src="/src/images/telegram.svg" alt="Телеграм"></a>
+                      <a href="#" class="header__social-item"><img src="/src/images/wahtsapp.svg" alt="Ватсап"></a>
+                      <a href="#" class="header__social-item"><img src="/src/images/vk.svg" alt="Вконтакте"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <p class="header__phone hidden-tablet"><a href="tel:+78432126623">+7(843) 212 66 23</a></p>
               <div class="header__social hidden-tablet">
                 <a href="#" class="header__social-item"><img src="/src/images/telegram.svg" alt="Телеграм"></a>
@@ -46,6 +81,7 @@
           <div class="header__band"></div>
         </div>
     </header>
+    </div>
     <main class="vacancies">
         <div class="container">
             <div class="vacancies__block">
