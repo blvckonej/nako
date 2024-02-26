@@ -10,12 +10,14 @@ const sliderThree = document.getElementById('mySliderPersonal');
 const sliderFour = document.getElementById('mySliderDocuments');
 const carousel = document.getElementById('main-carousel');
 const modalWindow = document.querySelector('.header__modal');
+const getOverlay = document.querySelector('.overlay');
+const getBurgerOpen = document.querySelector('.burger__open');
 
 
 // Burger
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById('burgers').addEventListener('click', function() {
-        document.querySelector('.burger').classList.toggle('burger__open');
+        document.querySelector('.burger').classList.toggle('burger__open');       
     })
 });
 
@@ -151,6 +153,7 @@ if(carousel) {
 
       splide.mount();
 }
+
 
 // if(modalWindow) {
 //     setTimeout(function(){  
