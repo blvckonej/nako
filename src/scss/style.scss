@@ -11,6 +11,7 @@
 /* Section Style */
 /* Home */
 @import "home/header.scss";
+@import "home/subheader.scss";
 @import "home/burger-menu.scss";
 @import "home/work.scss";
 @import "home/example.scss";
@@ -131,6 +132,9 @@
   &__arrow-review--prev {
     margin-left: -4%;
     opacity: 1 !important;
+    @include desktop-h {
+      margin-left: 0;
+    }
     @include tablet {
       margin-left: 0;
     }
@@ -138,6 +142,9 @@
   &__arrow-review--next {
     margin-right: -4%;
     opacity: 1 !important;
+    @include desktop-h {
+      margin-right: 0;
+    }
     @include tablet {
       margin-right: 0;
     }
@@ -146,6 +153,9 @@
   &__arrow-news--prev {
     opacity: 1 !important;
     margin-left: -2.5%;
+    @include desktop-h {
+      margin-left: 0;
+    }
     @include tablet {
       margin-left: 0;
     }
@@ -153,6 +163,9 @@
   &__arrow-news--next {
     opacity: 1 !important;
     margin-right: -2.5%;
+    @include desktop-h {
+      margin-right: 0;
+    }
     @include tablet {
       margin-right: 0;
     }
@@ -223,7 +236,7 @@
 }
 
 .overlay {
-  background-color: rgba(0,0,0,0.7); 
+  background-color: rgba(0, 0, 0, 0.7);
   height: 100%;
   position: absolute;
   width: 100%;

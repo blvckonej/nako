@@ -93,15 +93,21 @@
   }
   &__form-input {
     margin-right: 25px;
+    background-color: var(--color-light);
+    padding: 0;
     width: 297px;
+    text-align: center;
+    &::placeholder {
+      text-align: center;
+      color: var(--color-dark);
+      font-weight: var(--fw-light);
+      padding: 0;
+      text-align: center;
+    }
     @include tablet {
       width: 230px;
       margin-bottom: 10px;
       padding: 0;
-      &::placeholder {
-        padding: 0;
-        text-align: center;
-      }
     }
     @include mobile {
       margin: 0 0 10px 0;

@@ -1,3 +1,36 @@
 .project_header {
-    background-image: url('/src/images/bg-project-house.png');
+  background-image: url("/src/images/bg-project-house.png") !important;
+  @include phone {
+    background-image: url("/src/images/bg-project-header.png") !important;
+  }
+}
+
+.project__header-title {
+  font-size: var(--text-xxxl);
+  max-width: 1240px;
+  line-height: 77px;
+  @include tablet {
+    font-size: var(--text-xl);
+    line-height: 36px;
+    max-width: 700px;
+  }
+  @include phone {
+    line-height: normal;
+    width: 300px !important;
+    font-size: var(--text-xlg);
+  }
+}
+
+.project__header-description {
+  font-size: var(--text-lg);
+  max-width: 990px;
+  font-weight: var(--fw-regular);
+  @include tablet {
+    max-width: 500px;
+    font-size: var(--text-sm);
+  }
+  @include phone {
+    max-width: 255px;
+    font-size: var(--text-xs);
+  }
 }

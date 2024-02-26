@@ -1,0 +1,20 @@
+.subheader {
+  background-image: url("../images/titleimg2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1120px;
+  margin-top: -140px;
+  @include desktop {
+    height: 1040px;
+  }
+  @include mobile {
+    height: 740px;
+  }
+  @include phone {
+    height: 110vh;
+    background-image: url("/src/images/bg-phone-header.png") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

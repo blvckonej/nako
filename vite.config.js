@@ -15,6 +15,19 @@ export default defineConfig({
             input: {
                 ...pagesInput
             },
+            output: {
+                assetFileNames: (assetInfo) => {
+                    let extType = assetInfo.name.split('.').at(1);
+                    if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(extType)) {
+                        extType = 'img';
+                    } else if (/woff|woff2|eot|ttf/.test(extType)) {
+                        extType = "fonts";
+                    }
+                    return `assets/${extType}/[name][extname]`;
+                },
+                chunkFileNames: 'assets/js/[name].js',
+                entryFileNames: 'assets/js/[name].js',
+            },
         },
     },
 })

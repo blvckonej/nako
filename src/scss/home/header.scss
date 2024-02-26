@@ -1,23 +1,7 @@
 header {
-  background-image: url("../images/titleimg2.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   max-width: 100%;
-  z-index: -1;
-  height: 1120px;
-  @include desktop {
-    height: 900px;
-  }
-  @include mobile {
-    height: 600px;
-  }
-  @include phone {
-    height: 100vh;
-    background-image: url("/src/images/bg-phone-header.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
+  z-index: 1;
+  max-height: 173px;
 }
 
 .body_wrapper {
@@ -29,6 +13,9 @@ header {
 .header {
   padding-top: 15px;
   border-bottom-left-radius: 40px;
+  @include phone {
+    position: sticky;
+  }
   &__logo-block {
     @include df-center;
   }
@@ -88,21 +75,21 @@ header {
     max-width: 945px;
     text-transform: uppercase;
     line-height: 99px;
-    margin-top: 67px;
+    padding-top: 207px;
     @include desktop {
-      margin-top: 40px;
+      // margin-top: 40px;
       font-size: var(--text-xxxl);
       max-width: 700px;
     }
     @include mobile {
-      margin-top: 20px;
+      // margin-top: 20px;
       font-size: var(--text-xxl);
       max-width: 500px;
       line-height: 50px;
     }
     @include phone {
-      margin-top: 44px;
-      width: 200px;
+      margin-top: -150px;
+      width: 250px;
       line-height: 35px;
       font-size: var(--text-xlg);
     }

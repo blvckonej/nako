@@ -3,18 +3,22 @@
   right: -630px;
   top: 0;
   width: 630px;
-  max-height: 1120px;
+  height: 100%;
   background-color: var(--color-light-blue);
   border-bottom-right-radius: 40px;
   transition: all 0.6s ease-in;
-  z-index: 99999;
+  z-index: 11;
+  @include tablet {
+    border-bottom-right-radius: 0;
+  }
   @include mobile {
-    width: 50vh;
+    right: -400px;
+    width: 400px;
+    height: 100%;
   }
   @include phone {
     right: -300px;
     width: 300px;
-    height: 100%;
   }
   &__menu {
     display: flex;
@@ -61,7 +65,7 @@
   }
   &__menu-contact {
     margin-left: 64px;
-    margin-bottom: 70px;
+    margin-bottom: 140px;
     @include desktop {
       margin-top: 20%;
     }

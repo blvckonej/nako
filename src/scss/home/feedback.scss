@@ -173,6 +173,7 @@
     margin-left: 19%;
     @include desktop-h {
       margin-left: 2%;
+      max-width: 682px;
     }
     @include tablet {
       margin-left: 2%;

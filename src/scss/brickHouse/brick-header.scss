@@ -1,10 +1,16 @@
-.brick_header {
-    background-image: url("/src/images/bg-brickhouse.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 1120px;
-    @include desktop {
-        height: 100%;
-    }
+// .brick_header {
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     width: 100%;
+//     height: 1120px;
+//     @include desktop {
+//         height: 100%;
+//     }
+// }
+
+.brick_subheader {
+  background-image: url("/src/images/bg-brickhouse.jpeg");
+  @include phone {
+    // height: 105vh;
+  }
 }
