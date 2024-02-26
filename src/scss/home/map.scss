@@ -1,11 +1,17 @@
 .map {
-  background: url("/src/images/bg-mapOne.png");
+  // background: url("/src/images/bg-mapOne.png");
   background-size: cover;
   background-position: 0px 200px;
   background-repeat: no-repeat;
   height: 520px;
   padding-top: 50px;
   padding-bottom: 200px;
+  @include mobile {
+    height: 820px;
+  }
+  @include phone {
+    height: 620px;
+  }
   @include desktop {
     background-size: auto;
     background-position: -200px 200px;
@@ -29,6 +35,8 @@
     border-radius: var(--border-radius-m);
     box-shadow: var(--box-shadow-m);
     padding-top: 1px;
+    position: relative;
+    z-index: 1;
     @include tablet {
       max-width: 600px;
       max-height: 320px;
@@ -126,5 +134,12 @@
   }
   &__block-link {
     margin-right: 15px;
+  }
+}
+
+.map_yandex {
+  margin-top: -270px;
+  @include mobile {
+    margin-top: 0;
   }
 }
