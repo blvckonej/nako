@@ -4,9 +4,14 @@
   @include mobile {
     height: 850px !important;
   }
+  @include phone {
+    height: 760px !important;
+  }
 }
 .header__subblock-descr_article {
-  @include mobile {}
+  @include phone {
+    height: 760px;
+  }
 }
 .header__subblock-articlespage {
   margin-top: -1%;
@@ -21,8 +26,14 @@
   @include mobile {
     margin-top: -2.5% !important;
   }
+  @include phone {
+    margin-top: -15% !important;
+  }
 }
 
 .articlespage__title {
   max-width: 1170px;
+  @include phone {
+    margin-bottom: 40px;
+  }
 }

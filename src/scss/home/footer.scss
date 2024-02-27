@@ -21,6 +21,9 @@
     @include mobile {
       flex-direction: column;
     }
+    @include phone {
+      margin-left: 40px;
+    }
   }
   &__logo {
     img {
@@ -59,6 +62,10 @@
     @include mobile {
       flex-direction: column;
     }
+    @include phone {
+      margin-top: 22px;
+      margin-left: 20px;
+    }
   }
   &__license-right {
     margin-right: 54px;
@@ -68,10 +75,13 @@
     margin-top: 25px;
     line-height: 20px;
     @include mobile {
-      max-width: 220px;
+      max-width: 200px;
       span {
         display: block;
         margin-bottom: 20px;
+        @include phone {
+          margin-bottom: 15px;
+        }
       }
     }
   }
@@ -90,6 +100,9 @@
     @include mobile {
       width: 200px;
       line-height: 1.5;
+    }
+    @include mobile {
+      margin-top: 15px;
     }
   }
 }

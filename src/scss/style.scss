@@ -240,11 +240,17 @@
   top: 0;
   right: 0;
   height: 100%;
-  position: absolute;
   width: 100%;
-  z-index: 10;
+  position: absolute;
+  z-index: 10 !important;
+  overflow: hidden !important;
 }
 
 .scroll_body {
+  position: relative;
   overflow: hidden;
+}
+
+.display_none {
+  display: none;
 }

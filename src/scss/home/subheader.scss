@@ -12,9 +12,12 @@
     height: 740px;
   }
   @include phone {
-    height: 110vh;
+    height: 115vh;
     background-image: url("/src/images/bg-phone-header.png") !important;
     background-size: cover;
     background-repeat: no-repeat;
+  }
+  @include phoneHeight {
+    height: 900px;
   }
 }

@@ -7,6 +7,9 @@
 
 .articleinfo {
   margin-top: 69px;
+  @include phone {
+    margin-top: 25px;
+  }
   &__block {
     display: flex;
     justify-content: space-between;

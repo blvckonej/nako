@@ -9,6 +9,36 @@
         <div id="overlay_body"></div>
         <div class="body_wrapper">
         <header class="header_vacancies">
+          <div class="burger" id="burgers_menu">
+            <div class="burger__menu">
+              <div class="burger__menu-wrapper">
+                <a href="/" class="header__logo-link burger__logo">
+                  <img src="/src/images/logo.svg" alt="Логотип НАКО" loading="lazy">
+                </a>
+                <nav class="burger__menu-list">
+                  <a href="/index.html" class="burger__menu-item">Главная</a>
+                  <a href="/src/pages/brickHouse.html" class="burger__menu-item">Строительство кирпичных домов</a>
+                  <a href="/src/pages/bathHouse.html" class="burger__menu-item">Строительство бань</a>
+                  <a href="/src/pages/projectHouse.html" class="burger__menu-item">Индивидуальное проектирование домов</a>
+                  <a href="/src/pages/objects.html" class="burger__menu-item">Реализованные проекты</a>
+                  <a href="/src/pages/catalog.html" class="burger__menu-item">Каталог проектов</a>
+                  <a href="/src/pages/articles.html" class="burger__menu-item">полезные Статьи</a>
+                  <a href="/src/pages/company.html" class="burger__menu-item">О нас</a>
+                  <a href="/src/pages/vacancies.html" class="burger__menu-item">Вакансии</a>
+                  <a href="/" class="burger__menu-item">Контакты</a>
+                </nav>
+              </div>
+              <div class="burger__menu-contact">
+                <p class="header__phone menu__phone"><a href="tel:+78432126623">+7(843) 212 66 23</a></p>
+                <p class="footer__subdescr light_text">Пн-Пт с 9.00-18.00</p>
+                <div class="header__social menu__social">
+                  <a href="#" class="header__social-item"><img src="/src/images/telegram.svg" alt="Телеграм"></a>
+                  <a href="#" class="header__social-item"><img src="/src/images/wahtsapp.svg" alt="Ватсап"></a>
+                  <a href="#" class="header__social-item"><img src="/src/images/vk.svg" alt="Вконтакте"></a>
+                </div>
+              </div>
+            </div>
+          </div>
             <div class="container">
               <div class="header">
                 <div class="header__logo">
@@ -23,16 +53,16 @@
                   <nav class="header__menu hidden-tablet">
                     <ul class="header__menu-list">
                       <li class="header__menu-item">
-                        <a href="./src/pages/brickHouse.html" class="header__menu-link">О НАС</a>
+                        <a href="/src/pages/company.html" class="header__menu-link">О НАС</a>
                       </li>
                       <li class="header__menu-item">
-                        <a href="./src/pages/bathHouse.html" class="header__menu-link">ПРОЕКТЫ</a>
+                        <a href="/src/pages/catalog.html" class="header__menu-link">ПРОЕКТЫ</a>
                       </li>
                       <li class="header__menu-item">
-                        <a href="./src/pages/projectHouse.html" class="header__menu-link">ОБЪЕКТЫ</a>
+                        <a href="/src/pages/objects.html" class="header__menu-link">ОБЪЕКТЫ</a>
                       </li>
                       <li class="header__menu-item">
-                        <a href="#" class="header__menu-link">КОНТАКТЫ</a>
+                        <a href="#contacts" class="header__menu-link">КОНТАКТЫ</a>
                       </li>
                     </ul>
                   </nav>
@@ -41,36 +71,6 @@
                     <span></span>
                     <span></span>
                   </button>
-                  <div class="burger" id="burgers_menu">
-                    <div class="burger__menu">
-                      <div class="burger__menu-wrapper">
-                        <a href="/" class="header__logo-link burger__logo">
-                          <img src="/src/images/logo.svg" alt="Логотип НАКО" loading="lazy">
-                        </a>
-                        <nav class="burger__menu-list">
-                          <a href="/index.html" class="burger__menu-item">Главная</a>
-                          <a href="/src/pages/brickHouse.html" class="burger__menu-item">Строительство кирпичных домов</a>
-                          <a href="/src/pages/bathHouse.html" class="burger__menu-item">Строительство бань</a>
-                          <a href="/src/pages/projectHouse.html" class="burger__menu-item">Индивидуальное проектирование домов</a>
-                          <a href="/src/pages/objects.html" class="burger__menu-item">Реализованные проекты</a>
-                          <a href="/src/pages/catalog.html" class="burger__menu-item">Каталог проектов</a>
-                          <a href="/src/pages/articles.html" class="burger__menu-item">полезные Статьи</a>
-                          <a href="/src/pages/company.html" class="burger__menu-item">О нас</a>
-                          <a href="/src/pages/vacancies.html" class="burger__menu-item">Вакансии</a>
-                          <a href="/" class="burger__menu-item">Контакты</a>
-                        </nav>
-                      </div>
-                      <div class="burger__menu-contact">
-                        <p class="header__phone menu__phone"><a href="tel:+78432126623">+7(843) 212 66 23</a></p>
-                        <p class="footer__subdescr light_text">Пн-Пт с 9.00-18.00</p>
-                        <div class="header__social menu__social">
-                          <a href="#" class="header__social-item"><img src="/src/images/telegram.svg" alt="Телеграм"></a>
-                          <a href="#" class="header__social-item"><img src="/src/images/wahtsapp.svg" alt="Ватсап"></a>
-                          <a href="#" class="header__social-item"><img src="/src/images/vk.svg" alt="Вконтакте"></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                   <p class="header__phone hidden-tablet"><a href="tel:+78432126623">+7(843) 212 66 23</a></p>
                   <div class="header__social hidden-tablet">
                     <a href="#" class="header__social-item"><img src="/src/images/telegram.svg" alt="Телеграм"></a>
@@ -121,66 +121,67 @@
         </div>
     </main>
     <footer class="footer">
-        <div class="container">
-          <div class="footer__block">
-            <div class="footer__logo">
-              <img src="/src/images/logo.svg" alt="Лого">
-            </div>
-            <div class="footer__descr">
-              <h2 class="footer__title footer_title">Компания</h2>
-              <ul class="footer__list">
-                <li class="footer__item footer_item"><a href="#">О Нас</a></li>
-                <li class="footer__item footer_item"><a href="#">Карьера</a></li>
-                <li class="footer__item footer_item"><a href="#">Отзывы</a></li>
-                <li class="footer__item footer_item"><a href="#">Контакты</a></li>
-              </ul>
-            </div>
-  
-            <div class="footer__descr">
-              <h2 class="footer__title footer_title">Каталог проектов</h2>
-              <ul class="footer__list">
-                <li class="footer__item footer_item"><a href="#">1-этажные дома</a></li>
-                <li class="footer__item footer_item"><a href="#">2-этажные дома</a></li>
-                <li class="footer__item footer_item"><a href="#">Дома до 150м2</a></li>
-                <li class="footer__item footer_item"><a href="#">Дома 151-200м2</a></li>
-                <li class="footer__item footer_item"><a href="#">Дома более 200м2</a></li>
-              </ul>
-            </div>
-  
-            <div class="footer__descr">
-              <h2 class="footer__title footer_title">Услуги</h2>
-              <ul class="footer__list">
-                <li class="footer__item footer_item"><a href="#">Строительство кирпичных домов</a></li>
-                <li class="footer__item footer_item"><a href="#">Индивидуальное проектирование</a></li>
-                <li class="footer__item footer_item"><a href="#">Строительство бань</a></li>
-              </ul>
-            </div>
-  
-            <div class="footer__descr">
-              <h3 class="footer__title footer_number"><a href="tel:+78432126623">+ 7 (843) 212 66 23</a></h3>
-              <p class="footer__subtitle bold_text">Адрес офиса:</p>
-              <p class="footer__subdescr light_text">г. Казань, ул. Оренбургский тракт 22а, ТЦ «Бэхетле», 2 этаж</p>
-              <p class="footer__subtitle bold_text">Режим работы:</p>
-              <p class="footer__subdescr light_text">Пн-Пт с 9.00-18.00</p>
-            </div>
-            
+      <div class="container">
+        <div class="footer__block">
+          <div class="footer__logo">
+            <img src="/src/images/logo.svg" alt="Лого">
           </div>
-          <div class="footer__border"></div>
-          <div class="footer__license">
-            <div class="footer__license-left">
-                <p class="footer__license-name bold_text">© 2023 NAKO</p>
-                <p class="footer__license-descr light_text">
-                  <span>ООО «NAKO» ИНН 1655433656 ОГРН: 1201600014120</span> <span>Информация не является публичной офертой.</span>
-                </p>
-            </div>
-            <div class="footer__license-right">
-              <p class="footer__license-policy bold_text">Политика конфиденциальности</p>
-              <p class="footer__license-dev light_text">
-                Разработка сайта: <br> Adexe - эффективный интернет маркетинг
+          <div class="footer__descr">
+            <h2 class="footer__title footer_title">Компания</h2>
+            <ul class="footer__list">
+              <li class="footer__item footer_item"><a href="#">О Нас</a></li>
+              <li class="footer__item footer_item"><a href="#">Карьера</a></li>
+              <li class="footer__item footer_item"><a href="#">Отзывы</a></li>
+              <li class="footer__item footer_item"><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__descr">
+            <h2 class="footer__title footer_title">Каталог проектов</h2>
+            <ul class="footer__list">
+              <li class="footer__item footer_item"><a href="#">1-этажные дома</a></li>
+              <li class="footer__item footer_item"><a href="#">2-этажные дома</a></li>
+              <li class="footer__item footer_item"><a href="#">Дома до 150м2</a></li>
+              <li class="footer__item footer_item"><a href="#">Дома 151-200м2</a></li>
+              <li class="footer__item footer_item"><a href="#">Дома более 200м2</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__descr">
+            <h2 class="footer__title footer_title">Услуги</h2>
+            <ul class="footer__list">
+              <li class="footer__item footer_item"><a href="#">Строительство кирпичных домов</a></li>
+              <li class="footer__item footer_item"><a href="#">Индивидуальное проектирование</a></li>
+              <li class="footer__item footer_item"><a href="#">Строительство бань</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__descr">
+            <h2 class="footer__title footer_title">Услуги</h2>
+            <ul class="footer__list">
+              <li class="footer__item footer_item"><a href="/src/pages/brickHouse.html">Строительство кирпичных домов</a></li>
+              <li class="footer__item footer_item"><a href="/src/pages/projectHouse.html">Индивидуальное проектирование</a></li>
+              <li class="footer__item footer_item"><a href="/src/pages/bathHouse.html">Строительство бань</a></li>
+            </ul>
+          </div>
+          
+        </div>
+        <div class="footer__border"></div>
+        <div class="footer__license">
+          <div class="footer__license-left">
+              <p class="footer__license-name bold_text">© 2023 NAKO</p>
+              <p class="footer__license-descr light_text">
+                <span>ООО «NAKO» ИНН 1655433656 ОГРН: 1201600014120</span> <span>Информация не является публичной офертой.</span>
               </p>
-            </div>
+          </div>
+          <div class="footer__license-right">
+            <p class="footer__license-policy bold_text">Политика конфиденциальности</p>
+            <p class="footer__license-dev light_text">
+              Разработка сайта: <br> <a href="https://adexe.ru/" target="_blank">Adexe - эффективный интернет маркетинг</a>
+            </p>
           </div>
         </div>
+      </div>
     </footer>
   </div>
     <script type="module" src="/src/js/main.js"></script>
