@@ -6,6 +6,7 @@
     <title>О Нас</title>
 </head>
 <body>
+  <div id="overlay_body"></div>
     <div class="body_wrapper">
       <header class="header_company">
         <div class="container">
@@ -40,36 +41,6 @@
                 <span></span>
                 <span></span>
               </button>
-              <div class="burger" id="burgers_menu">
-                <div class="burger__menu">
-                  <div class="burger__menu-wrapper">
-                    <a href="/" class="header__logo-link burger__logo">
-                      <img src="/src/images/logo.svg" alt="Логотип НАКО" loading="lazy">
-                    </a>
-                    <nav class="burger__menu-list">
-                      <a href="/index.html" class="burger__menu-item">Главная</a>
-                      <a href="/src/pages/brickHouse.html" class="burger__menu-item">Строительство кирпичных домов</a>
-                      <a href="/src/pages/bathHouse.html" class="burger__menu-item">Строительство бань</a>
-                      <a href="/src/pages/projectHouse.html" class="burger__menu-item">Индивидуальное проектирование домов</a>
-                      <a href="/src/pages/objects.html" class="burger__menu-item">Реализованные проекты</a>
-                      <a href="/src/pages/catalog.html" class="burger__menu-item">Каталог проектов</a>
-                      <a href="/src/pages/articles.html" class="burger__menu-item">полезные Статьи</a>
-                      <a href="/src/pages/company.html" class="burger__menu-item">О нас</a>
-                      <a href="/src/pages/vacancies.html" class="burger__menu-item">Вакансии</a>
-                      <a href="/" class="burger__menu-item">Контакты</a>
-                    </nav>
-                  </div>
-                  <div class="burger__menu-contact">
-                    <p class="header__phone menu__phone"><a href="tel:+78432126623">+7(843) 212 66 23</a></p>
-                    <p class="footer__subdescr light_text">Пн-Пт с 9.00-18.00</p>
-                    <div class="header__social menu__social">
-                      <a href="#" class="header__social-item"><img src="/src/images/telegram.svg" alt="Телеграм"></a>
-                      <a href="#" class="header__social-item"><img src="/src/images/wahtsapp.svg" alt="Ватсап"></a>
-                      <a href="#" class="header__social-item"><img src="/src/images/vk.svg" alt="Вконтакте"></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
               <p class="header__phone hidden-tablet"><a href="tel:+78432126623">+7(843) 212 66 23</a></p>
               <div class="header__social hidden-tablet">
                 <a href="#" class="header__social-item"><img src="/src/images/telegram.svg" alt="Телеграм"></a>
@@ -86,15 +57,47 @@
             <p class="header__band-subtitle bold_text">О нас</p>
           </div>
         </div>
-        <div class="header__company">
-            <div class="container">
-                <h1 class="header__company-title light_title">
-                    Строительная компания  NАКО
-                </h1>
-            </div>
-        </div>
       </header>  
+      <div class="burger" id="burgers_menu">
+        <div class="burger__menu">
+          <div class="burger__menu-wrapper">
+            <a href="/" class="header__logo-link burger__logo">
+              <img src="/src/images/logo.svg" alt="Логотип НАКО" loading="lazy">
+            </a>
+            <nav class="burger__menu-list">
+              <a href="/index.html" class="burger__menu-item">Главная</a>
+              <a href="/src/pages/brickHouse.html" class="burger__menu-item">Строительство кирпичных домов</a>
+              <a href="/src/pages/bathHouse.html" class="burger__menu-item">Строительство бань</a>
+              <a href="/src/pages/projectHouse.html" class="burger__menu-item">Индивидуальное проектирование домов</a>
+              <a href="/src/pages/objects.html" class="burger__menu-item">Реализованные проекты</a>
+              <a href="/src/pages/catalog.html" class="burger__menu-item">Каталог проектов</a>
+              <a href="/src/pages/articles.html" class="burger__menu-item">полезные Статьи</a>
+              <a href="/src/pages/company.html" class="burger__menu-item">О нас</a>
+              <a href="/src/pages/vacancies.html" class="burger__menu-item">Вакансии</a>
+              <a href="/" class="burger__menu-item">Контакты</a>
+            </nav>
+          </div>
+          <div class="burger__menu-contact">
+            <p class="header__phone menu__phone"><a href="tel:+78432126623">+7(843) 212 66 23</a></p>
+            <p class="footer__subdescr light_text">Пн-Пт с 9.00-18.00</p>
+            <div class="header__social menu__social">
+              <a href="#" class="header__social-item"><img src="/src/images/telegram.svg" alt="Телеграм"></a>
+              <a href="#" class="header__social-item"><img src="/src/images/wahtsapp.svg" alt="Ватсап"></a>
+              <a href="#" class="header__social-item"><img src="/src/images/vk.svg" alt="Вконтакте"></a>
+            </div>
+          </div>
+        </div>
+      </div>
     <main>
+      <section class="subheader subheader__company">
+        <div class="header__company">
+          <div class="container">
+              <h1 class="header__company-title light_title">
+                  Строительная компания  NАКО
+              </h1>
+          </div>
+      </div>
+      </section>
       <section class="personal container">
         <h2 class="personal__title section_title">
           Строительство вашего дома - это проектная работа нескольких специалистов
@@ -318,7 +321,7 @@
             </div>
         </div>
       </section>
-      <section class="news container">
+      <section class="news container news__catalog">
         <h2 class="news__title section_title"><span>Делимся экспертностью</span> в области строительства</h2>
         <div class="news__block">
           <section id="mySliderNews" class="splide" aria-label="Splide Basic HTML Example">
@@ -381,7 +384,6 @@
           </section>
       </section>
     </main>
-  </div>
     <footer class="footer">
         <div class="container">
           <div class="footer__block">
@@ -444,6 +446,7 @@
           </div>
         </div>
     </footer>
+  </div>
     <script type="module" src="/src/js/main.js"></script>
 </body>
 </html>

@@ -237,7 +237,14 @@
 
 .overlay {
   background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  right: 0;
   height: 100%;
   position: absolute;
   width: 100%;
+  z-index: 10;
+}
+
+.scroll_body {
+  overflow: hidden;
 }

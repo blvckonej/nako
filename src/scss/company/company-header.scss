@@ -1,6 +1,5 @@
 .header_company {
   background-image: none;
-  margin-bottom: 96px;
   @include phone {
     margin-bottom: 46px;
   }
@@ -47,24 +46,39 @@
   }
 }
 
+.subheader__company {
+  background-image: none;
+  height: 850px;
+  margin-bottom: 40px;
+  margin-top: -1%;
+  @include phone {
+    margin-top: -15%;
+    background-image: url('/src/images/bg-company-phone.png') !important;
+    height: 560px;
+  }
+}
+
 .header__company {
   background-image: url("/src/images/bg-company.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 850px;
-  margin-top: -20px;
   display: grid;
   align-items: end;
   justify-content: center;
   z-index: -1;
   @include phone {
+    background-image: none;
     justify-content: start;
     height: 560px;
   }
   &-title {
     max-width: 1140px;
     margin-bottom: 56px;
+    @include mobile {
+      font-size: 40px;
+    }
     @include phone {
       max-width: 272px;
       font-size: 32px;

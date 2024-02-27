@@ -91,6 +91,12 @@
   &__block-operating_number {
     font-size: var(--text-sm);
     font-weight: var(--fw-bold);
+    &:hover {
+      color: lighten(#16182a, 40%) !important;
+    }
+    &:active {
+      color: darken(#fff, 40%) !important;
+    }
     @include tablet {
       font-size: var(--text-other);
     }

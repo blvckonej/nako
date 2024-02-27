@@ -19,6 +19,12 @@
     margin-bottom: 26px;
     font-weight: var(--fw-semibold);
     font-size: var(--text-other);
+    &:hover {
+      color: lighten(#16182a, 40%) !important;
+    }
+    &:active {
+      color: darken(#fff, 40%) !important;
+    }
   }
   &__block-date {
     font-size: var(--text-xxs);
@@ -38,4 +44,9 @@
   &__slide-news {
     margin: 0 auto !important;
   }
+}
+
+
+.news__catalog {
+  margin-bottom: 120px;
 }

@@ -97,8 +97,12 @@
     }
   }
   &__block-card_descr {
-    margin-left: 25px;
-    margin-top: 25px;
+    margin-left: 50px;
+    margin-top: 50px;
+    @include desktop {
+      margin-left: 25px;
+      margin-top: 25px;
+    }
   }
   &__block-card_counter {
     @include df-center;

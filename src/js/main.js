@@ -17,13 +17,17 @@ const getBurgerOpen = document.querySelector('.burger__open');
 // Burger
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById('burgers').addEventListener('click', function() {
-        document.querySelector('.burger').classList.toggle('burger__open');       
+        document.querySelector('.burger').classList.toggle('burger__open');
+        document.getElementById('overlay_body').classList.toggle('overlay');
+        document.getElementById('body_styles').classList.toggle('scroll_body');
     })
 });
 
 window.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
         document.querySelector('.burger').classList.remove('burger__open');
+        document.getElementById('overlay_body').classList.remove('overlay');
+        document.getElementById('body_styles').classList.remove('scroll_body');
     }
 });
 
@@ -37,6 +41,8 @@ document.body.addEventListener('click', event => {
     if (event._isClickWithInMenu) return;
     // Действие при клике
     document.querySelector(".burger").classList.remove("burger__open")
+    document.getElementById('overlay_body').classList.remove('overlay');
+    document.getElementById('body_styles').classList.remove('scroll_body');
 });
 
 if (sliderOne) {

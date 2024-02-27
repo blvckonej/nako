@@ -14,10 +14,20 @@
 .subdescr__list-bath {
   display: flex;
   flex-wrap: wrap;
+  height: 50px;
   li {
     &:nth-child(3) {
       margin-top: 60px;
       max-width: 400px !important;
+      @include tablet {
+        margin-top: 20px;
+      }
     }
+  }
+  @include tablet {
+    max-width: 500px;
+  }
+  @include mobile {
+    max-width: 300px;
   }
 }

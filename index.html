@@ -6,8 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NAKO</title>
   </head>
-  <body>
+  <body id="body_styles">
+    <div id="overlay_body"></div>
     <div class="body_wrapper">
+      <div class="burger" id="burgers_menu">
+        <div class="burger__menu">
+          <div class="burger__menu-wrapper">
+            <a href="/" class="header__logo-link burger__logo">
+              <img src="./src/images/logo.svg" alt="Логотип НАКО" loading="lazy">
+            </a>
+            <nav class="burger__menu-list">
+              <a href="/index.html" class="burger__menu-item">Главная</a>
+              <a href="/src/pages/brickHouse.html" class="burger__menu-item">Строительство кирпичных домов</a>
+              <a href="/src/pages/bathHouse.html" class="burger__menu-item">Строительство бань</a>
+              <a href="/src/pages/projectHouse.html" class="burger__menu-item">Индивидуальное проектирование домов</a>
+              <a href="/src/pages/objects.html" class="burger__menu-item">Реализованные проекты</a>
+              <a href="/src/pages/catalog.html" class="burger__menu-item">Каталог проектов</a>
+              <a href="/src/pages/articles.html" class="burger__menu-item">полезные Статьи</a>
+              <a href="/index.html" class="burger__menu-item">О нас</a>
+              <a href="/src/pages/vacancies.html" class="burger__menu-item">Вакансии</a>
+              <a href="/" class="burger__menu-item">Контакты</a>
+            </nav>
+          </div>
+          <div class="burger__menu-contact">
+            <p class="header__phone menu__phone"><a href="tel:+78432126623">+7(843) 212 66 23</a></p>
+            <p class="footer__subdescr light_text">Пн-Пт с 9.00-18.00</p>
+            <div class="header__social menu__social">
+              <a href="#" class="header__social-item"><img src="/src/images/telegram.svg" alt="Телеграм"></a>
+              <a href="#" class="header__social-item"><img src="/src/images/wahtsapp.svg" alt="Ватсап"></a>
+              <a href="#" class="header__social-item"><img src="/src/images/vk.svg" alt="Вконтакте"></a>
+            </div>
+          </div>
+        </div>
+      </div>
     <header>
       <div class="container">
         <div class="header">
@@ -50,36 +81,6 @@
           </div>
         </div>
       </div>
-        <div class="burger" id="burgers_menu">
-          <div class="burger__menu">
-            <div class="burger__menu-wrapper">
-              <a href="/" class="header__logo-link burger__logo">
-                <img src="./src/images/logo.svg" alt="Логотип НАКО" loading="lazy">
-              </a>
-              <nav class="burger__menu-list">
-                <a href="/index.html" class="burger__menu-item">Главная</a>
-                <a href="/src/pages/brickHouse.html" class="burger__menu-item">Строительство кирпичных домов</a>
-                <a href="/src/pages/bathHouse.html" class="burger__menu-item">Строительство бань</a>
-                <a href="/src/pages/projectHouse.html" class="burger__menu-item">Индивидуальное проектирование домов</a>
-                <a href="/src/pages/objects.html" class="burger__menu-item">Реализованные проекты</a>
-                <a href="/src/pages/catalog.html" class="burger__menu-item">Каталог проектов</a>
-                <a href="/src/pages/articles.html" class="burger__menu-item">полезные Статьи</a>
-                <a href="/index.html" class="burger__menu-item">О нас</a>
-                <a href="/src/pages/vacancies.html" class="burger__menu-item">Вакансии</a>
-                <a href="/" class="burger__menu-item">Контакты</a>
-              </nav>
-            </div>
-            <div class="burger__menu-contact">
-              <p class="header__phone menu__phone"><a href="tel:+78432126623">+7(843) 212 66 23</a></p>
-              <p class="footer__subdescr light_text">Пн-Пт с 9.00-18.00</p>
-              <div class="header__social menu__social">
-                <a href="#" class="header__social-item"><img src="/src/images/telegram.svg" alt="Телеграм"></a>
-                <a href="#" class="header__social-item"><img src="/src/images/wahtsapp.svg" alt="Ватсап"></a>
-                <a href="#" class="header__social-item"><img src="/src/images/vk.svg" alt="Вконтакте"></a>
-              </div>
-            </div>
-          </div>
-        </div>
     </header>
     <main class="content">
       <section class="subheader">
@@ -104,7 +105,6 @@
           </div>
         </div>
       </section>
-    </div>
       <section class="work container">
         <h2 class="work__block-title section_title">
           Работаем над реализацией <span>как загородных домов,</span>
@@ -130,7 +130,6 @@
             </div>
           </div>
           </div>
-
         </div>
       </section>
       <section class="example">
@@ -144,7 +143,7 @@
                     <p class="example__block-card_counter"><span class="example__block-card_dots"></span>построили 235 домов</p>
                     <h3 class="example__block-card_title">Дом из кирпича</h3>
                     <p class="example__block-card_price">от <span>35 000</span> руб/м2</p>
-                    <button class="example__block-card_button button_default">Узнать больше</button>
+                    <button class="example__block-card_button button_default"><a href="/src/pages/brickHouse.html">Узнать больше</a></button>
                   </div>
                 </div>
               </div>
@@ -158,7 +157,7 @@
                     <p class="example__block-card_counter"><span class="example__block-card_dots"></span>построили 47 бань</p>
                     <h3 class="example__block-card_title">Бани</h3>
                     <p class="example__block-card_price">от <span>35 000</span> руб/м2</p>
-                    <button class="example__block-card_button button_default">Узнать больше</button>
+                    <button class="example__block-card_button button_default"><a href="/src/pages/bathHouse.html">Узнать больше</a></button>
                   </div>
                 </div>
               </div>
@@ -172,7 +171,7 @@
                     <p class="example__block-card_counter"><span class="example__block-card_dots"></span>построили 62 навеса</p>
                     <h3 class="example__block-card_title">Гаражи/Навесы</h3>
                     <p class="example__block-card_price">от <span>35 000</span> руб/м2</p>
-                    <button class="example__block-card_button button_default">Узнать больше</button>
+                    <button class="example__block-card_button button_default"><a href="#">Узнать больше</a></button>
                   </div>
                 </div>
               </div>
@@ -321,7 +320,7 @@
                           <input class="feedback__form-realcheckbox" type="checkbox">
                           <span class="feedback__form-customcheckbox"></span>
                         </label>
-                        <p class="feedback__form-cookies">Нажимая на кнопку, вы соглашаетесь с <span><a href="#">политикой конфиденциальности</a></span> сайта</p>
+                        <p class="feedback__form-cookies">Нажимая на кнопку, вы соглашаетесь с <span><a href="/src/pages/policy.html">политикой конфиденциальности</a></span> сайта</p>
                       </div>
                     </form>
                     <div class="feedback__contacts">
@@ -354,6 +353,10 @@
             <div class="project__card">
               <div class="project__card-img">
                 <p class="project__card-video">Есть видео-отзыв</p>
+                <p href="#" class="project__card-links">
+                  <img src="/src/images/whitelupa.svg" alt="Подробнее">
+                </p>
+                <a href="/src/pages/products.html"><img class="project__card-head-img" src="/src/images/project.png" alt="Проект Нако"></a>
               </div>
               <div class="project__card-descr">
                 <h3 class="project__card-title">
@@ -367,6 +370,27 @@
             <div class="project__card">
               <div class="project__card-img">
                 <p class="project__card-video">Есть видео-отзыв</p>
+                <p href="#" class="project__card-links">
+                  <img src="/src/images/whitelupa.svg" alt="Подробнее">
+                </p>
+                <a href="/src/pages/products.html"><img class="project__card-head-img" src="/src/images/project.png" alt="Проект Нако"></a>
+               </div>
+              <div class="project__card-descr">
+                <h3 class="project__card-title">
+                  Проект NAKO №1
+                </h3>
+                <p class="project__card-char">Площадь:<span>125 м2</span></p>
+                <p class="project__card-char">Стоймость:<span>от 14 461 000 Р</span></p>
+                <button class="project__card-btn button_empty">Подробнее</button>
+              </div>
+            </div>
+            <div class="project__card">
+              <div class="project__card-img">
+                <p class="project__card-video">Есть видео-отзыв</p>
+                <p href="#" class="project__card-links">
+                  <img src="/src/images/whitelupa.svg" alt="Подробнее">
+                </p>
+                <a href="/src/pages/products.html"><img class="project__card-head-img" src="/src/images/project.png" alt="Проект Нако"></a>
               </div>
               <div class="project__card-descr">
                 <h3 class="project__card-title">
@@ -380,6 +404,10 @@
             <div class="project__card">
               <div class="project__card-img">
                 <p class="project__card-video">Есть видео-отзыв</p>
+                <p href="#" class="project__card-links">
+                  <img src="/src/images/whitelupa.svg" alt="Подробнее">
+                </p>
+                <a href="/src/pages/products.html"><img class="project__card-head-img" src="/src/images/project.png" alt="Проект Нако"></a>
               </div>
               <div class="project__card-descr">
                 <h3 class="project__card-title">
@@ -393,6 +421,10 @@
             <div class="project__card">
               <div class="project__card-img">
                 <p class="project__card-video">Есть видео-отзыв</p>
+                <p href="#" class="project__card-links">
+                  <img src="/src/images/whitelupa.svg" alt="Подробнее">
+                </p>
+                <a href="/src/pages/products.html"><img class="project__card-head-img" src="/src/images/project.png" alt="Проект Нако"></a>
               </div>
               <div class="project__card-descr">
                 <h3 class="project__card-title">
@@ -406,6 +438,10 @@
             <div class="project__card">
               <div class="project__card-img">
                 <p class="project__card-video">Есть видео-отзыв</p>
+                <p href="#" class="project__card-links">
+                  <img src="/src/images/whitelupa.svg" alt="Подробнее">
+                </p>
+                <a href="/src/pages/products.html"><img class="project__card-head-img" src="/src/images/project.png" alt="Проект Нако"></a>
               </div>
               <div class="project__card-descr">
                 <h3 class="project__card-title">
@@ -419,19 +455,10 @@
             <div class="project__card">
               <div class="project__card-img">
                 <p class="project__card-video">Есть видео-отзыв</p>
-              </div>
-              <div class="project__card-descr">
-                <h3 class="project__card-title">
-                  Проект NAKO №1
-                </h3>
-                <p class="project__card-char">Площадь:<span>125 м2</span></p>
-                <p class="project__card-char">Стоймость:<span>от 14 461 000 Р</span></p>
-                <button class="project__card-btn button_empty">Подробнее</button>
-              </div>
-            </div>
-            <div class="project__card">
-              <div class="project__card-img">
-                <p class="project__card-video">Есть видео-отзыв</p>
+                <p href="#" class="project__card-links">
+                  <img src="/src/images/whitelupa.svg" alt="Подробнее">
+                </p>
+                <a href="/src/pages/products.html"><img class="project__card-head-img" src="/src/images/project.png" alt="Проект Нако"></a>
               </div>
               <div class="project__card-descr">
                 <h3 class="project__card-title">
@@ -445,6 +472,10 @@
             <div class="project__card elem">
               <div class="project__card-img">
                 <p class="project__card-video">Есть видео-отзыв</p>
+                <p href="#" class="project__card-links">
+                  <img src="/src/images/whitelupa.svg" alt="Подробнее">
+                </p>
+                <a href="/src/pages/products.html"><img class="project__card-head-img" src="/src/images/project.png" alt="Проект Нако"></a>
               </div>
               <div class="project__card-descr">
                 <h3 class="project__card-title">
@@ -456,7 +487,7 @@
               </div>
             </div>
           </div>
-          <button class="project__block-btn button_default">Перейти в портфолио</button>
+          <button class="project__block-btn button_default"><a href="/src/pages/objects.html">Перейти в портфолио</a></button>
         </div>
       </section>
       <section class="inworked">
@@ -484,6 +515,10 @@
           <div class="project__card">
             <div class="project__card-img">
               <p class="project__card-video">Есть видео-отзыв</p>
+              <p href="#" class="project__card-links">
+                <img src="/src/images/whitelupa.svg" alt="Подробнее">
+              </p>
+              <a href="/src/pages/products.html"><img class="project__card-head-img" src="/src/images/project.png" alt="Проект Нако"></a>
             </div>
             <div class="project__card-descr">
               <h3 class="project__card-title">
@@ -494,10 +529,13 @@
               <button class="project__card-btn button_empty">Подробнее</button>
             </div>
           </div>
-
           <div class="project__card">
             <div class="project__card-img">
               <p class="project__card-video">Есть видео-отзыв</p>
+              <p href="#" class="project__card-links">
+                <img src="/src/images/whitelupa.svg" alt="Подробнее">
+              </p>
+              <a href="/src/pages/products.html"><img class="project__card-head-img" src="/src/images/project.png" alt="Проект Нако"></a>
             </div>
             <div class="project__card-descr">
               <h3 class="project__card-title">
@@ -508,10 +546,13 @@
               <button class="project__card-btn button_empty">Подробнее</button>
             </div>
           </div>
-
           <div class="project__card">
             <div class="project__card-img">
               <p class="project__card-video">Есть видео-отзыв</p>
+              <p href="#" class="project__card-links">
+                <img src="/src/images/whitelupa.svg" alt="Подробнее">
+              </p>
+              <a href="/src/pages/products.html"><img class="project__card-head-img" src="/src/images/project.png" alt="Проект Нако"></a>
             </div>
             <div class="project__card-descr">
               <h3 class="project__card-title">
@@ -522,10 +563,13 @@
               <button class="project__card-btn button_empty">Подробнее</button>
             </div>
           </div>
-
           <div class="project__card">
             <div class="project__card-img">
               <p class="project__card-video">Есть видео-отзыв</p>
+              <p href="#" class="project__card-links">
+                <img src="/src/images/whitelupa.svg" alt="Подробнее">
+              </p>
+              <a href="/src/pages/products.html"><img class="project__card-head-img" src="/src/images/project.png" alt="Проект Нако"></a>
             </div>
             <div class="project__card-descr">
               <h3 class="project__card-title">
@@ -537,7 +581,7 @@
             </div>
           </div>
         </div>
-        <button class="devproject__block-btn button_default">Смотреть каталог проектов</button>
+        <button class="devproject__block-btn button_default"><a href="/src/pages/catalog.html">Смотреть каталог проектов</a></button>
       </section>
       <section class="review">
         <div class="container">
@@ -602,7 +646,7 @@
                     <img src="./src/images/peoplework.png" alt="Рабочий">
                     <div class="news__block-descr">
                       <h3 class="news__block-subtitle">
-                        Экологически чистое строительство: новые тренды и решения
+                        <a href="/src/pages/articlesPage.html">Экологически чистое строительство: новые тренды и решения</a>
                       </h3>
                       <p class="news__block-date">01.01.2023</p>
                     </div>
@@ -613,7 +657,7 @@
                     <img src="./src/images/peoplework.png" alt="Рабочий">
                     <div class="news__block-descr">
                       <h3 class="news__block-subtitle">
-                        Экологически чистое строительство: новые тренды и решения
+                        <a href="/src/pages/articlesPage.html">Экологически чистое строительство: новые тренды и решения</a>
                       </h3>
                       <p class="news__block-date">01.01.2023</p>
                     </div>
@@ -624,7 +668,7 @@
                     <img src="./src/images/peoplework.png" alt="Рабочий">
                     <div class="news__block-descr">
                       <h3 class="news__block-subtitle">
-                        Экологически чистое строительство: новые тренды и решения
+                        <a href="/src/pages/articlesPage.html">Экологически чистое строительство: новые тренды и решения</a>
                       </h3>
                       <p class="news__block-date">01.01.2023</p>
                     </div>
@@ -635,7 +679,7 @@
                     <img src="./src/images/peoplework.png" alt="Рабочий">
                     <div class="news__block-descr">
                       <h3 class="news__block-subtitle">
-                        Экологически чистое строительство: новые тренды и решения
+                        <a href="/src/pages/articlesPage.html">Экологически чистое строительство: новые тренды и решения</a>
                       </h3>
                       <p class="news__block-date">01.01.2023</p>
                     </div>
@@ -741,12 +785,13 @@
           <div class="footer__license-right">
             <p class="footer__license-policy bold_text">Политика конфиденциальности</p>
             <p class="footer__license-dev light_text">
-              Разработка сайта: <br> Adexe - эффективный интернет маркетинг
+              Разработка сайта: <br> <a href="#">Adexe - эффективный интернет маркетинг</a>
             </p>
           </div>
         </div>
       </div>
     </footer>
-    <script type="module" src="/src/js/main.js"></script>
+  </div>
+  <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>

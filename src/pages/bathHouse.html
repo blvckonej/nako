@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Строительство бань</title>
 </head>
-<body>
+<body id="body_styles">
+  <div id="overlay_body"></div>
     <div class="body_wrapper">
       <header class="bath_header">
         <div class="container">
@@ -100,387 +101,399 @@
           </div>
         </div>
       </section>
-    </div>
-        <section class="typebaths container">
-            <h2 class="typebaths__title section_title">
-                Подберем тот вид бани, <span>который будет соотвествовать вашим предпочтениям</span>
-            </h2>
-            <div class="typebaths__block">
-                <div class="typebaths__card">
-                    <img src="/src/images/russianbath.png" alt="Русская баня">
-                    <div class="typebaths__card-descr">
-                        <div class="typebaths__card-dashed">
-                            <p class="typebaths__card-title"><span>Русская</span></p>
-                            <p class="typebaths__card-subdescr">
-                                В русской бане используется пар, который создается за счет наливания воды на раскаленные камни, температура достигает 70-100 °С, после парной люди обычно погружаются в холодный бассейн или купаются в снегу,  принято использовать веники
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="typebaths__card">
-                    <img src="/src/images/russianbath.png" alt="Турецкая (Хаммам) баня">
-                    <div class="typebaths__card-descr">
-                        <div class="typebaths__card-dashed">
-                            <p class="typebaths__card-title tyrkey"><span>Турецкая (хаммам)</span></p>
-                            <p class="typebaths__card-subdescr">
-                                В хаммаме нет раскаленных камней, на которые нужно лить воду, а температура здесь не превышает 50 °С ., а влажность при этом достигает 100 %, поэтому здесь себя отлично чувствуют люди, которые тяжело переносят финскую сауну.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="typebaths__card">
-                    <img src="/src/images/russianbath.png" alt="Финская баня">
-                    <div class="typebaths__card-descr">
-                        <div class="typebaths__card-dashed">
-                            <p class="typebaths__card-title"><span>Финская</span></p>
-                            <p class="typebaths__card-subdescr">
-                                Температура обычно достигает 90 °С, иногда до 120–130 °С, влажность — до 8 %-25 %. В финской сауне не используют веники, при низкой влажности они только ранят кожу. Отличие от русской бани — конструкция печи, которая нагревает камни не только дровами, но и с помощью электричества.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="typebaths__card">
-                    <img src="/src/images/russianbath.png" alt="Японская баня">
-                    <div class="typebaths__card-descr">
-                        <div class="typebaths__card-dashed">
-                            <p class="typebaths__card-title"><span>Японская</span></p>
-                            <p class="typebaths__card-subdescr">
-                                Японская баня выглядит весьма необычно, она представляет собой помещение с деревянной бочкой или купелью и кушеткой. Бочка наполнена водой, нагретой до температуры 45 °С
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="descrbaths container">
-            <h2 class="descrbaths__title section_title">Построим баню, <span>которая подойдет детям и всем, кто плохо переносит высокую тепературу</span></h2>
-            <div class="descrbaths__block">
-                <div class="descrbaths__left">
-                </div>
-                <div class="descrbaths__right">
-                    <div class="descrbaths__card">
-                        <img src="/src/images/stove.png" alt="Печка">
-                        <div class="descrbaths__card-dashed">
-                            <p class="descrbaths__card-title long_title"><span>Индивидуальный тепловой режим</span></p>
-                            <p class="descrbaths__card-subdescr">
-                                В зависимости от вида выбранной бани, мы сможем подобрать печь или парогенератор под температуру комфортную для всей вашей семьи.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="descrbaths__card">
-                        <img src="/src/images/aroma.png" alt="Арома добавки">
-                        <div class="descrbaths__card-dashed">
-                            <p class="descrbaths__card-title"><span>Ароматерапия</span></p>
-                            <p class="descrbaths__card-subdescr">
-                                Сочетание теплого пара и ароматических масел тонизирует и оздоравливает организм.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="descrbaths__card">
-                        <img src="/src/images/stones.png" alt="Камни">
-                        <div class="descrbaths__card-dashed">
-                            <p class="descrbaths__card-title"><span>Полный антисресс</span></p>
-                            <p class="descrbaths__card-subdescr">
-                                Тепло пара приводит к улучшению состояния кожи, кровообращения и обмена веществ, а также успокоению нервной системы и снижению мышечного напряжения.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="spazone">
-            <div class="container">
-                <h2 class="spazone__title section_title"><span>Создадим для вас красивую и удобную SPA зону</span> за счет использования проверенных материалов</h2>
-            </div>
-                <div class="spazone__wrapp">
-                    <div class="container">
-                        <div class="spazone__block">
-                            <div class="spazone__block-baseline">
-                                <div class="spazone__block-flexel">
-                                    <div class="spazone__block-card card_one">
-                                        <img src="/src/images/checkicon.svg" alt="Галочка">
-                                        <div class="spazone__block-dashed">
-                                            <p class="spazone__block-title">Панели управления</p>
-                                            <p class="spazone__block-subdescr">
-                                                Минималистичные и многофункциональные  панели от фирм NNN позволяют управлять сауной или паровой кабиной без особого труда.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="spazone__block-card card_two">
-                                        <img src="/src/images/checkicon.svg" alt="Галочка" class="position_item">
-                                        <div class="spazone__block-dashed">
-                                            <p class="spazone__block-title">Мозаика</p>
-                                            <p class="spazone__block-subdescr">
-                                                Мозаичная плитка используется для отделки сидений, потолков и стен в бане, создавая уникальный восточный стиль. Мы используем мозаику европейских фабрик.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="spazone__block-flexel">
-                                    <div class="spazone__block-card card_three">
-                                        <img src="/src/images/checkicon.svg" alt="Галочка" class="position_item_one">
-                                        <div class="spazone__block-dashed">
-                                            <p class="spazone__block-title">Древесина</p>
-                                            <p class="spazone__block-subdescr">
-                                                Мы используем дерево NNN, благодаря особым свойствам их древесины, создающим неповторимый микроклимат в помещении при воздействии температуры и наполняющим влажный воздух целебными ароматами.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="spazone__block-card card_four">
-                                        <img src="/src/images/checkicon.svg" alt="Галочка" class="position_item_two">
-                                        <div class="spazone__block-dashed">
-                                            <p class="spazone__block-title">Парогенераторы</p>
-                                            <p class="spazone__block-subdescr">
-                                                Мы подберем парогенератор, который подойдет именно под площадь вашей бани и прослужит вамеще не мало лет.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="spazone__block-tablet">
-                                <div class="spazone__block-card card_one">
-                                    <img src="/src/images/checkicon.svg" alt="Галочка">
-                                    <div class="spazone__block-dashed">
-                                        <p class="spazone__block-title">Панели управления</p>
-                                        <p class="spazone__block-subdescr">
-                                            Минималистичные и многофункциональные  панели от фирм NNN позволяют управлять сауной или паровой кабиной без особого труда.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="spazone__block-card card_two">
-                                    <img src="/src/images/checkicon.svg" alt="Галочка" class="position_item">
-                                    <div class="spazone__block-dashed">
-                                        <p class="spazone__block-title">Мозаика</p>
-                                        <p class="spazone__block-subdescr">
-                                            Мозаичная плитка используется для отделки сидений, потолков и стен в бане, создавая уникальный восточный стиль. Мы используем мозаику европейских фабрик.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="spazone__block-card card_three">
-                                    <img src="/src/images/checkicon.svg" alt="Галочка" class="position_item_one">
-                                    <div class="spazone__block-dashed">
-                                        <p class="spazone__block-title">Древесина</p>
-                                        <p class="spazone__block-subdescr">
-                                            Мы используем дерево NNN, благодаря особым свойствам их древесины, создающим неповторимый микроклимат в помещении при воздействии температуры и наполняющим влажный воздух целебными ароматами.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="spazone__block-card card_four">
-                                    <img src="/src/images/checkicon.svg" alt="Галочка" class="position_item_two">
-                                    <div class="spazone__block-dashed">
-                                        <p class="spazone__block-title">Парогенераторы</p>
-                                        <p class="spazone__block-subdescr">
-                                            Мы подберем парогенератор, который подойдет именно под площадь вашей бани и прослужит вамеще не мало лет.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </section>
-        <section class="devproject container">
-            <h2 class="devproject__title section_title">
-              Можем разработать <span>проект индивидуально под вас</span> или подобрать из нашей коллекции
-            </h2>
-            <div class="devproject__block">
-              <div class="project__card">
-                <div class="project__card-img">
-                  <p class="project__card-video">Есть видео-отзыв</p>
-                </div>
-                <div class="project__card-descr">
-                  <h3 class="project__card-title">
-                    Проект NAKO №1
-                  </h3>
-                  <p class="project__card-char">Площадь:<span>125 м2</span></p>
-                  <p class="project__card-char">Стоймость:<span>от 14 461 000 Р</span></p>
-                  <button class="project__card-btn button_empty">Подробнее</button>
-                </div>
+      <section class="typebaths container">
+          <h2 class="typebaths__title section_title">
+              Подберем тот вид бани, <span>который будет соотвествовать вашим предпочтениям</span>
+          </h2>
+          <div class="typebaths__block">
+              <div class="typebaths__card">
+                  <img src="/src/images/russianbath.png" alt="Русская баня">
+                  <div class="typebaths__card-descr">
+                      <div class="typebaths__card-dashed">
+                          <p class="typebaths__card-title"><span>Русская</span></p>
+                          <p class="typebaths__card-subdescr">
+                              В русской бане используется пар, который создается за счет наливания воды на раскаленные камни, температура достигает 70-100 °С, после парной люди обычно погружаются в холодный бассейн или купаются в снегу,  принято использовать веники
+                          </p>
+                      </div>
+                  </div>
               </div>
-    
-              <div class="project__card">
-                <div class="project__card-img">
-                  <p class="project__card-video">Есть видео-отзыв</p>
-                </div>
-                <div class="project__card-descr">
-                  <h3 class="project__card-title">
-                    Проект NAKO №1
-                  </h3>
-                  <p class="project__card-char">Площадь:<span>125 м2</span></p>
-                  <p class="project__card-char">Стоймость:<span>от 14 461 000 Р</span></p>
-                  <button class="project__card-btn button_empty">Подробнее</button>
-                </div>
+
+              <div class="typebaths__card">
+                  <img src="/src/images/turkeybaths.png" alt="Турецкая (Хаммам) баня">
+                  <div class="typebaths__card-descr">
+                      <div class="typebaths__card-dashed">
+                          <p class="typebaths__card-title tyrkey"><span>Турецкая (хаммам)</span></p>
+                          <p class="typebaths__card-subdescr">
+                              В хаммаме нет раскаленных камней, на которые нужно лить воду, а температура здесь не превышает 50 °С ., а влажность при этом достигает 100 %, поэтому здесь себя отлично чувствуют люди, которые тяжело переносят финскую сауну.
+                          </p>
+                      </div>
+                  </div>
               </div>
-    
-              <div class="project__card">
-                <div class="project__card-img">
-                  <p class="project__card-video">Есть видео-отзыв</p>
-                </div>
-                <div class="project__card-descr">
-                  <h3 class="project__card-title">
-                    Проект NAKO №1
-                  </h3>
-                  <p class="project__card-char">Площадь:<span>125 м2</span></p>
-                  <p class="project__card-char">Стоймость:<span>от 14 461 000 Р</span></p>
-                  <button class="project__card-btn button_empty">Подробнее</button>
-                </div>
+
+              <div class="typebaths__card">
+                  <img src="/src/images/finbaths.jpg" alt="Финская баня">
+                  <div class="typebaths__card-descr">
+                      <div class="typebaths__card-dashed">
+                          <p class="typebaths__card-title"><span>Финская</span></p>
+                          <p class="typebaths__card-subdescr">
+                              Температура обычно достигает 90 °С, иногда до 120–130 °С, влажность — до 8 %-25 %. В финской сауне не используют веники, при низкой влажности они только ранят кожу. Отличие от русской бани — конструкция печи, которая нагревает камни не только дровами, но и с помощью электричества.
+                          </p>
+                      </div>
+                  </div>
               </div>
-    
-              <div class="project__card">
-                <div class="project__card-img">
-                  <p class="project__card-video">Есть видео-отзыв</p>
-                </div>
-                <div class="project__card-descr">
-                  <h3 class="project__card-title">
-                    Проект NAKO №1
-                  </h3>
-                  <p class="project__card-char">Площадь:<span>125 м2</span></p>
-                  <p class="project__card-char">Стоймость:<span>от 14 461 000 Р</span></p>
-                  <button class="project__card-btn button_empty">Подробнее</button>
-                </div>
+
+              <div class="typebaths__card">
+                  <img src="/src/images/japanbaths.jpg" alt="Японская баня">
+                  <div class="typebaths__card-descr">
+                      <div class="typebaths__card-dashed">
+                          <p class="typebaths__card-title"><span>Японская</span></p>
+                          <p class="typebaths__card-subdescr">
+                              Японская баня выглядит весьма необычно, она представляет собой помещение с деревянной бочкой или купелью и кушеткой. Бочка наполнена водой, нагретой до температуры 45 °С
+                          </p>
+                      </div>
+                  </div>
               </div>
-            </div>
-            <button class="devproject__block-btn button_default">Смотреть каталог проектов</button>
-        </section>
-        <section class="cleaning container">
-            <div class="cleaning__block">
-                <img src="/src/images/bg-cleaning.png" alt="Уборщик">
-                <div class="cleaning__block-dashed">
-                    <div class="cleaning__block-descr">
-                        <p class="cleaning__title">
-                            Осуществялем сервисное обслуживание бань
-                        </p>
-                        <p class="cleaning__block-subtitle">В обслуживание бань входит:</p>
-                        <ul class="cleaning__list">
-                            <li class="cleaning__list-item">
-                                <p class="cleaning__list-dots"></p>
-                                <p class="cleaning__list-text">
-                                    очистка стен, крыши и пола от известкового налета
-                                </p>
-                            </li>
-                            <li class="cleaning__list-item">
-                                <p class="cleaning__list-dots"></p>
-                                <p class="cleaning__list-text">
-                                    промывка парогенератора от накипи
-                                </p>
-                            </li>
-                            <li class="cleaning__list-item">
-                                <p class="cleaning__list-dots"></p>
-                                <p class="cleaning__list-text">
-                                    очистка трапов от мусора
-                                </p>
-                            </li>
-                            <li class="cleaning__list-item">
-                                <p class="cleaning__list-dots"></p>
-                                <p class="cleaning__list-text">
-                                    проверка электрооборудования на работоспособность
-                                <p>
-                            </li>
-                            <li class="cleaning__list-item">
-                                <p class="cleaning__list-dots"></p>
-                                <p class="cleaning__list-text">
-                                    замена светодиодных лент, светильников
-                                </p>
-                            </li>
-                            <li class="cleaning__list-item">
-                                <p class="cleaning__list-dots"></p>
-                                <p class="cleaning__list-text">
-                                    устранение течи в резьбовых соединениях
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="review">
-            <div class="container">
-              <div class="review__block">
-                <div class="review__descr">
-                  <h2 class="review__descr-title section_title"><span>Видео-отзывы</span><br> о наших проектах</h2>
-                  <p class="review__descr-text">
-                    Вы сможете увидеть результаты работы и услышать мнение людей, которые уже воспользовались нашими услугами. Мы уверены, что эти отзывы помогут вам сделать правильный выбор и доверить нам свой проект.
-                  </p>
-                  <button class="review__descr-btn button_empty">Смотреть больше отзывов</button>
-                </div>
-                <div class="review__example">
-                  <section id="mySlider" class="splide" aria-label="Splide Basic HTML Example">
-                    <div class="splide__arrows">
-                      <button class="splide__arrow splide__arrow--prev">
-                        <img src="/src/images/prevbtn.svg" alt="Стрелка назад">
-                      </button>
-                      <button class="splide__arrow splide__arrow--next">
-                        <img src="/src/images/nextbtn.svg" alt="Стрелка вперед">
-                      </button>
-                    </div>
-                    <div class="splide__track">
-                      <ul class="splide__list">
-                        <li class="splide__slide">
-                          <img src="/src/images/houseproject.png" alt="Проект дома">
-                        </li>
-                        <li class="splide__slide">
-                          <img src="/src/images/houseproject.png" alt="Проект дома">
-                        </li>
-                        <li class="splide__slide">
-                          <img src="/src/images/houseproject.png" alt="Проект дома">
-                        </li>
-                        <li class="splide__slide">
-                          <img src="/src/images/houseproject.png" alt="Проект дома">
-                        </li>
-                        <li class="splide__slide">
-                          <img src="/src/images/houseproject.png" alt="Проект дома">
-                        </li>
-                      </ul>
-                    </div>
-                  </section>
-                </div>
+          </div>
+      </section>
+      <section class="descrbaths container">
+          <h2 class="descrbaths__title section_title">Построим баню, <span>которая подойдет детям и всем, кто плохо переносит высокую тепературу</span></h2>
+          <div class="descrbaths__block">
+              <div class="descrbaths__left">
               </div>
-            </div>
-        </section>
-        <section class="map">
+              <div class="descrbaths__right">
+                  <div class="descrbaths__card">
+                      <img src="/src/images/stove.png" alt="Печка">
+                      <div class="descrbaths__card-dashed">
+                          <p class="descrbaths__card-title long_title"><span>Индивидуальный тепловой режим</span></p>
+                          <p class="descrbaths__card-subdescr">
+                              В зависимости от вида выбранной бани, мы сможем подобрать печь или парогенератор под температуру комфортную для всей вашей семьи.
+                          </p>
+                      </div>
+                  </div>
+
+                  <div class="descrbaths__card">
+                      <img src="/src/images/aroma.png" alt="Арома добавки">
+                      <div class="descrbaths__card-dashed">
+                          <p class="descrbaths__card-title"><span>Ароматерапия</span></p>
+                          <p class="descrbaths__card-subdescr">
+                              Сочетание теплого пара и ароматических масел тонизирует и оздоравливает организм.
+                          </p>
+                      </div>
+                  </div>
+
+                  <div class="descrbaths__card">
+                      <img src="/src/images/stones.png" alt="Камни">
+                      <div class="descrbaths__card-dashed">
+                          <p class="descrbaths__card-title"><span>Полный антисресс</span></p>
+                          <p class="descrbaths__card-subdescr">
+                              Тепло пара приводит к улучшению состояния кожи, кровообращения и обмена веществ, а также успокоению нервной системы и снижению мышечного напряжения.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section class="spazone">
           <div class="container">
-            <div class="map__block">
-              <div class="map__block-descr">
-                <h2 class="map__title section_title">
-                  Свяжитесь с нами <br><span>любым удобным способом</span>
-                </h2>
-                <div class="map__block-operating">
-                  <div class="map__block-left">
-                    <p class="map__block-operating_title">Телефон:</p>
-                    <p class="map__block-operating_number"><a href="tel:+78432126623">+7 (843) 212 66 23</a></p>
+              <h2 class="spazone__title section_title"><span>Создадим для вас красивую и удобную SPA зону</span> за счет использования проверенных материалов</h2>
+          </div>
+              <div class="spazone__wrapp">
+                  <div class="container">
+                      <div class="spazone__block">
+                          <div class="spazone__block-baseline">
+                              <div class="spazone__block-flexel">
+                                  <div class="spazone__block-card card_one">
+                                      <img src="/src/images/checkicon.svg" alt="Галочка">
+                                      <div class="spazone__block-dashed">
+                                          <p class="spazone__block-title">Панели управления</p>
+                                          <p class="spazone__block-subdescr">
+                                              Минималистичные и многофункциональные  панели от фирм NNN позволяют управлять сауной или паровой кабиной без особого труда.
+                                          </p>
+                                      </div>
+                                  </div>
+                                  <div class="spazone__block-card card_two">
+                                      <img src="/src/images/checkicon.svg" alt="Галочка" class="position_item">
+                                      <div class="spazone__block-dashed">
+                                          <p class="spazone__block-title">Мозаика</p>
+                                          <p class="spazone__block-subdescr">
+                                              Мозаичная плитка используется для отделки сидений, потолков и стен в бане, создавая уникальный восточный стиль. Мы используем мозаику европейских фабрик.
+                                          </p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="spazone__block-flexel">
+                                  <div class="spazone__block-card card_three">
+                                      <img src="/src/images/checkicon.svg" alt="Галочка" class="position_item_one">
+                                      <div class="spazone__block-dashed">
+                                          <p class="spazone__block-title">Древесина</p>
+                                          <p class="spazone__block-subdescr">
+                                              Мы используем дерево NNN, благодаря особым свойствам их древесины, создающим неповторимый микроклимат в помещении при воздействии температуры и наполняющим влажный воздух целебными ароматами.
+                                          </p>
+                                      </div>
+                                  </div>
+                                  <div class="spazone__block-card card_four">
+                                      <img src="/src/images/checkicon.svg" alt="Галочка" class="position_item_two">
+                                      <div class="spazone__block-dashed">
+                                          <p class="spazone__block-title">Парогенераторы</p>
+                                          <p class="spazone__block-subdescr">
+                                              Мы подберем парогенератор, который подойдет именно под площадь вашей бани и прослужит вамеще не мало лет.
+                                          </p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="spazone__block-tablet">
+                              <div class="spazone__block-card card_one">
+                                  <img src="/src/images/checkicon.svg" alt="Галочка">
+                                  <div class="spazone__block-dashed">
+                                      <p class="spazone__block-title">Панели управления</p>
+                                      <p class="spazone__block-subdescr">
+                                          Минималистичные и многофункциональные  панели от фирм NNN позволяют управлять сауной или паровой кабиной без особого труда.
+                                      </p>
+                                  </div>
+                              </div>
+                              <div class="spazone__block-card card_two">
+                                  <img src="/src/images/checkicon.svg" alt="Галочка" class="position_item">
+                                  <div class="spazone__block-dashed">
+                                      <p class="spazone__block-title">Мозаика</p>
+                                      <p class="spazone__block-subdescr">
+                                          Мозаичная плитка используется для отделки сидений, потолков и стен в бане, создавая уникальный восточный стиль. Мы используем мозаику европейских фабрик.
+                                      </p>
+                                  </div>
+                              </div>
+                              <div class="spazone__block-card card_three">
+                                  <img src="/src/images/checkicon.svg" alt="Галочка" class="position_item_one">
+                                  <div class="spazone__block-dashed">
+                                      <p class="spazone__block-title">Древесина</p>
+                                      <p class="spazone__block-subdescr">
+                                          Мы используем дерево NNN, благодаря особым свойствам их древесины, создающим неповторимый микроклимат в помещении при воздействии температуры и наполняющим влажный воздух целебными ароматами.
+                                      </p>
+                                  </div>
+                              </div>
+                              <div class="spazone__block-card card_four">
+                                  <img src="/src/images/checkicon.svg" alt="Галочка" class="position_item_two">
+                                  <div class="spazone__block-dashed">
+                                      <p class="spazone__block-title">Парогенераторы</p>
+                                      <p class="spazone__block-subdescr">
+                                          Мы подберем парогенератор, который подойдет именно под площадь вашей бани и прослужит вамеще не мало лет.
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
                   </div>
-                  <div class="map__block-right">
-                    <p class="map__block-operating_title">Режим работы:</p>
-                    <p class="map__block-operating_subtitle">Пн-Пт с 9.00-18.00</p>
+              </div>
+      </section>
+      <section class="devproject container">
+        <h2 class="devproject__title section_title">
+          Можем разработать <span>проект индивидуально под вас</span> или подобрать из нашей коллекции
+        </h2>
+        <div class="devproject__block">
+          <div class="project__card">
+            <div class="project__card-img">
+              <p class="project__card-video">Есть видео-отзыв</p>
+              <p href="#" class="project__card-links">
+                <img src="/src/images/whitelupa.svg" alt="Подробнее">
+              </p>
+              <a href="/src/pages/products.html"><img class="project__card-head-img" src="/src/images/project.png" alt="Проект Нако"></a>
+            </div>
+            <div class="project__card-descr">
+              <h3 class="project__card-title">
+                Проект NAKO №1
+              </h3>
+              <p class="project__card-char">Площадь:<span>125 м2</span></p>
+              <p class="project__card-char">Стоймость:<span>от 14 461 000 Р</span></p>
+              <button class="project__card-btn button_empty">Подробнее</button>
+            </div>
+          </div>
+          <div class="project__card">
+            <div class="project__card-img">
+              <p class="project__card-video">Есть видео-отзыв</p>
+              <p href="#" class="project__card-links">
+                <img src="/src/images/whitelupa.svg" alt="Подробнее">
+              </p>
+              <a href="/src/pages/products.html"><img class="project__card-head-img" src="/src/images/project.png" alt="Проект Нако"></a>
+            </div>
+            <div class="project__card-descr">
+              <h3 class="project__card-title">
+                Проект NAKO №1
+              </h3>
+              <p class="project__card-char">Площадь:<span>125 м2</span></p>
+              <p class="project__card-char">Стоймость:<span>от 14 461 000 Р</span></p>
+              <button class="project__card-btn button_empty">Подробнее</button>
+            </div>
+          </div>
+          <div class="project__card">
+            <div class="project__card-img">
+              <p class="project__card-video">Есть видео-отзыв</p>
+              <p href="#" class="project__card-links">
+                <img src="/src/images/whitelupa.svg" alt="Подробнее">
+              </p>
+              <a href="/src/pages/products.html"><img class="project__card-head-img" src="/src/images/project.png" alt="Проект Нако"></a>
+            </div>
+            <div class="project__card-descr">
+              <h3 class="project__card-title">
+                Проект NAKO №1
+              </h3>
+              <p class="project__card-char">Площадь:<span>125 м2</span></p>
+              <p class="project__card-char">Стоймость:<span>от 14 461 000 Р</span></p>
+              <button class="project__card-btn button_empty">Подробнее</button>
+            </div>
+          </div>
+          <div class="project__card">
+            <div class="project__card-img">
+              <p class="project__card-video">Есть видео-отзыв</p>
+              <p href="#" class="project__card-links">
+                <img src="/src/images/whitelupa.svg" alt="Подробнее">
+              </p>
+              <a href="/src/pages/products.html"><img class="project__card-head-img" src="/src/images/project.png" alt="Проект Нако"></a>
+            </div>
+            <div class="project__card-descr">
+              <h3 class="project__card-title">
+                Проект NAKO №1
+              </h3>
+              <p class="project__card-char">Площадь:<span>125 м2</span></p>
+              <p class="project__card-char">Стоймость:<span>от 14 461 000 Р</span></p>
+              <button class="project__card-btn button_empty">Подробнее</button>
+            </div>
+          </div>
+        </div>
+        <button class="devproject__block-btn button_default"><a href="/src/pages/catalog.html">Смотреть каталог проектов</a></button>
+      </section>
+      <section class="cleaning container">
+          <div class="cleaning__block">
+              <img src="/src/images/bg-cleaning.png" alt="Уборщик">
+              <div class="cleaning__block-dashed">
+                  <div class="cleaning__block-descr">
+                      <p class="cleaning__title">
+                          Осуществялем сервисное обслуживание бань
+                      </p>
+                      <p class="cleaning__block-subtitle">В обслуживание бань входит:</p>
+                      <ul class="cleaning__list">
+                          <li class="cleaning__list-item">
+                              <p class="cleaning__list-dots"></p>
+                              <p class="cleaning__list-text">
+                                  очистка стен, крыши и пола от известкового налета
+                              </p>
+                          </li>
+                          <li class="cleaning__list-item">
+                              <p class="cleaning__list-dots"></p>
+                              <p class="cleaning__list-text">
+                                  промывка парогенератора от накипи
+                              </p>
+                          </li>
+                          <li class="cleaning__list-item">
+                              <p class="cleaning__list-dots"></p>
+                              <p class="cleaning__list-text">
+                                  очистка трапов от мусора
+                              </p>
+                          </li>
+                          <li class="cleaning__list-item">
+                              <p class="cleaning__list-dots"></p>
+                              <p class="cleaning__list-text">
+                                  проверка электрооборудования на работоспособность
+                              <p>
+                          </li>
+                          <li class="cleaning__list-item">
+                              <p class="cleaning__list-dots"></p>
+                              <p class="cleaning__list-text">
+                                  замена светодиодных лент, светильников
+                              </p>
+                          </li>
+                          <li class="cleaning__list-item">
+                              <p class="cleaning__list-dots"></p>
+                              <p class="cleaning__list-text">
+                                  устранение течи в резьбовых соединениях
+                              </p>
+                          </li>
+                      </ul>
                   </div>
+              </div>
+          </div>
+      </section>
+      <section class="review">
+        <div class="container">
+          <div class="review__block">
+            <div class="review__descr">
+              <h2 class="review__descr-title section_title"><span>Видео-отзывы</span><br> о наших проектах</h2>
+              <p class="review__descr-text">
+                Вы сможете увидеть результаты работы и услышать мнение людей, которые уже воспользовались нашими услугами. Мы уверены, что эти отзывы помогут вам сделать правильный выбор и доверить нам свой проект.
+              </p>
+              <button class="review__descr-btn button_empty">Смотреть больше отзывов</button>
+            </div>
+            <div class="review__example">
+              <section id="mySlider" class="splide" aria-label="Splide Basic HTML Example">
+                <div class="splide__arrows">
+                  <button class="splide__arrow splide__arrow--prev splide__arrow-review--prev">
+                    <img src="/src/images/prevbtn.svg" alt="Стрелка назад">
+                  </button>
+                  <button class="splide__arrow splide__arrow--next splide__arrow-review--next">
+                    <img src="/src/images/nextbtn.svg" alt="Стрелка вперед">
+                  </button>
                 </div>
-                <div class="map__block-address">
-                  <div class="map__block-address_left">
-                    <p class="map__block-operating_title">Адрес:</p>
-                    <p class="map__block-operating_subtitle">г. Казань, ул. Оренбургский тракт 22а, ТЦ «Бэхетле», 2 этаж</p>
-                  </div>
-                  <div class="map__block-address_right">
-                    <p class="map__block-operating_title">Присоединяйтесь в соц.сетях:</p>
-                    <ul class="map__block-social">
-                      <li class="map__block-item"><a href="#" class="map__block-link"><img src="/src/images/telegramorange.svg" alt="Телеграм"></a></li>
-                      <li class="map__block-item"><a href="#" class="map__block-link"><img src="/src/images/whatsorange.svg" alt="Ватсап"></a></li>
-                      <li class="map__block-item"><a href="#" class="map__block-link"><img src="/src/images/vkorange.svg" alt="Вконтакте"></a></li>
-                    </ul>
-                  </div>
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide">
+                      <img src="/src/images/houseproject.png" alt="Проект дома">
+                    </li>
+                    <li class="splide__slide">
+                      <img src="/src/images/houseproject.png" alt="Проект дома">
+                    </li>
+                    <li class="splide__slide">
+                      <img src="/src/images/houseproject.png" alt="Проект дома">
+                    </li>
+                    <li class="splide__slide">
+                      <img src="/src/images/houseproject.png" alt="Проект дома">
+                    </li>
+                    <li class="splide__slide">
+                      <img src="/src/images/houseproject.png" alt="Проект дома">
+                    </li>
+                  </ul>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="map">
+        <div class="container">
+          <div class="map__block">
+            <div class="map__block-descr">
+              <h2 class="map__title section_title">
+                Свяжитесь с нами <br><span>любым удобным способом</span>
+              </h2>
+              <div class="map__block-operating">
+                <div class="map__block-left">
+                  <p class="map__block-operating_title">Телефон:</p>
+                  <p class="map__block-operating_number"><a href="tel:+78432126623">+7 (843) 212 66 23</a></p>
+                </div>
+                <div class="map__block-right">
+                  <p class="map__block-operating_title">Режим работы:</p>
+                  <p class="map__block-operating_subtitle">Пн-Пт с 9.00-18.00</p>
+                </div>
+              </div>
+              <div class="map__block-address">
+                <div class="map__block-address_left">
+                  <p class="map__block-operating_title">Адрес:</p>
+                  <p class="map__block-operating_subtitle">г. Казань, ул. Оренбургский тракт 22а, ТЦ «Бэхетле», 2 этаж</p>
+                </div>
+                <div class="map__block-address_right">
+                  <p class="map__block-operating_title">Присоединяйтесь в соц.сетях:</p>
+                  <ul class="map__block-social">
+                    <li class="map__block-item"><a href="#" class="map__block-link"><img src="/src/images/telegramorange.svg" alt="Телеграм"></a></li>
+                    <li class="map__block-item"><a href="#" class="map__block-link"><img src="/src/images/whatsorange.svg" alt="Ватсап"></a></li>
+                    <li class="map__block-item"><a href="#" class="map__block-link"><img src="/src/images/vkorange.svg" alt="Вконтакте"></a></li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
-          <div class="map_yandex" style="position:relative; overflow: hidden;">
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2e865ca55e915a71499cb93f68d0b75132063adac67049f339877aa2e73ac1ff&amp;width=100%25&amp;height=620&amp;lang=ru_RU&amp;scroll=false"></script>
-            <script src="/src/js/icon_customImage.js" type="text/javascript"></script>
-          </div>
-        </section>
+        </div>
+        <div class="map_yandex" style="position:relative; overflow: hidden;">
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2e865ca55e915a71499cb93f68d0b75132063adac67049f339877aa2e73ac1ff&amp;width=100%25&amp;height=620&amp;lang=ru_RU&amp;scroll=false"></script>
+          <script src="/src/js/icon_customImage.js" type="text/javascript"></script>
+        </div>
+      </section>
     </main>
     <footer class="footer">
         <div class="container">
@@ -544,6 +557,7 @@
           </div>
         </div>
     </footer>
+  </div>
     <script type="module" src="/src/js/main.js"></script>
 </body>
 </html>

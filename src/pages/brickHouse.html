@@ -5,8 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Кирпичные дома</title>
 </head>
-<body>
+<body id="body_styles">
+  <div id="overlay_body"></div>
   <div class="body_wrapper">
+    <div class="burger" id="burgers_menu">
+      <div class="burger__menu">
+        <div class="burger__menu-wrapper">
+          <a href="/" class="header__logo-link burger__logo">
+            <img src="/src/images/logo.svg" alt="Логотип НАКО" loading="lazy">
+          </a>
+          <nav class="burger__menu-list">
+            <a href="/index.html" class="burger__menu-item">Главная</a>
+            <a href="/src/pages/brickHouse.html" class="burger__menu-item">Строительство кирпичных домов</a>
+            <a href="/src/pages/bathHouse.html" class="burger__menu-item">Строительство бань</a>
+            <a href="/src/pages/projectHouse.html" class="burger__menu-item">Индивидуальное проектирование домов</a>
+            <a href="/src/pages/objects.html" class="burger__menu-item">Реализованные проекты</a>
+            <a href="/src/pages/catalog.html" class="burger__menu-item">Каталог проектов</a>
+            <a href="/src/pages/articles.html" class="burger__menu-item">полезные Статьи</a>
+            <a href="/index.html" class="burger__menu-item">О нас</a>
+            <a href="/src/pages/vacancies.html" class="burger__menu-item">Вакансии</a>
+            <a href="/" class="burger__menu-item">Контакты</a>
+          </nav>
+        </div>
+        <div class="burger__menu-contact">
+          <p class="header__phone menu__phone"><a href="tel:+78432126623">+7(843) 212 66 23</a></p>
+          <p class="footer__subdescr light_text">Пн-Пт с 9.00-18.00</p>
+          <div class="header__social menu__social">
+            <a href="#" class="header__social-item"><img src="/src/images/telegram.svg" alt="Телеграм"></a>
+            <a href="#" class="header__social-item"><img src="/src/images/wahtsapp.svg" alt="Ватсап"></a>
+            <a href="#" class="header__social-item"><img src="/src/images/vk.svg" alt="Вконтакте"></a>
+          </div>
+        </div>
+      </div>
+    </div>
     <header class="brick_header">
         <div class="container">
           <div class="header">
@@ -47,36 +78,6 @@
                 <a href="#" class="header__social-item"><img src="/src/images/vk.svg" alt="Вконтакте"></a>
               </div>
             </div>
-          <div class="burger" id="burgers_menu">
-            <div class="burger__menu">
-              <div class="burger__menu-wrapper">
-                <a href="/" class="header__logo-link burger__logo">
-                  <img src="/src/images/logo.svg" alt="Логотип НАКО" loading="lazy">
-                </a>
-                <nav class="burger__menu-list">
-                  <a href="/index.html" class="burger__menu-item">Главная</a>
-                  <a href="/src/pages/brickHouse.html" class="burger__menu-item">Строительство кирпичных домов</a>
-                  <a href="/src/pages/bathHouse.html" class="burger__menu-item">Строительство бань</a>
-                  <a href="/src/pages/projectHouse.html" class="burger__menu-item">Индивидуальное проектирование домов</a>
-                  <a href="/src/pages/objects.html" class="burger__menu-item">Реализованные проекты</a>
-                  <a href="/src/pages/catalog.html" class="burger__menu-item">Каталог проектов</a>
-                  <a href="/src/pages/articles.html" class="burger__menu-item">полезные Статьи</a>
-                  <a href="/index.html" class="burger__menu-item">О нас</a>
-                  <a href="/src/pages/vacancies.html" class="burger__menu-item">Вакансии</a>
-                  <a href="/" class="burger__menu-item">Контакты</a>
-                </nav>
-              </div>
-              <div class="burger__menu-contact">
-                <p class="header__phone menu__phone"><a href="tel:+78432126623">+7(843) 212 66 23</a></p>
-                <p class="footer__subdescr light_text">Пн-Пт с 9.00-18.00</p>
-                <div class="header__social menu__social">
-                  <a href="#" class="header__social-item"><img src="/src/images/telegram.svg" alt="Телеграм"></a>
-                  <a href="#" class="header__social-item"><img src="/src/images/wahtsapp.svg" alt="Ватсап"></a>
-                  <a href="#" class="header__social-item"><img src="/src/images/vk.svg" alt="Вконтакте"></a>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
         </div>
     </header>
@@ -101,8 +102,6 @@
           </div>
         </div>
         </section>
-      </div>
-      </div>
         <section class="catalog">
             <div class="container">
                 <div class="catalog__block">
@@ -159,6 +158,10 @@
               <div class="project__card">
                 <div class="project__card-img">
                   <p class="project__card-video">Есть видео-отзыв</p>
+                  <p href="#" class="project__card-links">
+                    <img src="/src/images/whitelupa.svg" alt="Подробнее">
+                  </p>
+                  <a href="/src/pages/products.html"><img class="project__card-head-img" src="/src/images/project.png" alt="Проект Нако"></a>
                 </div>
                 <div class="project__card-descr">
                   <h3 class="project__card-title">
@@ -172,6 +175,27 @@
               <div class="project__card">
                 <div class="project__card-img">
                   <p class="project__card-video">Есть видео-отзыв</p>
+                  <p href="#" class="project__card-links">
+                    <img src="/src/images/whitelupa.svg" alt="Подробнее">
+                  </p>
+                  <a href="/src/pages/products.html"><img class="project__card-head-img" src="/src/images/project.png" alt="Проект Нако"></a>
+                 </div>
+                <div class="project__card-descr">
+                  <h3 class="project__card-title">
+                    Проект NAKO №1
+                  </h3>
+                  <p class="project__card-char">Площадь:<span>125 м2</span></p>
+                  <p class="project__card-char">Стоймость:<span>от 14 461 000 Р</span></p>
+                  <button class="project__card-btn button_empty">Подробнее</button>
+                </div>
+              </div>
+              <div class="project__card">
+                <div class="project__card-img">
+                  <p class="project__card-video">Есть видео-отзыв</p>
+                  <p href="#" class="project__card-links">
+                    <img src="/src/images/whitelupa.svg" alt="Подробнее">
+                  </p>
+                  <a href="/src/pages/products.html"><img class="project__card-head-img" src="/src/images/project.png" alt="Проект Нако"></a>
                 </div>
                 <div class="project__card-descr">
                   <h3 class="project__card-title">
@@ -185,6 +209,10 @@
               <div class="project__card">
                 <div class="project__card-img">
                   <p class="project__card-video">Есть видео-отзыв</p>
+                  <p href="#" class="project__card-links">
+                    <img src="/src/images/whitelupa.svg" alt="Подробнее">
+                  </p>
+                  <a href="/src/pages/products.html"><img class="project__card-head-img" src="/src/images/project.png" alt="Проект Нако"></a>
                 </div>
                 <div class="project__card-descr">
                   <h3 class="project__card-title">
@@ -198,6 +226,10 @@
               <div class="project__card">
                 <div class="project__card-img">
                   <p class="project__card-video">Есть видео-отзыв</p>
+                  <p href="#" class="project__card-links">
+                    <img src="/src/images/whitelupa.svg" alt="Подробнее">
+                  </p>
+                  <a href="/src/pages/products.html"><img class="project__card-head-img" src="/src/images/project.png" alt="Проект Нако"></a>
                 </div>
                 <div class="project__card-descr">
                   <h3 class="project__card-title">
@@ -211,6 +243,10 @@
               <div class="project__card">
                 <div class="project__card-img">
                   <p class="project__card-video">Есть видео-отзыв</p>
+                  <p href="#" class="project__card-links">
+                    <img src="/src/images/whitelupa.svg" alt="Подробнее">
+                  </p>
+                  <a href="/src/pages/products.html"><img class="project__card-head-img" src="/src/images/project.png" alt="Проект Нако"></a>
                 </div>
                 <div class="project__card-descr">
                   <h3 class="project__card-title">
@@ -224,19 +260,10 @@
               <div class="project__card">
                 <div class="project__card-img">
                   <p class="project__card-video">Есть видео-отзыв</p>
-                </div>
-                <div class="project__card-descr">
-                  <h3 class="project__card-title">
-                    Проект NAKO №1
-                  </h3>
-                  <p class="project__card-char">Площадь:<span>125 м2</span></p>
-                  <p class="project__card-char">Стоймость:<span>от 14 461 000 Р</span></p>
-                  <button class="project__card-btn button_empty">Подробнее</button>
-                </div>
-              </div>
-              <div class="project__card">
-                <div class="project__card-img">
-                  <p class="project__card-video">Есть видео-отзыв</p>
+                  <p href="#" class="project__card-links">
+                    <img src="/src/images/whitelupa.svg" alt="Подробнее">
+                  </p>
+                  <a href="/src/pages/products.html"><img class="project__card-head-img" src="/src/images/project.png" alt="Проект Нако"></a>
                 </div>
                 <div class="project__card-descr">
                   <h3 class="project__card-title">
@@ -250,6 +277,10 @@
               <div class="project__card elem">
                 <div class="project__card-img">
                   <p class="project__card-video">Есть видео-отзыв</p>
+                  <p href="#" class="project__card-links">
+                    <img src="/src/images/whitelupa.svg" alt="Подробнее">
+                  </p>
+                  <a href="/src/pages/products.html"><img class="project__card-head-img" src="/src/images/project.png" alt="Проект Нако"></a>
                 </div>
                 <div class="project__card-descr">
                   <h3 class="project__card-title">
@@ -261,7 +292,7 @@
                 </div>
               </div>
             </div>
-            <button class="project__block-btn button_default">Перейти в портфолио</button>
+            <button class="project__block-btn button_default"><a href="/src/pages/objects.html">Перейти в портфолио</a></button>
           </div>
         </section>
         <section class="inworked">
@@ -289,6 +320,10 @@
             <div class="project__card">
               <div class="project__card-img">
                 <p class="project__card-video">Есть видео-отзыв</p>
+                <p href="#" class="project__card-links">
+                  <img src="/src/images/whitelupa.svg" alt="Подробнее">
+                </p>
+                <a href="/src/pages/products.html"><img class="project__card-head-img" src="/src/images/project.png" alt="Проект Нако"></a>
               </div>
               <div class="project__card-descr">
                 <h3 class="project__card-title">
@@ -299,10 +334,13 @@
                 <button class="project__card-btn button_empty">Подробнее</button>
               </div>
             </div>
-  
             <div class="project__card">
               <div class="project__card-img">
                 <p class="project__card-video">Есть видео-отзыв</p>
+                <p href="#" class="project__card-links">
+                  <img src="/src/images/whitelupa.svg" alt="Подробнее">
+                </p>
+                <a href="/src/pages/products.html"><img class="project__card-head-img" src="/src/images/project.png" alt="Проект Нако"></a>
               </div>
               <div class="project__card-descr">
                 <h3 class="project__card-title">
@@ -313,10 +351,13 @@
                 <button class="project__card-btn button_empty">Подробнее</button>
               </div>
             </div>
-  
             <div class="project__card">
               <div class="project__card-img">
                 <p class="project__card-video">Есть видео-отзыв</p>
+                <p href="#" class="project__card-links">
+                  <img src="/src/images/whitelupa.svg" alt="Подробнее">
+                </p>
+                <a href="/src/pages/products.html"><img class="project__card-head-img" src="/src/images/project.png" alt="Проект Нако"></a>
               </div>
               <div class="project__card-descr">
                 <h3 class="project__card-title">
@@ -327,10 +368,13 @@
                 <button class="project__card-btn button_empty">Подробнее</button>
               </div>
             </div>
-  
             <div class="project__card">
               <div class="project__card-img">
                 <p class="project__card-video">Есть видео-отзыв</p>
+                <p href="#" class="project__card-links">
+                  <img src="/src/images/whitelupa.svg" alt="Подробнее">
+                </p>
+                <a href="/src/pages/products.html"><img class="project__card-head-img" src="/src/images/project.png" alt="Проект Нако"></a>
               </div>
               <div class="project__card-descr">
                 <h3 class="project__card-title">
@@ -342,7 +386,7 @@
               </div>
             </div>
           </div>
-          <button class="devproject__block-btn button_default">Смотреть каталог проектов</button>
+          <button class="devproject__block-btn button_default"><a href="/src/pages/catalog.html">Смотреть каталог проектов</a></button>
         </section>
         <section class="selection">
           <div class="container">
@@ -387,10 +431,10 @@
               <div class="review__example">
                 <section id="mySlider" class="splide" aria-label="Splide Basic HTML Example">
                   <div class="splide__arrows">
-                    <button class="splide__arrow splide__arrow--prev">
+                    <button class="splide__arrow splide__arrow--prev splide__arrow-review--prev">
                       <img src="/src/images/prevbtn.svg" alt="Стрелка назад">
                     </button>
-                    <button class="splide__arrow splide__arrow--next">
+                    <button class="splide__arrow splide__arrow--next splide__arrow-review--next">
                       <img src="/src/images/nextbtn.svg" alt="Стрелка вперед">
                     </button>
                   </div>
@@ -521,5 +565,6 @@
       </div>
     </footer>
     <script type="module" src="/src/js/main.js"></script>
+  </div>
 </body>
 </html>

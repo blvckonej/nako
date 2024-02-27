@@ -14,7 +14,12 @@ header {
   padding-top: 15px;
   border-bottom-left-radius: 40px;
   @include phone {
+    position: -webkit-sticky;
     position: sticky;
+    top: 0px;
+    border-bottom-left-radius: 0px;
+    backdrop-filter: blur(100px);
+    z-index: 10;
   }
   &__logo-block {
     @include df-center;
@@ -88,7 +93,7 @@ header {
       line-height: 50px;
     }
     @include phone {
-      margin-top: -150px;
+      margin-top: 50px;
       width: 250px;
       line-height: 35px;
       font-size: var(--text-xlg);

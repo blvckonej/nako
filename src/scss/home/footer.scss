@@ -77,6 +77,16 @@
   }
   &__license-dev {
     margin-top: 25px;
+    a {
+      display: block;
+      margin-top: 2px;
+      &:hover {
+        color: lighten(#16182a, 40%) !important;
+      }
+      &:active {
+        color: darken(#fff, 40%) !important;
+      }
+    }
     @include mobile {
       width: 200px;
       line-height: 1.5;
