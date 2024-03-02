@@ -41,7 +41,9 @@ header {
   &__menu-list {
     display: flex;
   }
-  &__menu-item {
+  &__menu-item,
+  &__menu-list,
+  .page_item {
     font-size: var(--text-xxs);
     margin-left: 50px;
     &:hover {
